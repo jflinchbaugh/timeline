@@ -16,6 +16,8 @@ To start a web server for the application, run:
 
     lein run 
 
-## License
-
-Copyright © 2017 FIXME
+At some point, you may want a `profiles.clj` 
+in the root of the project
+for local configs that won't get versioned.
+Start with at least an empty map (`{}`), 
+if you create the file.

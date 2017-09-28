@@ -16,6 +16,13 @@ To start a web server for the application, run:
 
     lein run 
 
+## Local configs
+
+I've (unconventionally) moved the dev and test DB environments
+into the project.clj file, 
+since those can be shared across developers
+and contain no proprietary information.
+
 At some point, you may want a `profiles.clj` 
 in the root of the project
 for local configs that won't get versioned.

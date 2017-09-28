@@ -1,5 +1,5 @@
 FROM java:8-alpine
-MAINTAINER Your Name <you@example.com>
+MAINTAINER John Flinchbaugh <john@hjsoft.com>
 
 ADD target/uberjar/timeline.jar /timeline/app.jar
 

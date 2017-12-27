@@ -21,11 +21,12 @@
     {:date [2008 11 28] :description "Attend Photo Class at HACC"}
     {:date [2009 4 26] :description "First Senior Portraits with Bridget"}
     {:date [2009 4] :description "Start Using a Standing Desk"}
-    {:date [2010 12 16] :description "Purchase Ford Fiesta"}
+    {:date [2010 12 16] :description "Purchase 2011 Ford Fiesta"}
     {:date [2012 5 22] :description "Start at Learning Sciences International"}
     {:date [2014 11 10] :description "Start at Hershey Medical Center"}
     {:date [2014 11 24] :description "Separated"}
     {:date [2015 12 31] :description "Divorce"}
+    {:date [2017 10 21] :description "Purchase 2014 BMW i3"}
   ]
 )
 

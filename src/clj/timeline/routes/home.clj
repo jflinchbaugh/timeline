@@ -9,9 +9,10 @@
   [
     {:date [1977 3 21] :description "Birth"}
     {:date [1981] :description "Start Preschool at Little People"}
-    {:date [1982] :description "Start Kindergarten"}
+    {:date [1982] :description "Start Kindergarten at Kreutz Creek"}
     {:date [1995 6] :description "Graduate from Eastern York High School"}
     {:date [2000 5] :description "Graduate from Millersville University"}
+    {:date [2000 6] :description "Start at Educators Mutual Life Insurance"}
     {:date [2002 8 10] :description "Married"}
     {:date [2002 12] :description "Moved to Armstrong Ln, Lancaster"}
     {:date [2003 5 10] :description "Paige Born"}
@@ -23,10 +24,13 @@
     {:date [2009 4] :description "Start Using a Standing Desk"}
     {:date [2010 12 16] :description "Purchase 2011 Ford Fiesta"}
     {:date [2012 5 22] :description "Start at Learning Sciences International"}
+    {:date [2014 10 15] :description "Left Learning Science International"}
     {:date [2014 11 10] :description "Start at Hershey Medical Center"}
     {:date [2014 11 24] :description "Separated"}
     {:date [2015 12 31] :description "Divorce"}
     {:date [2017 10 21] :description "Purchase 2014 BMW i3"}
+    {:date [2018 12 06] :description "Purchase House"}
+    {:date [2019 01 10] :description "Leave Hershey Medical Center"}
   ]
 )
 

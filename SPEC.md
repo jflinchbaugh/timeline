@@ -73,7 +73,8 @@
   nicer: be proud of your work
 - last thing you should do is run the compile and run the tests
   before claiming it's done.
-- ensure we're using latest versions of all libraries
+- start by using latest versions of all libraries
+  - run `clj -X:search/outdated` to verify and find new versions of clojure dependencies,
+    and then apply those updates to the manifest files manually.
+  - make sure you're using latest dependencies before writing code
 - debug and fix any warnings during compilation. JVM warnings are OK.
-- run `clj -X:search/outdated` to find new versions of clojure dependencies,
-  and then apply those updates to the manifest files manually.

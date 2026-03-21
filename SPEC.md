@@ -34,6 +34,8 @@
 - use clojurescript, shadow-cljs, helix
 - the input file will be json loaded from a remote url.
   - you can specify the json format expected.
+  - create your own sample  data
+  - serve the data from the test serve alongside index.html
 - all the players will share the same screen to play and take turns
 - rotate through players one by one
   - show their name, and the title of their next card
@@ -50,3 +52,4 @@
 # Style
 - use larger fonts, and larger components to facilitate touch
 - round the corners of the cards
+- show some nice, but quick, transition animations

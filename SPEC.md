@@ -37,6 +37,7 @@
 # Technical Specs
 - implement the game as a single-page application in the browser
 - use clojurescript, shadow-cljs, helix
+- the namespaces should start with "com.hjsoft.timeline"
 - the input file will be json loaded from a remote url.
   - you can specify the json format expected.
   - create your own sample data

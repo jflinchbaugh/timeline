@@ -27,7 +27,7 @@
 
 ## End of Game
 - When a player runs out of cards, they win.
-
+- allow a restart: prompt for names again.
 
 # Technical Specs
 - implement the game as a single-page application in the browser
@@ -49,3 +49,4 @@
 
 # Style
 - use larger fonts, and larger components to facilitate touch
+- round the corners of the cards

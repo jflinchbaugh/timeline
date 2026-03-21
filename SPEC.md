@@ -39,8 +39,9 @@
 - use clojurescript, shadow-cljs, helix
 - the input file will be json loaded from a remote url.
   - you can specify the json format expected.
-  - create your own sample  data
-    - at least 2 sets
+  - create your own sample data
+    - at least 3 sets
+    - each sample set should contain at least 100 events
     - give me a way to choose the json file, probably in the URL or something like that,
       so i can link directly to it
   - serve the data from the test serve alongside index.html
@@ -63,3 +64,9 @@
   - really really run the compiles and tests and make fixes,
     so this thing works when I run it.
 - npx shadow-cljs watch should serve the page to open the app.
+- see if there are any cleanups, refactoring that should be done to make it
+  nicer: be proud of your work
+- last thing you should do is run the compile and run the tests
+  before claiming it's done.
+- ensure we're using latest versions of all libraries
+- debug and fix any warnings during compilation. JVM warnings are OK.

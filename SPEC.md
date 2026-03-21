@@ -47,6 +47,7 @@
 - allow start of a new game
 - write tests for the code
 - compile and test the code to ensure it's working
+  - keep running the compilation and tests until it all works
 - npx shadow-cljs watch should serve the page to open the app.
 
 # Style

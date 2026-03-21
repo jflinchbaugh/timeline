@@ -41,7 +41,11 @@
   - you can specify the json format expected.
   - create your own sample data
     - at least 3 sets
-    - each sample set should contain at least 100 events
+    - each sample set should contain at least 50 events
+      - real-world events are best
+      - if you end up generating numbered event data,
+        then include the dates in the title,
+        so we can use them for manual testing
     - give me a way to choose the json file, probably in the URL or something like that,
       so i can link directly to it
   - serve the data from the test serve alongside index.html
@@ -70,3 +74,5 @@
   before claiming it's done.
 - ensure we're using latest versions of all libraries
 - debug and fix any warnings during compilation. JVM warnings are OK.
+- run `clj -X:search/outdated` to find new versions of clojure dependencies,
+  and then apply those updates to the manifest files manually.

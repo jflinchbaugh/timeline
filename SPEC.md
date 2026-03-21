@@ -55,7 +55,9 @@
 - when there's a winner (first player out of cards), show the winner
 - allow start of a new game
 - write tests for the code
+  - use react testing library
   - include tests for the react components to ensure their interactions work
+  - maximize test coverage
 - compile and test the code to ensure it's working
   - keep running the compilation and tests until it all works
   - really really run the compiles and tests and make fixes,

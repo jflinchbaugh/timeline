@@ -29,6 +29,11 @@
 - When a player runs out of cards, they win.
 - allow a restart: prompt for names again.
 
+# Style
+- use larger fonts, and larger components to facilitate touch
+- round the corners of the cards
+- show some nice, but quick, transition animations
+
 # Technical Specs
 - implement the game as a single-page application in the browser
 - use clojurescript, shadow-cljs, helix
@@ -50,11 +55,7 @@
 - when there's a winner (first player out of cards), show the winner
 - allow start of a new game
 - write tests for the code
+  - include tests for the react components to ensure their interactions work
 - compile and test the code to ensure it's working
   - keep running the compilation and tests until it all works
 - npx shadow-cljs watch should serve the page to open the app.
-
-# Style
-- use larger fonts, and larger components to facilitate touch
-- round the corners of the cards
-- show some nice, but quick, transition animations

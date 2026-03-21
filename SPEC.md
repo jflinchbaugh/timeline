@@ -58,4 +58,6 @@
   - include tests for the react components to ensure their interactions work
 - compile and test the code to ensure it's working
   - keep running the compilation and tests until it all works
+  - really really run the compiles and tests and make fixes,
+    so this thing works when I run it.
 - npx shadow-cljs watch should serve the page to open the app.

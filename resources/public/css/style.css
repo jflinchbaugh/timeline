@@ -1,0 +1,111 @@
+:root {
+    --primary: #007bff;
+    --success: #28a745;
+    --error: #dc3545;
+    --bg: #f0f2f5;
+    --text: #212529;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 1.4rem;
+}
+
+#app {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    color: #212529;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin: 20px 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideIn 0.4s ease-out;
+    cursor: pointer;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.place-button {
+    background-color: #eee;
+    color: #555;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 5px 0;
+    width: 100%;
+    border: 2px dashed #ccc;
+    box-shadow: none;
+}
+
+.place-button:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+    color: #333;
+}
+
+input {
+    padding: 15px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.result-banner {
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    animation: fadeIn 0.3s ease-in;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

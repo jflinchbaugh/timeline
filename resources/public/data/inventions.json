@@ -1,0 +1,262 @@
+{
+  "name": "Inventions",
+  "theme": {
+    "primaryColor": "#28a745",
+    "secondaryColor": "#ffc107",
+    "backgroundColor": "#fff3cd",
+    "cardColor": "#ffffff",
+    "textColor": "#212529"
+  },
+  "events": [
+    {
+      "title": "Invention of the Wheel",
+      "date": "3500 BC",
+      "description": "The earliest known wheels were used for pottery in Mesopotamia."
+    },
+    {
+      "title": "Invention of Papyrus",
+      "date": "3000 BC",
+      "description": "The ancient Egyptians developed papyrus for writing."
+    },
+    {
+      "title": "Invention of the Abacus",
+      "date": "2700 BC",
+      "description": "The earliest counting tool used in Sumeria."
+    },
+    {
+      "title": "Invention of Glass",
+      "date": "1500 BC",
+      "description": "The first glass objects were created in Mesopotamia and Egypt."
+    },
+    {
+      "title": "Invention of the Compass",
+      "date": "200 BC",
+      "description": "The magnetic compass was first invented in China during the Han Dynasty."
+    },
+    {
+      "title": "Invention of Paper",
+      "date": "105",
+      "description": "Cai Lun is credited with the invention of modern paper in China."
+    },
+    {
+      "title": "Invention of the Windmill",
+      "date": "600",
+      "description": "The first windmills were used in Persia for irrigation and grinding grain."
+    },
+    {
+      "title": "Invention of Gunpowder",
+      "date": "850",
+      "description": "Gunpowder was discovered by Chinese alchemists looking for an elixir of life."
+    },
+    {
+      "title": "Invention of Movable Type",
+      "date": "1041",
+      "description": "Bi Sheng invented the first movable type printing system in China."
+    },
+    {
+      "title": "Invention of the Mechanical Clock",
+      "date": "1270",
+      "description": "The first weight-driven mechanical clocks appeared in Europe."
+    },
+    {
+      "title": "Invention of Eyeglasses",
+      "date": "1286",
+      "description": "The first wearable eyeglasses were developed in Italy."
+    },
+    {
+      "title": "Gutenberg's Printing Press",
+      "date": "1440",
+      "description": "Johannes Gutenberg invented the metal movable type printing press."
+    },
+    {
+      "title": "Invention of the Microscope",
+      "date": "1590",
+      "description": "Janssen and his son created the first compound microscope."
+    },
+    {
+      "title": "Invention of the Telescope",
+      "date": "1608",
+      "description": "Hans Lippershey applied for the first patent for a telescope."
+    },
+    {
+      "title": "Invention of the Barometer",
+      "date": "1643",
+      "description": "Evangelista Torricelli invented the mercury barometer."
+    },
+    {
+      "title": "Invention of the Reflecting Telescope",
+      "date": "1668",
+      "description": "Isaac Newton built the first functional reflecting telescope."
+    },
+    {
+      "title": "Invention of the Steam Engine",
+      "date": "1712",
+      "description": "Thomas Newcomen built the first practical atmospheric steam engine."
+    },
+    {
+      "title": "Invention of the Lightning Rod",
+      "date": "1752",
+      "description": "Benjamin Franklin demonstrated that lightning is electricity."
+    },
+    {
+      "title": "Invention of the Spinning Jenny",
+      "date": "1764",
+      "description": "James Hargreaves invented the multi-spindle spinning frame."
+    },
+    {
+      "title": "Invention of the Steam Locomotive",
+      "date": "1804",
+      "description": "Richard Trevithick built the first full-scale working steam locomotive."
+    },
+    {
+      "title": "Invention of the Battery",
+      "date": "1800",
+      "description": "Alessandro Volta created the first chemical battery, the voltaic pile."
+    },
+    {
+      "title": "Invention of the Stethoscope",
+      "date": "1816",
+      "description": "Ren\u00e9 Laennec invented the first acoustic stethoscope."
+    },
+    {
+      "title": "Invention of Photography",
+      "date": "1826",
+      "description": "Nic\u00e9phore Ni\u00e9pce took the first permanent photograph."
+    },
+    {
+      "title": "Invention of the Electric Telegraph",
+      "date": "1837",
+      "description": "Samuel Morse and others developed the telegraph system."
+    },
+    {
+      "title": "Invention of the Morse Code",
+      "date": "1838",
+      "description": "A method for transmitting text information as a series of on-off pulses."
+    },
+    {
+      "title": "Invention of the Rubber Vulcanization",
+      "date": "1839",
+      "description": "Charles Goodyear discovered the process to make rubber more durable."
+    },
+    {
+      "title": "Invention of the Sewing Machine",
+      "date": "1846",
+      "description": "Elias Howe patented the first practical lockstitch sewing machine."
+    },
+    {
+      "title": "Invention of the Elevator Safety Brake",
+      "date": "1852",
+      "description": "Elisha Otis invented the mechanism that prevents elevators from falling."
+    },
+    {
+      "title": "Invention of the Bessemer Process",
+      "date": "1856",
+      "description": "The first inexpensive industrial process for the mass production of steel."
+    },
+    {
+      "title": "Invention of the Internal Combustion Engine",
+      "date": "1860",
+      "description": "Jean Joseph Etienne Lenoir built the first successful gas engine."
+    },
+    {
+      "title": "Invention of Dynamite",
+      "date": "1867",
+      "description": "Alfred Nobel invented a safer way to use nitroglycerin."
+    },
+    {
+      "title": "Invention of the Telephone",
+      "date": "1876",
+      "description": "Alexander Graham Bell was granted the first patent for the telephone."
+    },
+    {
+      "title": "Invention of the Phonograph",
+      "date": "1877",
+      "description": "Thomas Edison invented the device for recording and reproducing sound."
+    },
+    {
+      "title": "Invention of the Light Bulb",
+      "date": "1879",
+      "description": "Thomas Edison developed a practical and long-lasting electric light bulb."
+    },
+    {
+      "title": "Invention of the Steam Turbine",
+      "date": "1884",
+      "description": "Charles Parsons invented the modern steam turbine."
+    },
+    {
+      "title": "Invention of the Automobile",
+      "date": "1886",
+      "description": "Karl Benz patented the first petrol-powered motor car."
+    },
+    {
+      "title": "Invention of the Radio",
+      "date": "1895",
+      "description": "Guglielmo Marconi developed the first practical radio wave communication system."
+    },
+    {
+      "title": "Invention of the Airplane",
+      "date": "1903",
+      "description": "The Wright brothers made the first controlled, powered airplane flight."
+    },
+    {
+      "title": "Invention of the Vacuum Tube",
+      "date": "1904",
+      "description": "John Ambrose Fleming invented the first thermionic valve."
+    },
+    {
+      "title": "Invention of the Television",
+      "date": "1927",
+      "description": "Philo Farnsworth demonstrated the first electronic television system."
+    },
+    {
+      "title": "Invention of Jet Engine",
+      "date": "1937",
+      "description": "Frank Whittle and Hans von Ohain independently developed the jet engine."
+    },
+    {
+      "title": "Invention of the Computer (ENIAC)",
+      "date": "1945",
+      "description": "The first general-purpose electronic digital computer."
+    },
+    {
+      "title": "Invention of the Transistor",
+      "date": "1947",
+      "description": "Bardeen, Brattain, and Shockley invented the semiconductor device."
+    },
+    {
+      "title": "Invention of the Microwave Oven",
+      "date": "1945",
+      "description": "Percy Spencer accidentally discovered microwave cooking."
+    },
+    {
+      "title": "Invention of the Laser",
+      "date": "1960",
+      "description": "Theodore Maiman operated the first functional laser."
+    },
+    {
+      "title": "Invention of the Integrated Circuit",
+      "date": "1958",
+      "description": "Jack Kilby and Robert Noyce independently developed the microchip."
+    },
+    {
+      "title": "Invention of the Arpanet (Internet)",
+      "date": "1969",
+      "description": "The precursor to the modern Internet was established."
+    },
+    {
+      "title": "Invention of the Mobile Phone",
+      "date": "1973",
+      "description": "Martin Cooper made the first handheld mobile phone call."
+    },
+    {
+      "title": "Invention of the Personal Computer",
+      "date": "1975",
+      "description": "The Altair 8800 was released, sparking the PC revolution."
+    },
+    {
+      "title": "Invention of the GPS",
+      "date": "1978",
+      "description": "The first satellite for the Global Positioning System was launched."
+    }
+  ]
+}

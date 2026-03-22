@@ -1,0 +1,262 @@
+{
+  "name": "Scientific Discoveries",
+  "theme": {
+    "primaryColor": "#0056b3",
+    "secondaryColor": "#17a2b8",
+    "backgroundColor": "#e9ecef",
+    "cardColor": "#ffffff",
+    "textColor": "#212529"
+  },
+  "events": [
+    {
+      "title": "Aristotle's Physics",
+      "date": "350 BC",
+      "description": "Aristotle wrote his major work on the principles of nature."
+    },
+    {
+      "title": "Archimedes' Principle",
+      "date": "250 BC",
+      "description": "The discovery of the law of buoyancy by Archimedes of Syracuse."
+    },
+    {
+      "title": "Eratosthenes Calculates Earth's Circumference",
+      "date": "240 BC",
+      "description": "The ancient Greek polymath used shadows to estimate the size of the Earth."
+    },
+    {
+      "title": "Al-Khwarizmi's Algebra",
+      "date": "820",
+      "description": "The Persian mathematician wrote the foundational text on algebra."
+    },
+    {
+      "title": "Alhazen's Book of Optics",
+      "date": "1021",
+      "description": "The foundational work on optics and the scientific method."
+    },
+    {
+      "title": "Copernicus' Heliocentric Model",
+      "date": "1543",
+      "description": "Nicolaus Copernicus published 'On the Revolutions of the Heavenly Spheres'."
+    },
+    {
+      "title": "Vesalius' De Humani Corporis Fabrica",
+      "date": "1543",
+      "description": "The first modern book on human anatomy was published."
+    },
+    {
+      "title": "Kepler's Laws of Planetary Motion",
+      "date": "1609",
+      "description": "Johannes Kepler published the first two laws of planetary motion."
+    },
+    {
+      "title": "Galileo's Sidereus Nuncius",
+      "date": "1610",
+      "description": "Galileo Galilei published his telescopic observations of the Moon, Jupiter, and stars."
+    },
+    {
+      "title": "Harvey's Circulation of Blood",
+      "date": "1628",
+      "description": "William Harvey described the systemic circulation of blood in the body."
+    },
+    {
+      "title": "Hooke's Micrographia",
+      "date": "1665",
+      "description": "Robert Hooke published his microscopic observations, coining the term 'cell'."
+    },
+    {
+      "title": "Newton's Principia",
+      "date": "1687",
+      "description": "Isaac Newton established the laws of motion and universal gravitation."
+    },
+    {
+      "title": "Lavoisier's Elements of Chemistry",
+      "date": "1789",
+      "description": "Antoine Lavoisier defined the modern system of chemical nomenclature."
+    },
+    {
+      "title": "Edward Jenner's Smallpox Vaccine",
+      "date": "1796",
+      "description": "The first successful vaccine was developed."
+    },
+    {
+      "title": "Dalton's Atomic Theory",
+      "date": "1803",
+      "description": "John Dalton proposed that matter is composed of atoms."
+    },
+    {
+      "title": "Discovery of Electromagnetism",
+      "date": "1820",
+      "description": "Hans Christian \u00d8rsted discovered that electric currents create magnetic fields."
+    },
+    {
+      "title": "Faraday's Law of Induction",
+      "date": "1831",
+      "description": "Michael Faraday discovered electromagnetic induction."
+    },
+    {
+      "title": "Darwin's On the Origin of Species",
+      "date": "1859",
+      "description": "Charles Darwin proposed the theory of evolution by natural selection."
+    },
+    {
+      "title": "Maxwell's Equations",
+      "date": "1865",
+      "description": "James Clerk Maxwell unified electricity, magnetism, and light as electromagnetism."
+    },
+    {
+      "title": "Mendel's Laws of Inheritance",
+      "date": "1866",
+      "description": "Gregor Mendel published his work on the genetics of pea plants."
+    },
+    {
+      "title": "Mendeleev's Periodic Table",
+      "date": "1869",
+      "description": "Dmitri Mendeleev organized the chemical elements into a periodic table."
+    },
+    {
+      "title": "Koch's Germ Theory",
+      "date": "1876",
+      "description": "Robert Koch proved that specific microorganisms cause specific diseases."
+    },
+    {
+      "title": "Hertz Discovers Radio Waves",
+      "date": "1887",
+      "description": "Heinrich Hertz experimentally confirmed the existence of electromagnetic waves."
+    },
+    {
+      "title": "Roentgen Discovers X-rays",
+      "date": "1895",
+      "description": "Wilhelm Conrad Roentgen discovered the first form of ionizing radiation."
+    },
+    {
+      "title": "Becquerel Discovers Radioactivity",
+      "date": "1896",
+      "description": "Henri Becquerel discovered spontaneous radioactivity in uranium."
+    },
+    {
+      "title": "Thomson Discovers the Electron",
+      "date": "1897",
+      "description": "J.J. Thomson identified the first subatomic particle."
+    },
+    {
+      "title": "Planck's Quantum Hypothesis",
+      "date": "1900",
+      "description": "Max Planck proposed that energy is radiated in discrete units or quanta."
+    },
+    {
+      "title": "Einstein's Special Relativity",
+      "date": "1905",
+      "description": "Albert Einstein published his theory on space, time, and the speed of light."
+    },
+    {
+      "title": "Photoelectric Effect Explained",
+      "date": "1905",
+      "description": "Einstein explained the photoelectric effect using the concept of light quanta."
+    },
+    {
+      "title": "Rutherford Discovers the Atomic Nucleus",
+      "date": "1911",
+      "description": "The gold foil experiment revealed the dense center of the atom."
+    },
+    {
+      "title": "Wegener's Continental Drift",
+      "date": "1912",
+      "description": "Alfred Wegener proposed that the continents were once joined in a single landmass."
+    },
+    {
+      "title": "Bohr Model of the Atom",
+      "date": "1913",
+      "description": "Niels Bohr proposed that electrons orbit the nucleus in discrete levels."
+    },
+    {
+      "title": "Einstein's General Relativity",
+      "date": "1915",
+      "description": "Einstein's theory of gravitation as the curvature of spacetime."
+    },
+    {
+      "title": "Noether's Theorem",
+      "date": "1918",
+      "description": "Emmy Noether linked symmetry in physics to conservation laws."
+    },
+    {
+      "title": "Hubble's Discovery of Other Galaxies",
+      "date": "1924",
+      "description": "Edwin Hubble proved that Andromeda is a separate galaxy beyond the Milky Way."
+    },
+    {
+      "title": "Heisenberg's Uncertainty Principle",
+      "date": "1927",
+      "description": "Werner Heisenberg established the limits of precision in quantum measurements."
+    },
+    {
+      "title": "Fleming Discovers Penicillin",
+      "date": "1928",
+      "description": "Alexander Fleming discovered the first antibiotic substance."
+    },
+    {
+      "title": "Hubble's Law",
+      "date": "1929",
+      "description": "Hubble discovered that the universe is expanding."
+    },
+    {
+      "title": "Discovery of the Neutron",
+      "date": "1932",
+      "description": "James Chadwick discovered the neutral subatomic particle in the nucleus."
+    },
+    {
+      "title": "Discovery of Nuclear Fission",
+      "date": "1938",
+      "description": "Otto Hahn and Fritz Strassmann discovered the splitting of heavy atomic nuclei."
+    },
+    {
+      "title": "Miller-Urey Experiment",
+      "date": "1953",
+      "description": "Demonstrated that organic compounds could be formed from inorganic precursors."
+    },
+    {
+      "title": "DNA Structure Discovered",
+      "date": "1953",
+      "description": "Watson, Crick, Franklin, and Wilkins identified the double helix structure of DNA."
+    },
+    {
+      "title": "Plate Tectonics Theory",
+      "date": "1960",
+      "description": "The modern theory describing the large-scale motion of Earth's lithosphere."
+    },
+    {
+      "title": "Penzias and Wilson Discover CMB",
+      "date": "1964",
+      "description": "The discovery of the cosmic microwave background radiation confirmed the Big Bang."
+    },
+    {
+      "title": "Quarks Proposed",
+      "date": "1964",
+      "description": "Murray Gell-Mann and George Zweig proposed the existence of quarks."
+    },
+    {
+      "title": "First Recombinant DNA",
+      "date": "1972",
+      "description": "Paul Berg created the first DNA molecule containing parts from different organisms."
+    },
+    {
+      "title": "Discovery of the W and Z Bosons",
+      "date": "1983",
+      "description": "Confirmed the electroweak unification theory."
+    },
+    {
+      "title": "Human Genome Project Completion",
+      "date": "2003",
+      "description": "The entire human genome was sequenced and mapped."
+    },
+    {
+      "title": "Discovery of the Higgs Boson",
+      "date": "2012",
+      "description": "The ATLAS and CMS experiments at CERN confirmed the existence of the 'God particle'."
+    },
+    {
+      "title": "First Detection of Gravitational Waves",
+      "date": "2015",
+      "description": "LIGO detected ripples in spacetime from merging black holes."
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "name": "World History",
+  "theme": {
+    "primaryColor": "#343a40",
+    "secondaryColor": "#adb5bd",
+    "backgroundColor": "#f8f9fa",
+    "cardColor": "#ffffff",
+    "textColor": "#212529"
+  },
+  "events": [
+    {
+      "title": "Death of Cleopatra",
+      "date": "30 BC",
+      "description": "The last Pharaoh of Ancient Egypt died, marking the end of the Ptolemaic Kingdom."
+    },
+    {
+      "title": "Fire of Rome",
+      "date": "64",
+      "description": "The Great Fire of Rome destroyed much of the city during the reign of Emperor Nero."
+    },
+    {
+      "title": "Eruption of Mount Vesuvius",
+      "date": "79",
+      "description": "The eruption of Mount Vesuvius buried the Roman cities of Pompeii and Herculaneum."
+    },
+    {
+      "title": "Council of Nicaea",
+      "date": "325",
+      "description": "The First Council of Nicaea was held, establishing the Nicene Creed."
+    },
+    {
+      "title": "Fall of the Western Roman Empire",
+      "date": "476",
+      "description": "Romulus Augustulus was deposed, marking the traditional end of the Western Roman Empire."
+    },
+    {
+      "title": "Hijra of Muhammad",
+      "date": "622",
+      "description": "The journey of the Islamic prophet Muhammad and his followers from Mecca to Medina."
+    },
+    {
+      "title": "Battle of Tours",
+      "date": "732",
+      "description": "Charles Martel defeated the Umayyad Caliphate, halting the Muslim advance into Europe."
+    },
+    {
+      "title": "Coronation of Charlemagne",
+      "date": "800",
+      "description": "Charlemagne was crowned Holy Roman Emperor by Pope Leo III."
+    },
+    {
+      "title": "Battle of Hastings",
+      "date": "1066",
+      "description": "William the Conqueror defeated King Harold II, leading to the Norman conquest of England."
+    },
+    {
+      "title": "Signing of the Magna Carta",
+      "date": "1215",
+      "description": "King John of England was forced to sign the Great Charter, limiting royal power."
+    },
+    {
+      "title": "Marco Polo's Arrival in China",
+      "date": "1275",
+      "description": "The Venetian explorer arrived at the court of Kublai Khan."
+    },
+    {
+      "title": "The Black Death",
+      "date": "1347",
+      "description": "The bubonic plague reached Europe, eventually killing a significant portion of the population."
+    },
+    {
+      "title": "Fall of Constantinople",
+      "date": "1453",
+      "description": "The Ottoman Empire captured the capital of the Byzantine Empire."
+    },
+    {
+      "title": "Columbus Reaches the Americas",
+      "date": "1492",
+      "description": "Christopher Columbus landed in the Caribbean, opening the era of European exploration."
+    },
+    {
+      "title": "Leonardo da Vinci's Mona Lisa",
+      "date": "1503",
+      "description": "The famous portrait was begun in Florence."
+    },
+    {
+      "title": "Martin Luther's 95 Theses",
+      "date": "1517",
+      "description": "The Protestant Reformation began with the posting of these theses in Wittenberg."
+    },
+    {
+      "title": "Magellan's Circumnavigation",
+      "date": "1522",
+      "description": "The expedition led by Ferdinand Magellan completed the first circumnavigation of the globe."
+    },
+    {
+      "title": "Elizabeth I becomes Queen",
+      "date": "1558",
+      "description": "The Elizabethan Era began, a golden age for England."
+    },
+    {
+      "title": "Shakespeare's First Folio",
+      "date": "1623",
+      "description": "The first collected edition of William Shakespeare's plays was published."
+    },
+    {
+      "title": "Great Fire of London",
+      "date": "1666",
+      "description": "The massive fire destroyed much of the city of London."
+    },
+    {
+      "title": "Isaac Newton's Principia",
+      "date": "1687",
+      "description": "Newton published his work on the laws of motion and universal gravitation."
+    },
+    {
+      "title": "Declaration of Independence",
+      "date": "1776",
+      "description": "The United States declared its independence from Great Britain."
+    },
+    {
+      "title": "French Revolution Begins",
+      "date": "1789",
+      "description": "The storming of the Bastille marked the start of the revolution in France."
+    },
+    {
+      "title": "Napoleon's Defeat at Waterloo",
+      "date": "1815",
+      "description": "The final defeat of Napoleon Bonaparte ended the Napoleonic Wars."
+    },
+    {
+      "title": "Battle of Gettysburg",
+      "date": "1863",
+      "description": "A turning point in the American Civil War."
+    },
+    {
+      "title": "Opening of the Suez Canal",
+      "date": "1869",
+      "description": "The canal connecting the Mediterranean and Red Seas was opened."
+    },
+    {
+      "title": "World War I Begins",
+      "date": "1914",
+      "description": "The assassination of Archduke Franz Ferdinand triggered the Great War."
+    },
+    {
+      "title": "Russian Revolution",
+      "date": "1917",
+      "description": "The Bolsheviks led by Lenin seized power in Russia."
+    },
+    {
+      "title": "The Great Depression Begins",
+      "date": "1929",
+      "description": "The stock market crash in October marked the start of the economic crisis."
+    },
+    {
+      "title": "World War II Begins",
+      "date": "1939",
+      "description": "Germany invaded Poland, leading to the start of the second world war."
+    },
+    {
+      "title": "Hiroshima and Nagasaki Bombings",
+      "date": "1945",
+      "description": "The first and only use of atomic weapons in warfare."
+    },
+    {
+      "title": "Founding of the United Nations",
+      "date": "1945",
+      "description": "The international organization was established to maintain peace and security."
+    },
+    {
+      "title": "Indian Independence",
+      "date": "1947",
+      "description": "India gained independence from British rule."
+    },
+    {
+      "title": "Founding of the People's Republic of China",
+      "date": "1949",
+      "description": "Mao Zedong proclaimed the founding of the new state."
+    },
+    {
+      "title": "Korean War Begins",
+      "date": "1950",
+      "description": "The conflict between North and South Korea began."
+    },
+    {
+      "title": "Sputnik 1 Launch",
+      "date": "1957",
+      "description": "The Soviet Union launched the first artificial satellite into orbit."
+    },
+    {
+      "title": "Cuban Missile Crisis",
+      "date": "1962",
+      "description": "A 13-day confrontation between the US and the Soviet Union."
+    },
+    {
+      "title": "Assassination of JFK",
+      "date": "1963",
+      "description": "President John F. Kennedy was assassinated in Dallas, Texas."
+    },
+    {
+      "title": "Apollo 11 Moon Landing",
+      "date": "1969",
+      "description": "Neil Armstrong and Buzz Aldrin became the first humans to walk on the moon."
+    },
+    {
+      "title": "Fall of the Berlin Wall",
+      "date": "1989",
+      "description": "The wall separating East and West Berlin was opened, symbolizing the end of the Cold War."
+    },
+    {
+      "title": "Nelson Mandela Released",
+      "date": "1990",
+      "description": "The anti-apartheid leader was released after 27 years in prison."
+    },
+    {
+      "title": "Dissolution of the Soviet Union",
+      "date": "1991",
+      "description": "The USSR officially ceased to exist."
+    },
+    {
+      "title": "Founding of the World Wide Web",
+      "date": "1991",
+      "description": "Tim Berners-Lee made the web publicly available."
+    },
+    {
+      "title": "9/11 Attacks",
+      "date": "2001",
+      "description": "Al-Qaeda launched terrorist attacks on the World Trade Center and Pentagon."
+    },
+    {
+      "title": "Invasion of Iraq",
+      "date": "2003",
+      "description": "A US-led coalition invaded Iraq to remove Saddam Hussein."
+    },
+    {
+      "title": "Election of Barack Obama",
+      "date": "2008",
+      "description": "The first African American President of the United States was elected."
+    },
+    {
+      "title": "Arab Spring",
+      "date": "2010",
+      "description": "A wave of pro-democracy protests and uprisings across the Middle East."
+    },
+    {
+      "title": "Brexit Referendum",
+      "date": "2016",
+      "description": "The UK voted to leave the European Union."
+    },
+    {
+      "title": "COVID-19 Pandemic Begins",
+      "date": "2020",
+      "description": "The global outbreak of the SARS-CoV-2 virus was declared a pandemic."
+    },
+    {
+      "title": "Launch of James Webb Space Telescope",
+      "date": "2021",
+      "description": "The most powerful space telescope ever built was launched into orbit."
+    }
+  ]
+}

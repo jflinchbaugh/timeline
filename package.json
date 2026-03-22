@@ -1,0 +1,25 @@
+{
+  "name": "timeline-oneshot",
+  "version": "1.0.0",
+  "description": "FIXME: my new application.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "jsdom": "^29.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "shadow-cljs": "^3.3.6",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

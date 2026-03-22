@@ -25,3 +25,15 @@
         (rtl/fireEvent.click button)
         (is @started?)
         (rtl/cleanup)))))
+
+(deftest game-screen-deck-count-test
+  (testing "GameScreen displays deck count"
+    (let [game {:timeline [{:title "Event 1" :date "1000"}]
+                :players [{:id 0 :name "Alice" :hand [{:title "Event 2" :date "2000"}]}]
+                :current-player-idx 0
+                :deck (repeat 40 {:title "Deck Card" :date "2020"})
+                :status :playing}
+          result (rtl/render ($ ui/GameScreen {:game game}))]
+      (is (rtl/screen.getByText #"Deck:"))
+      (is (rtl/screen.getByText "40 cards"))
+      (rtl/cleanup))))

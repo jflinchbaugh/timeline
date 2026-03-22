@@ -14,7 +14,7 @@
         [loading? set-loading] (hooks/use-state true)]
 
     (hooks/use-effect [current-file]
-      (let [url (str "/data/" current-file)]
+      (let [url (str "data/" current-file)]
         (set-loading true)
         (GET url
           {:handler (fn [res]

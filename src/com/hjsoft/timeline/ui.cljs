@@ -67,7 +67,7 @@
           "Start Game")))))
 
 (defnc GameScreen [{:keys [game on-action]}]
-  (let [{:keys [timeline players current-player-idx last-result status]} game
+  (let [{:keys [timeline players current-player-idx last-result status deck]} game
         current-player (get players current-player-idx)
         next-player-idx (mod (inc current-player-idx) (count players))
         next-player (get players next-player-idx)
@@ -108,7 +108,16 @@
                             :border (if is-current? "none" "1px solid #ddd")}}
               (d/strong (:name p))
               (d/span {:style {:margin-left "10px"}}
-                (str (count (:hand p)) " cards"))))))
+                (str (count (:hand p)) " cards")))))
+        (d/div {:style {:padding "10px 20px"
+                        :border-radius "10px"
+                        :background-color "white"
+                        :color "black"
+                        :box-shadow "0 2px 4px rgba(0,0,0,0.1)"
+                        :border "1px solid #ddd"}}
+          (d/strong "Deck: ")
+          (d/span {:style {:margin-left "10px"}}
+            (str (count deck) " cards"))))
 
       (d/h2 {:style {:text-align "center" :color "var(--primary)"}}
         (if winner

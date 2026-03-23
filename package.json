@@ -1,7 +1,7 @@
 {
-  "name": "timeline-oneshot",
+  "name": "timeline",
   "version": "1.0.0",
-  "description": "FIXME: my new application.",
+  "description": "Timeline game.",
   "main": "index.js",
   "directories": {
     "doc": "doc",

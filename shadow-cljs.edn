@@ -13,4 +13,5 @@
          :test-dir "target/public/test"}
   :node-test {:target :node-test
               :output-to "out/tests.js"
-              :main com.hjsoft.timeline.test-runner/main}}}
+              :main com.hjsoft.timeline.test-runner/main
+              :autorun true}}}

@@ -38,8 +38,16 @@ npx shadow-cljs watch app
 To run the ClojureScript tests using Node.js and jsdom:
 
 ```bash
-npx shadow-cljs compile test
+npx shadow-cljs compile node-test
 ```
+
+To run the ClojureScript tests in the browser:
+
+```bash
+npx shadow-cljs watch test
+```
+
+- The tests will be available at [http://localhost:8021](http://localhost:8021).
 
 ## Releasing
 

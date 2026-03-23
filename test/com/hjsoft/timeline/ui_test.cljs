@@ -1,5 +1,6 @@
 (ns com.hjsoft.timeline.ui-test
-  (:require [cljs.test :refer [deftest is testing]]
+  (:require [com.hjsoft.timeline.test-env]
+            [cljs.test :refer [deftest is testing]]
             [helix.core :refer [$]]
             [com.hjsoft.timeline.ui :as ui]
             ["@testing-library/react" :as rtl]))

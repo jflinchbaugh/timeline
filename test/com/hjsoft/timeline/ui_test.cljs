@@ -8,7 +8,7 @@
 (deftest card-component-test
   (testing "Card rendering"
     (let [card {:title "Test Event" :date "2021" :description "Test Desc"}
-          result (rtl/render ($ ui/Card {:card card :revealed? true}))]
+          result (rtl/render ($ ui/card {:card card :revealed? true}))]
       (is (rtl/screen.getByText "Test Event"))
       (is (rtl/screen.getByText "2021"))
       (is (rtl/screen.getByText "Test Desc"))
@@ -17,7 +17,7 @@
 (deftest setup-screen-test
   (testing "Setup screen interaction"
     (let [started? (atom false)
-          result (rtl/render ($ ui/SetupScreen
+          result (rtl/render ($ ui/setup-screen
                                {:on-start #(reset! started? true)
                                 :current-file "history.json"}))]
       (let [input (rtl/screen.getByPlaceholderText "Player 1 name")
@@ -37,7 +37,7 @@
                 :current-player-idx 0
                 :deck (repeat 40 {:title "Deck Card" :date "2020"})
                 :status :playing}
-          result (rtl/render ($ ui/GameScreen {:game game}))]
+          result (rtl/render ($ ui/game-screen {:game game}))]
       (is (rtl/screen.getByText #"Deck:"))
       (is (rtl/screen.getByText "40 cards"))
       (rtl/cleanup))))

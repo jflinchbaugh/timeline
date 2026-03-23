@@ -7,7 +7,7 @@
             [com.hjsoft.timeline.logic :as logic]
             [com.hjsoft.timeline.ui :as ui]))
 
-(defn- update-theme! [theme]
+(defn- update-theme [theme]
   (let [root (.-documentElement js/document)]
     (.setProperty (.-style root) "--primary" (:primaryColor theme))
     (.setProperty (.-style root) "--bg" (:backgroundColor theme))
@@ -19,7 +19,7 @@
     (.set (.-searchParams url) key value)
     (.pushState js/window.history #js {} "" (.toString url))))
 
-(defnc App []
+(defnc app []
   (let [[current-file set-current-file]
         (hooks/use-state
          (or
@@ -45,7 +45,7 @@
 
     (hooks/use-effect [data]
       (when data
-        (update-theme! (:theme data))))
+        (update-theme (:theme data))))
 
     (let [handle-select-data (fn [file]
                                (set-current-file file)
@@ -61,11 +61,11 @@
       (if loading?
         (d/div "Loading game data...")
         (if-not game
-          ($ ui/SetupScreen
+          ($ ui/setup-screen
              {:current-file current-file
               :on-select-data handle-select-data
               :on-start handle-start})
-          ($ ui/GameScreen
+          ($ ui/game-screen
              {:game game
               :on-action handle-action}))))))
 
@@ -78,7 +78,7 @@
     (when (and el (not @root-atom))
       (reset! root-atom (rdom/createRoot el))))
   (when @root-atom
-    (.render ^js @root-atom ($ App))))
+    (.render ^js @root-atom ($ app))))
 
 (defn ^:before-load stop! []
   (when @root-atom

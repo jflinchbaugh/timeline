@@ -5,15 +5,17 @@
             [clojure.string :as str]
             [com.hjsoft.timeline.logic :as logic]))
 
-(defnc Card [{:keys [card revealed? style class-name]}]
+(defnc card [{:keys [card revealed? style class-name]}]
   (let [card-clj (if (map? card) card (js->clj card :keywordize-keys true))
         title (or (:title card-clj) "Untitled Event")
         date (or (:date card-clj) "Unknown Date")
         desc (or (:description card-clj) "No description available.")
         win? (:win-highlight? card-clj)
+        correct? (:correct-highlight? card-clj)
         wrong? (:wrong-highlight? card-clj)]
     (d/div {:class (str "card"
                         (when win? " win")
+                        (when correct? " correct")
                         (when wrong? " wrong")
                         (when class-name (str " " class-name)))
             :style style}
@@ -23,7 +25,7 @@
           (d/p {:class "date"} date)
           (d/p {:class "description"} desc))))))
 
-(defnc SetupScreen [{:keys [on-start on-select-data current-file]}]
+(defnc setup-screen [{:keys [on-start on-select-data current-file]}]
   (let [[names set-names] (hooks/use-state [""])
         add-player (fn [] (set-names conj ""))
         handle-name-change (fn [idx event]
@@ -61,7 +63,7 @@
                    :disabled (not can-start?)}
           "Start Game")))))
 
-(defnc GameScreen [{:keys [game on-action]}]
+(defnc game-screen [{:keys [game on-action]}]
   (let [{:keys [timeline
                 players
                 current-player-idx
@@ -102,12 +104,14 @@
         handle-next-turn (fn [] (on-action :next-turn))
         handle-place (fn [idx] (on-action :place idx))]
 
-    (hooks/use-effect [last-result]
+    (hooks/use-effect [last-result current-player-idx]
       (if last-result
-        (when scroll-ref.current
-          (.scrollIntoView
-            scroll-ref.current
-            #js {:behavior "smooth" :block "center"}))
+        (js/setTimeout
+          #(when scroll-ref.current
+             (.scrollIntoView
+               scroll-ref.current
+               #js {:behavior "smooth" :block "center"}))
+          50)
         (.scrollTo js/window #js {:top 0 :behavior "smooth"})))
 
     (d/div
@@ -140,8 +144,7 @@
           (d/h2 (cond
                   winner (str "\uD83C\uDFC6 " (:name winner) " Wins!")
                   (:correct? last-result) "\u2713 Correct!"
-                  :else "\u2717 Wrong spot!"))
-          (d/p (str "The date was " (:date (:card last-result)) "."))
+                  :else "\u2717 Wrong!"))
           (if winner
             (d/button {:on-click handle-restart :class "button-black"}
               "Play Again")
@@ -151,7 +154,7 @@
       (when (and (not last-result) (not= status :won) current-card)
         (d/h3 "Your Card:"))
       (when (and (not last-result) (not= status :won) current-card)
-        ($ Card {:card current-card
+        ($ card {:card current-card
                  :revealed? false
                  :class-name "sticky"
                  :style {:margin-top "0"}}))
@@ -165,10 +168,11 @@
           (d/div {:key idx
                   :ref (if (or
                              (:wrong-highlight? t-card)
+                             (:correct-highlight? t-card)
                              (:win-highlight? t-card))
                          scroll-ref
                          nil)}
-            ($ Card {:card t-card
+            ($ card {:card t-card
                      :revealed? true})
             (when (and (not last-result) (not= status :won))
               (d/button {:class "place-button"

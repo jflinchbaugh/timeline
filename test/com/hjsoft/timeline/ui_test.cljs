@@ -17,8 +17,9 @@
 (deftest setup-screen-test
   (testing "Setup screen interaction"
     (let [started? (atom false)
-          result (rtl/render ($ ui/SetupScreen {:on-start #(reset! started? true)
-                                                :current-file "history.json"}))]
+          result (rtl/render ($ ui/SetupScreen
+                               {:on-start #(reset! started? true)
+                                :current-file "history.json"}))]
       (let [input (rtl/screen.getByPlaceholderText "Player 1 name")
             button (rtl/screen.getByText "Start Game")]
         (rtl/fireEvent.change input #js {:target #js {:value "Alice"}})
@@ -30,7 +31,9 @@
 (deftest game-screen-deck-count-test
   (testing "GameScreen displays deck count"
     (let [game {:timeline [{:title "Event 1" :date "1000"}]
-                :players [{:id 0 :name "Alice" :hand [{:title "Event 2" :date "2000"}]}]
+                :players [{:id 0
+                           :name "Alice"
+                           :hand [{:title "Event 2" :date "2000"}]}]
                 :current-player-idx 0
                 :deck (repeat 40 {:title "Deck Card" :date "2020"})
                 :status :playing}

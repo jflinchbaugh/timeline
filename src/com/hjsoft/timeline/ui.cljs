@@ -56,7 +56,12 @@
           "Start Game")))))
 
 (defnc GameScreen [{:keys [game on-action]}]
-  (let [{:keys [timeline players current-player-idx last-result status deck]} game
+  (let [{:keys [timeline
+                players
+                current-player-idx
+                last-result
+                status
+                deck]} game
         current-player (get players current-player-idx)
         next-player-idx (mod (inc current-player-idx) (count players))
         next-player (get players next-player-idx)
@@ -65,13 +70,20 @@
 
         ;; Calculate the correct index for the card in the timeline
         correct-idx (when (and last-result (not (:correct? last-result)))
-                      (let [card-val (logic/parse-date-val (:date current-card))]
-                        (count (filter #(< (logic/parse-date-val (:date %)) card-val) timeline))))
+                      (let [card-val (logic/parse-date-val
+                                       (:date current-card))]
+                        (count
+                          (filter
+                            #(< (logic/parse-date-val (:date %)) card-val)
+                            timeline))))
 
         ;; Temporary timeline for rendering wrong result
         display-timeline (if (and last-result (not (:correct? last-result)))
                            (vec (concat (take correct-idx timeline)
-                                        [(assoc current-card :wrong-highlight? true)]
+                                        [(assoc
+                                           current-card
+                                           :wrong-highlight?
+                                           true)]
                                         (drop correct-idx timeline)))
                            timeline)
 
@@ -80,7 +92,9 @@
     (hooks/use-effect [last-result]
       (if last-result
         (when scroll-ref.current
-          (.scrollIntoView scroll-ref.current #js {:behavior "smooth" :block "center"}))
+          (.scrollIntoView
+            scroll-ref.current
+            #js {:behavior "smooth" :block "center"}))
         (.scrollTo js/window #js {:top 0 :behavior "smooth"})))
 
     (d/div
@@ -89,7 +103,8 @@
         (for [p players]
           (let [is-current? (= (:id p) (:id current-player))]
             (d/div {:key (:id p)
-                    :class (str "scoreboard-item" (when is-current? " current"))}
+                    :class (str "scoreboard-item"
+                                (when is-current? " current"))}
               (d/strong (:name p))
               (d/span {:class "count"}
                 (str (count (:hand p)) " cards")))))
@@ -110,9 +125,9 @@
                           (:correct? last-result) "correct"
                           :else "wrong"))}
           (d/h2 (cond
-                  winner (str "🏆 " (:name winner) " Wins!")
-                  (:correct? last-result) "✓ Correct!"
-                  :else "✗ Wrong spot!"))
+                  winner (str "\uD83C\uDFC6 " (:name winner) " Wins!")
+                  (:correct? last-result) "\u2713 Correct!"
+                  :else "\u2717 Wrong spot!"))
           (d/p (str "The date was " (:date (:card last-result)) "."))
           (if winner
             (d/button {:on-click #(on-action :restart) :class "button-black"}
@@ -134,9 +149,15 @@
           (d/button {:class "place-button" :on-click #(on-action :place 0)}
             "Place here"))
         (for [[idx t-card] (map-indexed vector display-timeline)]
-          (d/div {:key idx :ref (if (or (:wrong-highlight? t-card) (:win-highlight? t-card)) scroll-ref nil)}
+          (d/div {:key idx
+                  :ref (if (or
+                             (:wrong-highlight? t-card)
+                             (:win-highlight? t-card))
+                         scroll-ref
+                         nil)}
             ($ Card {:card t-card
                      :revealed? true})
             (when (and (not last-result) (not= status :won))
-              (d/button {:class "place-button" :on-click #(on-action :place (inc idx))}
+              (d/button {:class "place-button"
+                         :on-click #(on-action :place (inc idx))}
                 "Place here"))))))))

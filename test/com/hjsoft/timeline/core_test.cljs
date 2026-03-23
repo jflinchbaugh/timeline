@@ -4,11 +4,16 @@
 
 (deftest parse-date-val-test
   (testing "Parsing dates with precision"
-    (is (< (logic/parse-date-val "3001 BC") (logic/parse-date-val "3000 BC")))
-    (is (< (logic/parse-date-val "3000-01 BC") (logic/parse-date-val "3000-02 BC")))
-    (is (< (logic/parse-date-val "30 BC") (logic/parse-date-val "29 BC")))
-    (is (< (logic/parse-date-val "1969-07-20") (logic/parse-date-val "1969-07-21")))
-    (is (< (logic/parse-date-val "2021-01") (logic/parse-date-val "2021-02")))))
+    (is (< (logic/parse-date-val "3001 BC")
+           (logic/parse-date-val "3000 BC")))
+    (is (< (logic/parse-date-val "3000-01 BC")
+           (logic/parse-date-val "3000-02 BC")))
+    (is (< (logic/parse-date-val "30 BC")
+           (logic/parse-date-val "29 BC")))
+    (is (< (logic/parse-date-val "1969-07-20")
+           (logic/parse-date-val "1969-07-21")))
+    (is (< (logic/parse-date-val "2021-01")
+           (logic/parse-date-val "2021-02")))))
 
 (deftest init-game-test
   (let [events (map #(hash-map :title (str %) :date (str %)) (range 50))
@@ -40,4 +45,7 @@
     (testing "Precise date placements"
       (let [timeline-precise [{:date "2021-01"} {:date "2021-03"}]]
         (is (logic/check-placement timeline-precise {:date "2021-02"} 1))
-        (is (not (logic/check-placement timeline-precise {:date "2021-04"} 1)))))))
+        (is (not (logic/check-placement
+                   timeline-precise
+                   {:date "2021-04"}
+                   1)))))))

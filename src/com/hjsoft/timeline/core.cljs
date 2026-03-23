@@ -8,7 +8,11 @@
             [com.hjsoft.timeline.ui :as ui]))
 
 (defnc App []
-  (let [[current-file set-current-file] (hooks/use-state (or (.get (js/URLSearchParams. js/window.location.search) "data") "history.json"))
+  (let [[current-file set-current-file]
+        (hooks/use-state
+          (or
+            (.get (js/URLSearchParams. js/window.location.search) "data")
+            "history.json"))
         [data set-data] (hooks/use-state nil)
         [game set-game] (hooks/use-state nil)
         [loading? set-loading] (hooks/use-state true)]
@@ -37,39 +41,73 @@
     (if loading?
       (d/div "Loading game data...")
       (if-not game
-        ($ ui/SetupScreen {:current-file current-file
-                           :on-select-data (fn [file]
-                                             (set-current-file file)
-                                             (let [url (js/URL. js/window.location.href)]
-                                               (.set (.-searchParams url) "data" file)
-                                               (.pushState js/window.history #js {} "" (.toString url))))
-                           :on-start (fn [names]
-                                       (set-game (logic/init-game (:events data) names)))})
-        ($ ui/GameScreen {:game game
-                          :on-action (fn [action & args]
-                                       (case action
-                                         :place
-                                         (let [idx (first args)]
-                                           (set-game (fn [g]
-                                                       (let [{:keys [players current-player-idx timeline deck]} g
-                                                             current-player (get players current-player-idx)
-                                                             card (first (:hand current-player))
-                                                             correct? (logic/check-placement timeline card idx)]
-                                                         (if correct?
-                                                           (let [new-hand (vec (rest (:hand current-player)))
-                                                                 winning? (empty? new-hand)
-                                                                 placed-card (if winning? (assoc card :win-highlight? true) card)
-                                                                 new-timeline (vec (concat (take idx timeline)
-                                                                                           [placed-card]
-                                                                                           (drop idx timeline)))
-                                                                 new-players (assoc-in players [current-player-idx :hand] new-hand)]
-                                                             (assoc g :timeline new-timeline
-                                                                    :players new-players
-                                                                    :status (if winning? :won :playing)
-                                                                    :last-result {:correct? true
-                                                                                  :card placed-card
-                                                                                  :winner (when winning? current-player)}))
-                                                           (let [new-card (first deck)
+        ($ ui/SetupScreen
+          {:current-file current-file
+          :on-select-data (fn [file]
+                            (set-current-file file)
+                            (let [url (js/URL. js/window.location.href)]
+                              (.set (.-searchParams url) "data" file)
+                              (.pushState
+                                js/window.history
+                                #js {}
+                                ""
+                                (.toString url))))
+          :on-start (fn [names]
+                      (set-game (logic/init-game (:events data) names)))})
+        ($ ui/GameScreen
+          {:game game
+           :on-action (fn [action & args]
+                        (case action
+                          :place
+                          (let [idx (first args)]
+                              (set-game
+                                (fn [g]
+                                  (let [{:keys [players
+                                                current-player-idx
+                                                timeline deck]} g
+                                        current-player (get
+                                                         players
+                                                         current-player-idx)
+                                        card (first (:hand current-player))
+                                        correct? (logic/check-placement
+                                                   timeline
+                                                   card
+                                                   idx)]
+                                    (if correct?
+                                      (let [new-hand (vec
+                                                       (rest
+                                                         (:hand
+                                                          current-player)))
+                                            winning? (empty? new-hand)
+                                            placed-card (if winning?
+                                                          (assoc
+                                                            card
+                                                            :win-highlight?
+                                                            true)
+                                                          card)
+                                            new-timeline (vec
+                                                           (concat
+                                                             (take
+                                                               idx
+                                                               timeline)
+                                                             [placed-card]
+                                                             (drop
+                                                               idx
+                                                               timeline)))
+                                            new-players (assoc-in
+                                                          players
+                                                          [current-player-idx
+                                                           :hand]
+                                                          new-hand)]
+                                        (assoc g
+                                          :timeline new-timeline
+                                          :players new-players
+                                          :status (if winning? :won :playing)
+                                          :last-result {:correct? true
+                                                        :card placed-card
+                                                        :winner (when winning?
+                                                                  current-player)}))
+                                                (let [new-card (first deck)
                                                                  new-deck (vec (rest deck))
                                                                  new-hand (conj (vec (rest (:hand current-player))) new-card)
                                                                  new-players (assoc-in players [current-player-idx :hand] new-hand)]

@@ -66,8 +66,8 @@
                                                              (assoc g :timeline new-timeline
                                                                     :players new-players
                                                                     :status (if winning? :won :playing)
-                                                                    :last-result {:correct? true 
-                                                                                  :card placed-card 
+                                                                    :last-result {:correct? true
+                                                                                  :card placed-card
                                                                                   :winner (when winning? current-player)}))
                                                            (let [new-card (first deck)
                                                                  new-deck (vec (rest deck))

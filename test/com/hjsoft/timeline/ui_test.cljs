@@ -56,3 +56,21 @@
       (is (rtl/screen.getByText "Alice: 0 cards left"))
       (is (rtl/screen.getByText "Bob: 1 cards left"))
       (rtl/cleanup))))
+
+(deftest game-screen-restart-test
+  (testing "GameScreen displays restart button and handles click"
+    (let [restarted? (atom false)
+          game {:timeline [{:title "E1" :date "1000"}]
+                :players [{:id 0 :name "Alice" :hand [{:title "E2" :date "2000"}]}]
+                :current-player-idx 0
+                :status :playing
+                :deck []}
+          _ (rtl/render ($ ui/game-screen
+                           {:game game
+                            :on-action (fn [action]
+                                         (when (= action :restart)
+                                           (reset! restarted? true)))}))]
+      (let [button (rtl/screen.getByText "Restart")]
+        (rtl/fireEvent.click button)
+        (is @restarted?))
+      (rtl/cleanup))))

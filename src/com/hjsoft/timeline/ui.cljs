@@ -127,7 +127,11 @@
         (d/div {:class "scoreboard-item"}
           (d/strong "Deck: ")
           (d/span {:class "count"}
-            (str (count deck) " cards"))))
+            (str (count deck) " cards")))
+        (d/button {:on-click handle-restart
+                   :class "button-secondary"
+                   :style {:padding "5px 15px" :font-size "1rem"}}
+          "Restart"))
 
       (d/h2 {:class "turn-message"}
         (if winner

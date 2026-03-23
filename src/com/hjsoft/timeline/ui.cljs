@@ -44,7 +44,8 @@
           (d/option {:value "history.json"} "World History")
           (d/option {:value "science.json"} "Scientific Discoveries")
           (d/option {:value "inventions.json"} "Inventions")
-          (d/option {:value "space.json"} "Space Exploration")))
+          (d/option {:value "space.json"} "Space Exploration")
+          (d/option {:value "computer.json"} "Computer History")))
 
       (d/div {:class "field-group"}
         (d/label "Players:")

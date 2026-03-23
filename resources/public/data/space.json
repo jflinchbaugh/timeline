@@ -4,8 +4,9 @@
     "primaryColor": "#6c5ce7",
     "secondaryColor": "#a29bfe",
     "backgroundColor": "#2d3436",
-    "cardColor": "#ffffff",
-    "textColor": "#dfe6e9"
+    "cardColor": "#dfe6e9",
+    "textColor": "#ffffff",
+    "cardTextColor": "#1e272e"
   },
   "events": [
     {

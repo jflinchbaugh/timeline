@@ -10,9 +10,12 @@
 (defn- update-theme [theme]
   (let [root (.-documentElement js/document)]
     (.setProperty (.-style root) "--primary" (:primaryColor theme))
+    (.setProperty (.-style root) "--secondary" (:secondaryColor theme))
     (.setProperty (.-style root) "--bg" (:backgroundColor theme))
     (.setProperty (.-style root) "--text" (:textColor theme))
-    (.setProperty (.-style root) "--card-bg" (:cardColor theme))))
+    (.setProperty (.-style root) "--card-bg" (:cardColor theme))
+    (.setProperty (.-style root) "--card-text" (or (:cardTextColor theme)
+                                                  (:textColor theme)))))
 
 (defn- update-url-param [key value]
   (let [url (js/URL. js/window.location.href)]

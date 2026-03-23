@@ -28,7 +28,7 @@
         valid-names (filter seq (map #(.trim %) names))
         can-start? (seq valid-names)]
     (d/div {:class "setup-screen"}
-      (d/h1 "Timeline Game")
+      (d/h1 "Timeline")
 
       (d/div {:class "field-group"}
         (d/label "Select Theme:")

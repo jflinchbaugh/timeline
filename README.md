@@ -28,7 +28,7 @@ A ClojureScript implementation of the Timeline card game using [helix](https://g
 To start the development environment:
 
 ```bash
-npx shadow-cljs watch app
+npx shadow-cljs watch frontend
 ```
 
 - The app will be available at [http://localhost:8080](http://localhost:8080).
@@ -54,7 +54,7 @@ npx shadow-cljs watch test
 To build the production version of the application:
 
 ```bash
-npx shadow-cljs release app
+npx shadow-cljs release frontend
 ```
 
 The compiled assets will be in `target/public/js/main.js`. You can serve the contents of `resources/public` and `target/public` using any web server.

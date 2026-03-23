@@ -17,11 +17,11 @@
                         (when wrong? " wrong")
                         (when class-name (str " " class-name)))
             :style style}
-      (d/h2 title)
-      (when revealed?
-        (d/div {:class "revealed-content"}
-          (d/p {:class "date"} date)
-          (d/p {:class "description"} desc))))))
+           (d/h2 title)
+           (when revealed?
+             (d/div {:class "revealed-content"}
+                    (d/p {:class "date"} date)
+                    (d/p {:class "description"} desc))))))
 
 (defnc setup-screen [{:keys [on-start on-select-data current-file]}]
   (let [[names set-names] (hooks/use-state [""])
@@ -35,34 +35,34 @@
         can-start? (seq valid-names)
         handle-start (fn [] (when can-start? (on-start valid-names)))]
     (d/div {:class "setup-screen"}
-      (d/h1 "Timeline")
+           (d/h1 "Timeline")
 
-      (d/div {:class "field-group"}
-        (d/label "Select Theme:")
-        (d/select {:value current-file
-                   :on-change handle-theme-change}
-          (d/option {:value "history.json"} "World History")
-          (d/option {:value "science.json"} "Scientific Discoveries")
-          (d/option {:value "inventions.json"} "Inventions")
-          (d/option {:value "space.json"} "Space Exploration")
-          (d/option {:value "computer.json"} "Computer History")))
+           (d/div {:class "field-group"}
+                  (d/label "Select Theme:")
+                  (d/select {:value current-file
+                             :on-change handle-theme-change}
+                            (d/option {:value "history.json"} "World History")
+                            (d/option {:value "science.json"} "Scientific Discoveries")
+                            (d/option {:value "inventions.json"} "Inventions")
+                            (d/option {:value "space.json"} "Space Exploration")
+                            (d/option {:value "computer.json"} "Computer History")))
 
-      (d/div {:class "field-group"}
-        (d/label "Players:")
-        (for [[idx name] (map-indexed vector names)]
-          (d/div {:key idx :class "player-input-wrapper"}
-            (d/input {:value name
-                      :placeholder (str "Player " (inc idx) " name")
-                      :on-change #(handle-name-change idx %)}))))
+           (d/div {:class "field-group"}
+                  (d/label "Players:")
+                  (for [[idx name] (map-indexed vector names)]
+                    (d/div {:key idx :class "player-input-wrapper"}
+                           (d/input {:value name
+                                     :placeholder (str "Player " (inc idx) " name")
+                                     :on-change #(handle-name-change idx %)}))))
 
-      (d/div {:class "button-group"}
-        (d/button {:on-click add-player :class "button-secondary"}
-          "+ Add Player")
-        (d/button {:on-click handle-start
-                   :disabled (not can-start?)}
-          "Start Game")))))
+           (d/div {:class "button-group"}
+                  (d/button {:on-click add-player :class "button-secondary"}
+                            "+ Add Player")
+                  (d/button {:on-click handle-start
+                             :disabled (not can-start?)}
+                            "Start Game")))))
 
-(defnc game-screen [{:keys [game on-action]}]
+(defnc game-screen [{:keys [game source-url on-action]}]
   (let [{:keys [timeline
                 players
                 current-player-idx
@@ -81,19 +81,19 @@
                           card-val))
         correct-idx (when (and last-result (not (:correct? last-result)))
                       (let [card-val (logic/parse-date-val
-                                       (:date current-card))]
+                                      (:date current-card))]
                         (count
-                          (filter
-                            #(before-card? card-val %)
-                            timeline))))
+                         (filter
+                          #(before-card? card-val %)
+                          timeline))))
 
         ;; Temporary timeline for rendering wrong result
         display-timeline (if (and last-result (not (:correct? last-result)))
                            (vec (concat (take correct-idx timeline)
                                         [(assoc
-                                           current-card
-                                           :wrong-highlight?
-                                           true)]
+                                          current-card
+                                          :wrong-highlight?
+                                          true)]
                                         (drop correct-idx timeline)))
                            timeline)
 
@@ -104,84 +104,91 @@
         handle-place (fn [idx] (on-action :place idx))]
 
     (hooks/use-effect [last-result current-player-idx]
-      (if last-result
-        (js/setTimeout
-          #(when scroll-ref.current
-             (.scrollIntoView
-               scroll-ref.current
-               #js {:behavior "smooth" :block "center"}))
-          50)
-        (.scrollTo js/window #js {:top 0 :behavior "smooth"})))
+                      (if last-result
+                        (js/setTimeout
+                         #(when scroll-ref.current
+                            (.scrollIntoView
+                             scroll-ref.current
+                             #js {:behavior "smooth" :block "center"}))
+                         50)
+                        (.scrollTo js/window #js {:top 0 :behavior "smooth"})))
 
     (d/div
       ;; Scoreboard
-      (d/div {:class "scoreboard"}
-        (for [p players]
-          (let [is-current? (= (:id p) (:id current-player))]
-            (d/div {:key (:id p)
-                    :class (str "scoreboard-item"
-                                (when is-current? " current"))}
-              (d/strong (:name p))
-              (d/span {:class "count"}
-                (str (count (:hand p)) " cards")))))
-        (d/div {:class "scoreboard-item"}
-          (d/strong "Deck: ")
-          (d/span {:class "count"}
-            (str (count deck) " cards")))
-        (d/button {:on-click handle-restart
-                   :class "button-secondary"
-                   :style {:padding "5px 15px" :font-size "1rem"}}
-          "Restart"))
+     (d/div {:class "scoreboard"}
+            (for [p players]
+              (let [is-current? (= (:id p) (:id current-player))]
+                (d/div {:key (:id p)
+                        :class (str "scoreboard-item"
+                                    (when is-current? " current"))}
+                       (d/strong (:name p))
+                       (d/span {:class "count"}
+                               (str (count (:hand p)) " cards")))))
+            (d/div {:class "scoreboard-item"}
+                   (d/strong "Deck: ")
+                   (d/span {:class "count"}
+                           (str (count deck) " cards")))
+            (d/button {:on-click handle-restart
+                       :class "button-secondary"
+                       :style {:padding "5px 15px" :font-size "1rem"}}
+                      "Restart"))
 
-      (d/h2 {:class "turn-message"}
-        (if winner
-          (str (:name winner) " Wins!")
-          (str (:name current-player) "'s Turn")))
+     (d/h2 {:class "turn-message"}
+           (if winner
+             (str (:name winner) " Wins!")
+             (str (:name current-player) "'s Turn")))
 
-      (when last-result
-        (d/div {:class (str "result-banner "
-                        (cond
-                          winner "win"
-                          (:correct? last-result) "correct"
-                          :else "wrong"))}
-          (d/h2 (cond
-                  winner (str "\uD83C\uDFC6 " (:name winner) " Wins!")
-                  (:correct? last-result) "\u2713 Correct!"
-                  :else "\u2717 Wrong!"))
-          (if winner
-            (d/div
-              (d/div {:class "final-scores"}
-                (for [p players]
-                  (d/p {:key (:id p)}
-                    (str (:name p) ": " (count (:hand p)) " cards left"))))
-              (d/button {:on-click handle-restart :class "button-black"}
-                "Play Again"))
-            (d/button {:on-click handle-next-turn :class "button-white"}
-              (str "Next Player: " (:name next-player))))))
+     (when last-result
+       (d/div {:class (str "result-banner "
+                           (cond
+                             winner "win"
+                             (:correct? last-result) "correct"
+                             :else "wrong"))}
+              (d/h2 (cond
+                      winner (str "\uD83C\uDFC6 " (:name winner) " Wins!")
+                      (:correct? last-result) "\u2713 Correct!"
+                      :else "\u2717 Wrong!"))
+              (if winner
+                (d/div
+                 (d/div {:class "final-scores"}
+                        (for [p players]
+                          (d/p {:key (:id p)}
+                               (str (:name p) ": " (count (:hand p)) " cards left"))))
+                 (d/button {:on-click handle-restart :class "button-black"}
+                           "Play Again"))
+                (d/button {:on-click handle-next-turn :class "button-white"}
+                          (str "Next Player: " (:name next-player))))))
 
-      (when (and (not last-result) (not= status :won) current-card)
-        (d/h3 "Your Card:"))
-      (when (and (not last-result) (not= status :won) current-card)
-        ($ card {:card current-card
-                 :revealed? false
-                 :class-name "sticky"
-                 :style {:margin-top "0"}}))
+     (when (and (not last-result) (not= status :won) current-card)
+       (d/h3 "Your Card:"))
+     (when (and (not last-result) (not= status :won) current-card)
+       ($ card {:card current-card
+                :revealed? false
+                :class-name "sticky"
+                :style {:margin-top "0"}}))
 
-      (d/h3 "Timeline:")
-      (d/div {:class "timeline-container"}
-        (when (and (not last-result) (not= status :won))
-          (d/button {:class "place-button" :on-click #(handle-place 0)}
-            "Place here"))
-        (for [[idx t-card] (map-indexed vector display-timeline)]
-          (d/div {:key idx
-                  :ref (if (or
-                             (:wrong-highlight? t-card)
-                             (:correct-highlight? t-card))
-                         scroll-ref
-                         nil)}
-            ($ card {:card t-card
-                     :revealed? true})
+     (d/h3 "Timeline:")
+     (d/div {:class "timeline-container"}
             (when (and (not last-result) (not= status :won))
-              (d/button {:class "place-button"
-                         :on-click #(handle-place (inc idx))}
-                "Place here"))))))))
+              (d/button {:class "place-button" :on-click #(handle-place 0)}
+                        "Place here"))
+            (for [[idx t-card] (map-indexed vector display-timeline)]
+              (d/div {:key idx
+                      :ref (if (or
+                                (:wrong-highlight? t-card)
+                                (:correct-highlight? t-card))
+                             scroll-ref
+                             nil)}
+                     ($ card {:card t-card
+                              :revealed? true})
+                     (when (and (not last-result) (not= status :won))
+                       (d/button {:class "place-button"
+                                  :on-click #(handle-place (inc idx))}
+                                 "Place here")))))
+     (when source-url
+       (d/div {:style {:text-align "center"
+                       :margin-top "40px"
+                       :padding-bottom "20px"
+                       :font-size "0.9rem"
+                       :opacity 0.7}}
+              (d/a {:href source-url :target "_blank"} "Source"))))))

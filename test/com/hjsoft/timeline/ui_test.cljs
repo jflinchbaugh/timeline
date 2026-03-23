@@ -74,3 +74,19 @@
         (rtl/fireEvent.click button)
         (is @restarted?))
       (rtl/cleanup))))
+
+(deftest game-screen-source-link-test
+  (testing "GameScreen displays source link when source-url is provided"
+    (let [game {:timeline [{:title "E1" :date "1000"}]
+                :players [{:id 0 :name "Alice" :hand [{:title "E2" :date "2000"}]}]
+                :current-player-idx 0
+                :status :playing
+                :deck []}
+          source-url "https://example.com/source"
+          _ (rtl/render ($ ui/game-screen
+                           {:game game
+                            :source-url source-url}))]
+      (let [link (rtl/screen.getByText "Source")]
+        (is (= (.getAttribute link "href") source-url))
+        (is (= (.getAttribute link "target") "_blank")))
+      (rtl/cleanup))))

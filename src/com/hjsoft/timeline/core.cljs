@@ -70,6 +70,7 @@
               :on-start handle-start})
           ($ ui/game-screen
              {:game game
+              :source-url (:url data)
               :on-action handle-action}))))))
 
 ;; --- Entry Point ---

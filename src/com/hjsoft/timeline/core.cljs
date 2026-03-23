@@ -27,7 +27,7 @@
         (hooks/use-state
          (or
           (.get (js/URLSearchParams. js/window.location.search) "data")
-          "history.json"))
+          "computer.json"))
         [data set-data] (hooks/use-state nil)
         [game set-game] (hooks/use-state nil)
         [loading? set-loading] (hooks/use-state true)]

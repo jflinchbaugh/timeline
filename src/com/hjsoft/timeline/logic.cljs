@@ -26,7 +26,9 @@
         players (vec (map-indexed (fn [idx name]
                                     {:id idx
                                      :name name
-                                     :hand (take 10 (drop (* idx 10) remaining))})
+                                     :hand (take
+                                             10
+                                             (drop (* idx 10) remaining))})
                                   player-names))
         deck (drop (* (count player-names) 10) remaining)]
     {:timeline [initial-card]

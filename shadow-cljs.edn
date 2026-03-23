@@ -1,4 +1,4 @@
-{:deps {:aliases [:test]}
+{:deps {:aliases [:test :dev]}
  :dev-http {8080 ["target/public"]
             8021 "target/public/test"}
  :builds

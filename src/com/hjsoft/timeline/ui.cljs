@@ -2,6 +2,7 @@
   (:require [helix.core :refer [defnc $]]
             [helix.hooks :as hooks]
             [helix.dom :as d]
+            [clojure.string :as str]
             [com.hjsoft.timeline.logic :as logic]))
 
 (defnc Card [{:keys [card revealed? style class-name]}]
@@ -24,16 +25,22 @@
 
 (defnc SetupScreen [{:keys [on-start on-select-data current-file]}]
   (let [[names set-names] (hooks/use-state [""])
-        add-player #(set-names conj "")
-        valid-names (filter seq (map #(.trim %) names))
-        can-start? (seq valid-names)]
+        add-player (fn [] (set-names conj ""))
+        handle-name-change (fn [idx event]
+                             (let [new-val (.. event -target -value)]
+                               (set-names assoc idx new-val)))
+        handle-theme-change (fn [event]
+                              (on-select-data (.. event -target -value)))
+        valid-names (filter seq (map str/trim names))
+        can-start? (seq valid-names)
+        handle-start (fn [] (when can-start? (on-start valid-names)))]
     (d/div {:class "setup-screen"}
       (d/h1 "Timeline")
 
       (d/div {:class "field-group"}
         (d/label "Select Theme:")
         (d/select {:value current-file
-                   :on-change #(on-select-data (.. % -target -value))}
+                   :on-change handle-theme-change}
           (d/option {:value "history.json"} "World History")
           (d/option {:value "science.json"} "Scientific Discoveries")
           (d/option {:value "inventions.json"} "Inventions")
@@ -45,13 +52,12 @@
           (d/div {:key idx :class "player-input-wrapper"}
             (d/input {:value name
                       :placeholder (str "Player " (inc idx) " name")
-                      :on-change #(let [new-val (.. % -target -value)]
-                                    (set-names assoc idx new-val))}))))
+                      :on-change #(handle-name-change idx %)}))))
 
       (d/div {:class "button-group"}
         (d/button {:on-click add-player :class "button-secondary"}
           "+ Add Player")
-        (d/button {:on-click #(when can-start? (on-start valid-names))
+        (d/button {:on-click handle-start
                    :disabled (not can-start?)}
           "Start Game")))))
 
@@ -69,12 +75,15 @@
         winner (or (:winner last-result) (when (= status :won) current-player))
 
         ;; Calculate the correct index for the card in the timeline
+        before-card? (fn [card-val timeline-card]
+                       (< (logic/parse-date-val (:date timeline-card))
+                          card-val))
         correct-idx (when (and last-result (not (:correct? last-result)))
                       (let [card-val (logic/parse-date-val
                                        (:date current-card))]
                         (count
                           (filter
-                            #(< (logic/parse-date-val (:date %)) card-val)
+                            #(before-card? card-val %)
                             timeline))))
 
         ;; Temporary timeline for rendering wrong result
@@ -87,7 +96,11 @@
                                         (drop correct-idx timeline)))
                            timeline)
 
-        scroll-ref (hooks/use-ref nil)]
+        scroll-ref (hooks/use-ref nil)
+
+        handle-restart (fn [] (on-action :restart))
+        handle-next-turn (fn [] (on-action :next-turn))
+        handle-place (fn [idx] (on-action :place idx))]
 
     (hooks/use-effect [last-result]
       (if last-result
@@ -130,9 +143,9 @@
                   :else "\u2717 Wrong spot!"))
           (d/p (str "The date was " (:date (:card last-result)) "."))
           (if winner
-            (d/button {:on-click #(on-action :restart) :class "button-black"}
+            (d/button {:on-click handle-restart :class "button-black"}
               "Play Again")
-            (d/button {:on-click #(on-action :next-turn) :class "button-white"}
+            (d/button {:on-click handle-next-turn :class "button-white"}
               (str "Next Player: " (:name next-player))))))
 
       (when (and (not last-result) (not= status :won) current-card)
@@ -146,7 +159,7 @@
       (d/h3 "Timeline:")
       (d/div {:class "timeline-container"}
         (when (and (not last-result) (not= status :won))
-          (d/button {:class "place-button" :on-click #(on-action :place 0)}
+          (d/button {:class "place-button" :on-click #(handle-place 0)}
             "Place here"))
         (for [[idx t-card] (map-indexed vector display-timeline)]
           (d/div {:key idx
@@ -159,5 +172,5 @@
                      :revealed? true})
             (when (and (not last-result) (not= status :won))
               (d/button {:class "place-button"
-                         :on-click #(on-action :place (inc idx))}
+                         :on-click #(handle-place (inc idx))}
                 "Place here"))))))))

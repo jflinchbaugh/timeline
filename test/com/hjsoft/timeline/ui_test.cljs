@@ -41,3 +41,18 @@
       (is (rtl/screen.getByText #"Deck:"))
       (is (rtl/screen.getByText "40 cards"))
       (rtl/cleanup))))
+
+(deftest game-screen-win-test
+  (testing "GameScreen displays winning banner and final scores"
+    (let [game {:timeline [{:title "E1" :date "1000"}]
+                :players [{:id 0 :name "Alice" :hand []}
+                          {:id 1 :name "Bob" :hand [{:title "E2" :date "2000"}]}]
+                :current-player-idx 0
+                :status :won
+                :winner {:id 0 :name "Alice"}
+                :last-result {:correct? true :winner {:id 0 :name "Alice"}}}
+          result (rtl/render ($ ui/game-screen {:game game}))]
+      (is (seq (rtl/screen.getAllByText #"Alice Wins!")))
+      (is (rtl/screen.getByText "Alice: 0 cards left"))
+      (is (rtl/screen.getByText "Bob: 1 cards left"))
+      (rtl/cleanup))))

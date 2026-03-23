@@ -59,8 +59,7 @@
     (if correct?
       (let [new-hand (vec (rest (:hand current-player)))
             winning? (empty? new-hand)
-            placed-card (cond-> (assoc card :correct-highlight? true)
-                          winning? (assoc :win-highlight? true))
+            placed-card (assoc card :correct-highlight? true)
             new-timeline (vec (concat (take index timeline)
                                       [placed-card]
                                       (drop index timeline)))
@@ -85,6 +84,6 @@
   (assoc game
          :current-player-idx (mod (inc (:current-player-idx game))
                                   (count (:players game)))
-         :timeline (mapv #(dissoc % :correct-highlight? :win-highlight? :wrong-highlight?)
+         :timeline (mapv #(dissoc % :correct-highlight? :wrong-highlight?)
                          (:timeline game))
          :last-result nil))

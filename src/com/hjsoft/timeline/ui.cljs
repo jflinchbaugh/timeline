@@ -10,11 +10,9 @@
         title (or (:title card-clj) "Untitled Event")
         date (or (:date card-clj) "Unknown Date")
         desc (or (:description card-clj) "No description available.")
-        win? (:win-highlight? card-clj)
         correct? (:correct-highlight? card-clj)
         wrong? (:wrong-highlight? card-clj)]
     (d/div {:class (str "card"
-                        (when win? " win")
                         (when correct? " correct")
                         (when wrong? " wrong")
                         (when class-name (str " " class-name)))
@@ -146,8 +144,13 @@
                   (:correct? last-result) "\u2713 Correct!"
                   :else "\u2717 Wrong!"))
           (if winner
-            (d/button {:on-click handle-restart :class "button-black"}
-              "Play Again")
+            (d/div
+              (d/div {:class "final-scores"}
+                (for [p players]
+                  (d/p {:key (:id p)}
+                    (str (:name p) ": " (count (:hand p)) " cards left"))))
+              (d/button {:on-click handle-restart :class "button-black"}
+                "Play Again"))
             (d/button {:on-click handle-next-turn :class "button-white"}
               (str "Next Player: " (:name next-player))))))
 
@@ -168,8 +171,7 @@
           (d/div {:key idx
                   :ref (if (or
                              (:wrong-highlight? t-card)
-                             (:correct-highlight? t-card)
-                             (:win-highlight? t-card))
+                             (:correct-highlight? t-card))
                          scroll-ref
                          nil)}
             ($ card {:card t-card

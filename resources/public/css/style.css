@@ -47,14 +47,9 @@ body {
     border: 2px solid var(--primary);
 }
 
-.card.win {
-    border: 4px solid gold;
-    box-shadow: 0 0 20px gold;
-}
-
 .card.correct {
-    border: 6px solid var(--success);
-    box-shadow: 0 0 30px var(--success);
+    border: 4px solid var(--success);
+    box-shadow: 0 0 20px var(--success);
 }
 
 .card.wrong {
@@ -245,6 +240,15 @@ input {
 .result-banner.win { background-color: gold; color: black; }
 .result-banner.correct { background-color: var(--success); color: white; }
 .result-banner.wrong { background-color: var(--error); color: white; }
+
+.final-scores {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.final-scores p {
+    margin: 5px 0;
+}
 
 .button-black { background-color: black; color: white; }
 .button-white { background-color: white; color: black; }

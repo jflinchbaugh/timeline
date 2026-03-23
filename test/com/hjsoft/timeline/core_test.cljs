@@ -49,3 +49,35 @@
                    timeline-precise
                    {:date "2021-04"}
                    1)))))))
+
+(deftest place-card-test
+  (let [events [{:title "E1" :date "1000"}
+                {:title "E2" :date "2000"}
+                {:title "E3" :date "3000"}
+                {:title "E4" :date "4000"}]
+        game {:timeline [{:title "E2" :date "2000"}]
+              :players [{:id 0 :name "P1" :hand [{:title "E1" :date "1000"}]}]
+              :current-player-idx 0
+              :deck [{:title "E4" :date "4000"}]
+              :status :playing}]
+    (testing "Correct placement"
+      (let [new-game (logic/place-card game 0)]
+        (is (= 2 (count (:timeline new-game))))
+        (is (:correct-highlight? (first (:timeline new-game))))
+        (is (= :won (:status new-game)))))
+    (testing "Incorrect placement"
+      (let [game-wrong (assoc-in game [:players 0 :hand 0] {:title "E3" :date "3000"})
+            new-game (logic/place-card game-wrong 0)]
+        (is (= 1 (count (:timeline new-game))))
+        (is (= 1 (count (get-in new-game [:players 0 :hand]))))
+        (is (= "E4" (:title (last (get-in new-game [:players 0 :hand])))))))))
+
+(deftest next-turn-test
+  (let [game {:timeline [{:title "E1" :date "1000" :correct-highlight? true}]
+              :players [{:id 0 :name "P1"} {:id 1 :name "P2"}]
+              :current-player-idx 0
+              :last-result {:correct? true}}]
+    (let [next-game (logic/next-turn game)]
+      (is (= 1 (:current-player-idx next-game)))
+      (is (nil? (:last-result next-game)))
+      (is (not (:correct-highlight? (first (:timeline next-game))))))))

@@ -75,7 +75,14 @@
                             "+ Add Player")
                   (d/button {:on-click handle-start
                              :disabled (not can-start?)}
-                            "Start Game")))))
+                            "Start Game"))
+
+           (d/div {:class "instructions"}
+                  (d/h3 "How to Play")
+                  (d/ul
+                   (d/li "Place cards in chronological order on the timeline.")
+                   (d/li "If correct, the card stays. If wrong, it's discarded.")
+                   (d/li "First player to empty their hand wins!"))))))
 
 (defnc game-screen [{:keys [game source-url on-action]}]
   (let [{:keys [timeline

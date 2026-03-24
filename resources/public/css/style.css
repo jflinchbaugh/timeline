@@ -187,6 +187,35 @@ input {
     justify-content: center;
 }
 
+.instructions {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border: 1px solid var(--text);
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.instructions h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.instructions ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.instructions li {
+    margin-bottom: 5px;
+}
+
 .button-secondary {
     background-color: var(--bg);
     color: var(--secondary);

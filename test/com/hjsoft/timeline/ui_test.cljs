@@ -28,6 +28,50 @@
         (is @started?)
         (rtl/cleanup)))))
 
+(deftest setup-screen-persistence-test
+  (testing "Setup screen saves and culls blank names"
+    (.clear js/localStorage)
+    (let [started? (atom false)
+          _ (rtl/render ($ ui/setup-screen
+                           {:on-start #(reset! started? true)
+                            :current-file "history.json"}))]
+      (let [input1 (rtl/screen.getByPlaceholderText "Player 1 name")
+            add-button (rtl/screen.getByText "+ Add Player")
+            start-button (rtl/screen.getByText "Start Game")]
+
+        ;; Enter "Alice" for Player 1
+        (rtl/fireEvent.change input1 #js {:target #js {:value "Alice"}})
+
+        ;; Add Player 2 and leave blank
+        (rtl/fireEvent.click add-button)
+
+        ;; Add Player 3 and enter "Bob"
+        (rtl/fireEvent.click add-button)
+        (let [inputs (rtl/screen.getAllByPlaceholderText #"Player \d name")
+              input3 (nth (vec inputs) 2)]
+          (rtl/fireEvent.change input3 #js {:target #js {:value "Bob"}}))
+
+        (rtl/fireEvent.click start-button)
+
+        (is @started?)
+        (let [stored (js/JSON.parse
+                       (.getItem js/localStorage "timeline-player-names"))
+              stored-clj (js->clj stored)]
+          (is (= ["Alice" "Bob"] stored-clj)
+            "only provided names are remembered")))
+      (rtl/cleanup)))
+
+  (testing "Setup screen loads names from localStorage"
+    (.setItem js/localStorage
+      "timeline-player-names"
+      (js/JSON.stringify #js ["Charlie" "Dave"]))
+    (let [_ (rtl/render ($ ui/setup-screen
+                           {:on-start #()
+                            :current-file "history.json"}))]
+      (is (rtl/screen.getByDisplayValue "Charlie"))
+      (is (rtl/screen.getByDisplayValue "Dave"))
+      (rtl/cleanup))))
+
 (deftest game-screen-deck-count-test
   (testing "game screen displays deck count"
     (let [game {:timeline [{:title "Event 1" :date "1000"}]
@@ -45,8 +89,12 @@
 (deftest game-screen-win-test
   (testing "game screen displays winning banner and final scores"
     (let [game {:timeline [{:title "E1" :date "1000"}]
-                :players [{:id 0 :name "Alice" :hand []}
-                          {:id 1 :name "Bob" :hand [{:title "E2" :date "2000"}]}]
+                :players [{:id 0
+                           :name "Alice"
+                           :hand []}
+                          {:id 1
+                           :name "Bob"
+                           :hand [{:title "E2" :date "2000"}]}]
                 :current-player-idx 0
                 :status :won
                 :winner {:id 0 :name "Alice"}
@@ -60,11 +108,16 @@
 (deftest game-screen-wrong-test
   (testing "game screen displays wrong banner"
     (let [game {:timeline [{:title "E1" :date "1000"}]
-                :players [{:id 0 :name "Alice" :hand []}
-                          {:id 1 :name "Bob" :hand [{:title "E3" :date "3000"}]}]
+                :players [{:id 0
+                           :name "Alice"
+                           :hand []}
+                          {:id 1
+                           :name "Bob"
+                           :hand [{:title "E3" :date "3000"}]}]
                 :current-player-idx 0
                 :status :playing
-                :last-result {:correct? false :card {:title "E2" :date "2000"}}}
+                :last-result {:correct? false
+                              :card {:title "E2" :date "2000"}}}
           _ (rtl/render ($ ui/game-screen {:game game}))]
       (is (rtl/screen.getByText #"\u2717 Wrong!"))
       (is (rtl/screen.getByText #"You draw another card."))
@@ -78,7 +131,9 @@
   (testing "game screen displays restart button and handles click"
     (let [restarted? (atom false)
           game {:timeline [{:title "E1" :date "1000"}]
-                :players [{:id 0 :name "Alice" :hand [{:title "E2" :date "2000"}]}]
+                :players [{:id 0
+                           :name "Alice"
+                           :hand [{:title "E2" :date "2000"}]}]
                 :current-player-idx 0
                 :status :playing
                 :deck []}
@@ -95,7 +150,9 @@
 (deftest game-screen-source-link-test
   (testing "game screen displays source link when source-url is provided"
     (let [game {:timeline [{:title "E1" :date "1000"}]
-                :players [{:id 0 :name "Alice" :hand [{:title "E2" :date "2000"}]}]
+                :players [{:id 0
+                           :name "Alice"
+                           :hand [{:title "E2" :date "2000"}]}]
                 :current-player-idx 0
                 :status :playing
                 :deck []}

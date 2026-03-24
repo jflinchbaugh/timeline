@@ -5,6 +5,18 @@
             [clojure.string :as str]
             [com.hjsoft.timeline.logic :as logic]))
 
+(defn- save-names [names]
+  (let [to-save (filterv #(not (str/blank? %)) names)]
+    (js/localStorage.setItem "timeline-player-names" (js/JSON.stringify (clj->js to-save)))))
+
+(defn- load-names []
+  (try
+    (let [stored (js/localStorage.getItem "timeline-player-names")]
+      (if (and stored (not= stored "undefined"))
+        (js->clj (js/JSON.parse stored))
+        [""]))
+    (catch :default _ [""])))
+
 (defnc card [{:keys [card revealed? style class-name]}]
   (let [card-clj (if (map? card) card (js->clj card :keywordize-keys true))
         title (or (:title card-clj) "Untitled Event")
@@ -24,7 +36,7 @@
                     (d/p {:class "description"} desc))))))
 
 (defnc setup-screen [{:keys [on-start on-select-data current-file]}]
-  (let [[names set-names] (hooks/use-state [""])
+  (let [[names set-names] (hooks/use-state (load-names))
         add-player (fn [] (set-names conj ""))
         handle-name-change (fn [idx event]
                              (let [new-val (.. event -target -value)]
@@ -33,7 +45,10 @@
                               (on-select-data (.. event -target -value)))
         valid-names (filter seq (map str/trim names))
         can-start? (seq valid-names)
-        handle-start (fn [] (when can-start? (on-start valid-names)))]
+        handle-start (fn []
+                       (when can-start?
+                         (save-names names)
+                         (on-start valid-names)))]
     (d/div {:class "setup-screen"}
            (d/h1 "Timeline")
 

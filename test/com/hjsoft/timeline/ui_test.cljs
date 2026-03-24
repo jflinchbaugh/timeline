@@ -29,7 +29,7 @@
         (rtl/cleanup)))))
 
 (deftest game-screen-deck-count-test
-  (testing "GameScreen displays deck count"
+  (testing "game screen displays deck count"
     (let [game {:timeline [{:title "Event 1" :date "1000"}]
                 :players [{:id 0
                            :name "Alice"
@@ -43,7 +43,7 @@
       (rtl/cleanup))))
 
 (deftest game-screen-win-test
-  (testing "GameScreen displays winning banner and final scores"
+  (testing "game screen displays winning banner and final scores"
     (let [game {:timeline [{:title "E1" :date "1000"}]
                 :players [{:id 0 :name "Alice" :hand []}
                           {:id 1 :name "Bob" :hand [{:title "E2" :date "2000"}]}]
@@ -58,7 +58,7 @@
       (rtl/cleanup))))
 
 (deftest game-screen-restart-test
-  (testing "GameScreen displays restart button and handles click"
+  (testing "game screen displays restart button and handles click"
     (let [restarted? (atom false)
           game {:timeline [{:title "E1" :date "1000"}]
                 :players [{:id 0 :name "Alice" :hand [{:title "E2" :date "2000"}]}]
@@ -76,7 +76,7 @@
       (rtl/cleanup))))
 
 (deftest game-screen-source-link-test
-  (testing "GameScreen displays source link when source-url is provided"
+  (testing "game screen displays source link when source-url is provided"
     (let [game {:timeline [{:title "E1" :date "1000"}]
                 :players [{:id 0 :name "Alice" :hand [{:title "E2" :date "2000"}]}]
                 :current-player-idx 0

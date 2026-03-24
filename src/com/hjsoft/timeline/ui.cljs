@@ -148,6 +148,8 @@
                       winner (str "\uD83C\uDFC6 " (:name winner) " Wins!")
                       (:correct? last-result) "\u2713 Correct!"
                       :else "\u2717 Wrong!"))
+              (when-not (or winner (:correct? last-result))
+                (d/p "You draw another card."))
               (if winner
                 (d/div
                  (d/div {:class "final-scores"}

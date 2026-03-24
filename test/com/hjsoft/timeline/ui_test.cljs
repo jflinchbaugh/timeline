@@ -57,6 +57,23 @@
       (is (rtl/screen.getByText "Bob: 1 cards left"))
       (rtl/cleanup))))
 
+(deftest game-screen-wrong-test
+  (testing "game screen displays wrong banner"
+    (let [game {:timeline [{:title "E1" :date "1000"}]
+                :players [{:id 0 :name "Alice" :hand []}
+                          {:id 1 :name "Bob" :hand [{:title "E3" :date "3000"}]}]
+                :current-player-idx 0
+                :status :playing
+                :last-result {:correct? false :card {:title "E2" :date "2000"}}}
+          _ (rtl/render ($ ui/game-screen {:game game}))]
+      (is (rtl/screen.getByText #"\u2717 Wrong!"))
+      (is (rtl/screen.getByText #"You draw another card."))
+      (is (rtl/screen.getByText "Next Player: Bob"))
+      ;; Card should be shown in timeline with date revealed
+      (is (rtl/screen.getByText "E2"))
+      (is (rtl/screen.getByText "2000"))
+      (rtl/cleanup))))
+
 (deftest game-screen-restart-test
   (testing "game screen displays restart button and handles click"
     (let [restarted? (atom false)

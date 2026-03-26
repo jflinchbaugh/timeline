@@ -60,7 +60,10 @@
                             (d/option {:value "science.json"} "Scientific Discoveries")
                             (d/option {:value "inventions.json"} "Inventions")
                             (d/option {:value "space.json"} "Space Exploration")
-                            (d/option {:value "computer.json"} "Computer History")))
+                            (d/option {:value "computer.json"} "Computer History")
+                            (d/option {:value "videogames.json"} "Video Game History")
+                            (d/option {:value "cinema.json"} "Cinema & Film")
+                            (d/option {:value "olympics.json"} "The Olympic Games")))
 
            (d/div {:class "field-group"}
                   (d/label "Players:")

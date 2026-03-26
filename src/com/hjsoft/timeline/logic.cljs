@@ -36,6 +36,7 @@
      :players players
      :current-player-idx 0
      :deck deck
+     :initial-deck-size (count remaining)
      :status :playing
      :message nil
      :last-result nil}))

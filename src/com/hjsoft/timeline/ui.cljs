@@ -50,7 +50,7 @@
                          (save-names names)
                          (on-start valid-names)))]
     (d/div {:class "setup-screen"}
-           (d/h1 "Timeline")
+           (d/h1 (d/a {:href "/" :style {:text-decoration "none" :color "inherit"}} "Timeline"))
 
            (d/div {:class "field-group"}
                   (d/label "Select Theme:")
@@ -89,7 +89,8 @@
                 current-player-idx
                 last-result
                 status
-                deck]} game
+                deck
+                initial-deck-size]} game
         current-player (get players current-player-idx)
         next-player-idx (mod (inc current-player-idx) (count players))
         next-player (get players next-player-idx)
@@ -148,7 +149,7 @@
             (d/div {:class "scoreboard-item"}
                    (d/strong "Deck: ")
                    (d/span {:class "count"}
-                           (str (count deck) " cards")))
+                           (str (count deck) "/" initial-deck-size)))
             (d/button {:on-click handle-restart
                        :class "button-secondary"
                        :style {:padding "5px 15px" :font-size "1rem"}}
@@ -176,7 +177,8 @@
                  (d/div {:class "final-scores"}
                         (for [p players]
                           (d/p {:key (:id p)}
-                               (str (:name p) ": " (count (:hand p)) " cards left"))))
+                               (str (:name p) ": " (count (:hand p)) " cards left")))
+                        (d/p (d/strong (str "Deck: " (count deck) "/" initial-deck-size))))
                  (d/button {:on-click handle-restart :class "button-black"}
                            "Play Again"))
                 (d/button {:on-click handle-next-turn :class "button-white"}

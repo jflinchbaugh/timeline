@@ -19,24 +19,24 @@
 (defn shuffle-deck [deck]
   (shuffle (vec deck)))
 
-(defn- create-player [idx name remaining]
+(defn- create-player [idx name dealer-deck]
   {:id idx
    :name name
-   :hand (take 10 (drop (* idx 10) remaining))})
+   :hand (take 10 (drop (* idx 10) dealer-deck))})
 
 (defn init-game [events player-names]
   (let [shuffled (shuffle-deck events)
         initial-card (first shuffled)
-        remaining (rest shuffled)
+        dealer-deck (rest shuffled)
         players (vec (map-indexed (fn [idx name]
-                                    (create-player idx name remaining))
+                                    (create-player idx name dealer-deck))
                                   player-names))
-        deck (drop (* (count player-names) 10) remaining)]
+        deck (drop (* (count player-names) 10) dealer-deck)]
     {:timeline [initial-card]
      :players players
      :current-player-idx 0
      :deck deck
-     :initial-deck-size (count remaining)
+     :initial-deck-size (count dealer-deck)
      :status :playing
      :message nil
      :last-result nil}))

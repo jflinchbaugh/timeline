@@ -1,0 +1,10 @@
+[
+  {"filename": "history.json", "name": "World History"},
+  {"filename": "science.json", "name": "Scientific Discoveries"},
+  {"filename": "inventions.json", "name": "Inventions"},
+  {"filename": "space.json", "name": "Space Exploration"},
+  {"filename": "computer.json", "name": "Computer History"},
+  {"filename": "videogames.json", "name": "Video Game History"},
+  {"filename": "cinema.json", "name": "Cinema & Film"},
+  {"filename": "olympics.json", "name": "The Olympic Games"}
+]

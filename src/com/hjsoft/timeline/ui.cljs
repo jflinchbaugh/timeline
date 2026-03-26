@@ -35,7 +35,7 @@
                     (d/p {:class "date"} date)
                     (d/p {:class "description"} desc))))))
 
-(defnc setup-screen [{:keys [on-start on-select-data current-file]}]
+(defnc setup-screen [{:keys [on-start on-select-data current-file datasets]}]
   (let [[names set-names] (hooks/use-state (load-names))
         add-player (fn [] (set-names conj ""))
         handle-name-change (fn [idx event]
@@ -56,14 +56,10 @@
                   (d/label "Select Theme:")
                   (d/select {:value current-file
                              :on-change handle-theme-change}
-                            (d/option {:value "history.json"} "World History")
-                            (d/option {:value "science.json"} "Scientific Discoveries")
-                            (d/option {:value "inventions.json"} "Inventions")
-                            (d/option {:value "space.json"} "Space Exploration")
-                            (d/option {:value "computer.json"} "Computer History")
-                            (d/option {:value "videogames.json"} "Video Game History")
-                            (d/option {:value "cinema.json"} "Cinema & Film")
-                            (d/option {:value "olympics.json"} "The Olympic Games")))
+                            (for [dataset datasets]
+                              (d/option {:key (:filename dataset)
+                                         :value (:filename dataset)}
+                                        (:name dataset)))))
 
            (d/div {:class "field-group"}
                   (d/label "Players:")

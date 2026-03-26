@@ -25,26 +25,36 @@
 (defnc app []
   (let [[current-file set-current-file]
         (hooks/use-state
-         (or
-          (.get (js/URLSearchParams. js/window.location.search) "data")
-          "computer.json"))
+         (.get (js/URLSearchParams. js/window.location.search) "data"))
         [data set-data] (hooks/use-state nil)
         [game set-game] (hooks/use-state nil)
-        [loading? set-loading] (hooks/use-state true)]
+        [loading? set-loading] (hooks/use-state true)
+        [datasets set-datasets] (hooks/use-state [])]
+
+    (hooks/use-effect :once
+      (GET "data/datasets.json"
+        {:handler (fn [res]
+                    (let [ds (js->clj res :keywordize-keys true)]
+                      (set-datasets ds)
+                      (when-not current-file
+                        (let [random-ds (rand-nth ds)]
+                          (set-current-file (:filename random-ds))))))
+         :response-format (json-response-format {:keywords? true})}))
 
     (hooks/use-effect [current-file]
-      (let [url (str "data/" current-file)
-            on-success (fn [res]
-                         (set-data (js->clj res :keywordize-keys true))
-                         (set-loading false))
-            on-error (fn [e]
-                       (js/console.error "Failed to load data" e)
-                       (set-loading false))]
-        (set-loading true)
-        (GET url
-          {:handler on-success
-           :response-format (json-response-format {:keywords? true})
-           :error-handler on-error})))
+      (when current-file
+        (let [url (str "data/" current-file)
+              on-success (fn [res]
+                           (set-data (js->clj res :keywordize-keys true))
+                           (set-loading false))
+              on-error (fn [e]
+                         (js/console.error "Failed to load data" e)
+                         (set-loading false))]
+          (set-loading true)
+          (GET url
+            {:handler on-success
+             :response-format (json-response-format {:keywords? true})
+             :error-handler on-error}))))
 
     (hooks/use-effect [data]
       (when data
@@ -66,6 +76,7 @@
         (if-not game
           ($ ui/setup-screen
              {:current-file current-file
+              :datasets datasets
               :on-select-data handle-select-data
               :on-start handle-start})
           ($ ui/game-screen

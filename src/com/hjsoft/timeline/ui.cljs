@@ -38,6 +38,7 @@
 (defnc setup-screen [{:keys [on-start on-select-data current-file datasets]}]
   (let [[names set-names] (hooks/use-state (load-names))
         input-refs (hooks/use-ref {})
+        mounted? (hooks/use-ref false)
         add-player (fn [] (set-names conj ""))
         handle-name-change (fn [idx event]
                              (let [new-val (.. event -target -value)]
@@ -51,9 +52,11 @@
                          (save-names names)
                          (on-start valid-names)))]
     (hooks/use-effect [(count names)]
-                      (let [last-idx (dec (count names))]
-                        (when-let [input (get @input-refs last-idx)]
-                          (.focus input))))
+                      (if-not @mounted?
+                        (reset! mounted? true)
+                        (let [last-idx (dec (count names))]
+                          (when-let [input (get @input-refs last-idx)]
+                            (.focus input)))))
     (d/div {:class "setup-screen"}
            (d/h1 (d/a {:href js/window.location.pathname :style {:text-decoration "none" :color "inherit"}} "Timeline"))
 

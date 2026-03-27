@@ -55,7 +55,7 @@
                         (when-let [input (get @input-refs last-idx)]
                           (.focus input))))
     (d/div {:class "setup-screen"}
-           (d/h1 (d/a {:href "/" :style {:text-decoration "none" :color "inherit"}} "Timeline"))
+           (d/h1 (d/a {:href js/window.location.pathname :style {:text-decoration "none" :color "inherit"}} "Timeline"))
 
            (d/div {:class "field-group"}
                   (d/label "Select Theme:")

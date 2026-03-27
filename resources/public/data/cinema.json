@@ -1,143 +1,532 @@
 {
-  "name": "Cinema History",
-  "url": "https://en.wikipedia.org/wiki/History_of_film",
-  "theme": {
-    "primaryColor": "#D4AF37",
-    "secondaryColor": "#C5A028",
-    "backgroundColor": "#000000",
-    "cardColor": "#1A1A1A",
-    "textColor": "#FFFFFF"
+  "name" : "Cinema History",
+  "url" : "https://en.wikipedia.org/wiki/History_of_film",
+  "theme" : {
+    "primaryColor" : "#D4AF37",
+    "secondaryColor" : "#C5A028",
+    "backgroundColor" : "#000000",
+    "cardColor" : "#1A1A1A",
+    "textColor" : "#FFFFFF"
   },
-  "events": [
-    { "title": "First Moving Image Captured", "date": "1878-06-15", "description": "Eadweard Muybridge uses a series of cameras to capture a horse in motion, proving all four hooves leave the ground." },
-    { "title": "Roundhay Garden Scene", "date": "1888-10-14", "description": "Louis Le Prince films the oldest surviving motion picture in Leeds, England." },
-    { "title": "Kinetoscope Patented", "date": "1891-08-31", "description": "Thomas Edison patents the Kinetoscope, an early motion picture exhibition device." },
-    { "title": "First Public Lumière Screening", "date": "1895-12-28", "description": "The Lumière brothers hold the first public screening of ten short films at the Grand Café in Paris." },
-    { "title": "A Trip to the Moon Released", "date": "1902-09-01", "description": "Georges Méliès releases 'Le Voyage dans la lune', pioneering special effects and narrative storytelling." },
-    { "title": "The Great Train Robbery Released", "date": "1903-12-01", "description": "Edwin S. Porter's landmark Western introduces cross-cutting and on-location filming." },
-    { "title": "First Nickelodeon Opens", "date": "1905-06", "description": "The first Nickelodeon theater opens in Pittsburgh, making movies accessible to the masses for five cents." },
-    { "title": "The Birth of a Nation Released", "date": "1915-02-08", "description": "D.W. Griffith's controversial epic revolutionizes film technique but is criticized for its racist content." },
-    { "title": "Technicolor Corporation Founded", "date": "1914", "description": "The Technicolor Motion Picture Corporation is founded, eventually dominating the color film industry." },
-    { "title": "Charlie Chaplin's 'The Tramp' Debuts", "date": "1915-04-11", "description": "Chaplin introduces his iconic 'Little Tramp' character in the film 'The Tramp'." },
-    { "title": "Intolerance Released", "date": "1916-09-05", "description": "D.W. Griffith releases his ambitious multi-narrative epic as a response to criticisms of his previous work." },
-    { "title": "The Cabinet of Dr. Caligari Released", "date": "1920-02-26", "description": "A landmark of German Expressionist cinema, featuring stylized sets and a twist ending." },
-    { "title": "Nanook of the North Released", "date": "1922-06-11", "description": "Robert J. Flaherty's film is considered the first feature-length documentary." },
-    { "title": "Nosferatu Released", "date": "1922-03-04", "description": "F.W. Murnau's unauthorized adaptation of Dracula becomes a cornerstone of horror cinema." },
-    { "title": "The Hunchback of Notre Dame Released", "date": "1923-09-02", "description": "Lon Chaney stars in this massive production, cementing his status as 'The Man of a Thousand Faces'." },
-    { "title": "Battleship Potemkin Released", "date": "1925-12-21", "description": "Sergei Eisenstein's masterpiece introduces revolutionary montage editing techniques." },
-    { "title": "The Gold Rush Released", "date": "1925-06-26", "description": "Charlie Chaplin's comedy epic about the Klondike Gold Rush becomes a massive success." },
-    { "title": "Metropolis Released", "date": "1927-01-10", "description": "Fritz Lang's pioneering sci-fi epic features groundbreaking special effects and social commentary." },
-    { "title": "The Jazz Singer Released", "date": "1927-10-06", "description": "The first feature-length 'talkie' marks the end of the silent era." },
-    { "title": "Wings Wins First Best Picture", "date": "1929-05-16", "description": "At the first Academy Awards, 'Wings' is named Outstanding Picture (Best Picture)." },
-    { "title": "All Quiet on the Western Front Released", "date": "1930-04-21", "description": "The powerful anti-war film wins Best Picture at the 3rd Academy Awards." },
-    { "title": "Cimarron Wins Best Picture", "date": "1931-11-10", "description": "The first Western to win the Academy Award for Best Picture." },
-    { "title": "Dracula and Frankenstein Released", "date": "1931", "description": "Universal Pictures releases two iconic horror films, launching the Universal Monsters era." },
-    { "title": "Grand Hotel Wins Best Picture", "date": "1932-11-18", "description": "The only Best Picture winner to receive no other nominations." },
-    { "title": "King Kong Released", "date": "1933-03-02", "description": "The landmark creature feature showcases Willis O'Brien's stop-motion animation." },
-    { "title": "It Happened One Night Wins Big Five", "date": "1935-02-27", "description": "The first film to win all five major Academy Awards (Picture, Director, Actor, Actress, Screenplay)." },
-    { "title": "Mutiny on the Bounty Wins Best Picture", "date": "1936-03-05", "description": "The historical epic starring Clark Gable wins the top prize." },
-    { "title": "Snow White and the Seven Dwarfs Released", "date": "1937-12-21", "description": "Walt Disney releases the first feature-length cel-animated film." },
-    { "title": "The Life of Emile Zola Wins Best Picture", "date": "1938-03-10", "description": "The biographical film about the French writer wins the 10th Academy Award for Best Picture." },
-    { "title": "You Can't Take It with You Wins Best Picture", "date": "1939-02-23", "description": "Frank Capra's comedy wins the top prize at the 11th Academy Awards." },
-    { "title": "Gone with the Wind Released", "date": "1939-12-15", "description": "The epic historical romance wins 10 Oscars and remains the highest-grossing film when adjusted for inflation." },
-    { "title": "The Wizard of Oz Released", "date": "1939-08-25", "description": "The beloved fantasy film showcases vivid Technicolor and becomes a cultural touchstone." },
-    { "title": "Rebecca Wins Best Picture", "date": "1941-02-27", "description": "Alfred Hitchcock's only film to win Best Picture." },
-    { "title": "Citizen Kane Released", "date": "1941-05-01", "description": "Orson Welles' debut is now widely considered the greatest film ever made." },
-    { "title": "How Green Was My Valley Wins Best Picture", "date": "1942-02-26", "description": "John Ford's drama wins Best Picture over Citizen Kane." },
-    { "title": "Mrs. Miniver Wins Best Picture", "date": "1943-03-04", "description": "The wartime drama wins 6 Oscars at the 15th Academy Awards." },
-    { "title": "Casablanca Wins Best Picture", "date": "1944-03-02", "description": "The classic romantic drama starring Humphrey Bogart and Ingrid Bergman wins the top prize." },
-    { "title": "Going My Way Wins Best Picture", "date": "1945-03-15", "description": "The musical comedy-drama starring Bing Crosby wins 7 Oscars." },
-    { "title": "The Lost Weekend Wins Best Picture", "date": "1946-03-07", "description": "Billy Wilder's gritty look at alcoholism wins the top prize." },
-    { "title": "The Best Years of Our Lives Wins Best Picture", "date": "1947-03-13", "description": "A moving look at veterans returning from WWII wins 7 Oscars." },
-    { "title": "Gentleman's Agreement Wins Best Picture", "date": "1948-03-20", "description": "The drama about anti-Semitism wins the top prize at the 20th Academy Awards." },
-    { "title": "Hamlet Wins Best Picture", "date": "1949-03-24", "description": "Laurence Olivier's adaptation is the first British film to win Best Picture." },
-    { "title": "All About Eve Wins 6 Oscars", "date": "1951-03-29", "description": "The film receives a record 14 nominations and wins Best Picture." },
-    { "title": "Sunset Boulevard Released", "date": "1950-08-10", "description": "Billy Wilder's noir masterpiece examines the dark side of Hollywood fame." },
-    { "title": "An American in Paris Wins Best Picture", "date": "1952-03-20", "description": "The vibrant musical starring Gene Kelly wins 6 Oscars." },
-    { "title": "The Greatest Show on Earth Wins Best Picture", "date": "1953-03-19", "description": "Cecil B. DeMille's circus epic wins the top prize at the 25th Academy Awards." },
-    { "title": "From Here to Eternity Wins 8 Oscars", "date": "1954-03-25", "description": "The wartime drama wins Best Picture, tying the record for most wins at the time." },
-    { "title": "Seven Samurai Released", "date": "1954-04-26", "description": "Akira Kurosawa's epic masterpiece redefines action cinema." },
-    { "title": "On the Waterfront Wins Best Picture", "date": "1955-03-30", "description": "Marlon Brando's powerful performance anchors this 8-Oscar winner." },
-    { "title": "Marty Wins Best Picture", "date": "1956-03-21", "description": "The first film based on a teleplay to win Best Picture." },
-    { "title": "Around the World in 80 Days Wins Best Picture", "date": "1957-03-27", "description": "The star-studded adventure wins 5 Oscars at the 29th Academy Awards." },
-    { "title": "The Bridge on the River Kwai Wins 7 Oscars", "date": "1958-03-26", "description": "David Lean's war epic wins Best Picture." },
-    { "title": "Gigi Wins 9 Oscars", "date": "1959-04-06", "description": "The musical sets a new record for most wins for a single film at the time." },
-    { "title": "Ben-Hur Wins 11 Oscars", "date": "1960-04-04", "description": "The massive epic sets a record for most Oscar wins that would not be tied for decades." },
-    { "title": "Psycho Released", "date": "1960-06-16", "description": "Alfred Hitchcock's thriller shocks audiences and changes horror cinema forever." },
-    { "title": "The Apartment Wins Best Picture", "date": "1961-04-17", "description": "Billy Wilder's romantic comedy-drama wins the top prize." },
-    { "title": "West Side Story Wins 10 Oscars", "date": "1962-04-09", "description": "The musical adaptation wins Best Picture." },
-    { "title": "Lawrence of Arabia Wins 7 Oscars", "date": "1963-04-08", "description": "David Lean's biographical epic wins Best Picture." },
-    { "title": "Tom Jones Wins Best Picture", "date": "1964-04-13", "description": "The British adventure comedy wins the top prize at the 36th Academy Awards." },
-    { "title": "My Fair Lady Wins 8 Oscars", "date": "1965-04-05", "description": "The musical starring Audrey Hepburn wins Best Picture." },
-    { "title": "The Sound of Music Wins Best Picture", "date": "1966-04-18", "description": "The beloved musical wins 5 Oscars and becomes a massive commercial hit." },
-    { "title": "A Man for All Seasons Wins Best Picture", "date": "1967-04-10", "description": "The historical drama wins 6 Oscars at the 39th Academy Awards." },
-    { "title": "In the Heat of the Night Wins Best Picture", "date": "1968-04-10", "description": "The crime drama starring Sidney Poitier wins 5 Oscars." },
-    { "title": "2001: A Space Odyssey Released", "date": "1968-04-03", "description": "Stanley Kubrick's sci-fi masterpiece revolutionizes visual effects and narrative." },
-    { "title": "Oliver! Wins Best Picture", "date": "1969-04-14", "description": "The musical based on Charles Dickens' novel wins the top prize." },
-    { "title": "Midnight Cowboy Wins Best Picture", "date": "1970-04-07", "description": "The only X-rated film to ever win Best Picture." },
-    { "title": "Patton Wins 7 Oscars", "date": "1971-04-15", "description": "The war biopic wins Best Picture; George C. Scott famously refuses his Best Actor Oscar." },
-    { "title": "The French Connection Wins Best Picture", "date": "1972-04-10", "description": "The gritty crime thriller wins 5 Oscars." },
-    { "title": "The Godfather Released", "date": "1972-03-24", "description": "Francis Ford Coppola's masterpiece wins Best Picture and is considered one of the greatest films ever." },
-    { "title": "The Sting Wins 7 Oscars", "date": "1974-04-02", "description": "The caper film starring Newman and Redford wins Best Picture." },
-    { "title": "The Godfather Part II Wins Best Picture", "date": "1975-04-08", "description": "The first sequel to ever win Best Picture." },
-    { "title": "Jaws Released", "date": "1975-06-20", "description": "Steven Spielberg's thriller creates the 'summer blockbuster' phenomenon." },
-    { "title": "One Flew Over the Cuckoo's Nest Wins Big Five", "date": "1976-03-29", "description": "The second film to win all five major Academy Awards." },
-    { "title": "Rocky Wins Best Picture", "date": "1977-03-28", "description": "The underdog boxing drama wins the top prize over Taxi Driver and Network." },
-    { "title": "Star Wars Released", "date": "1977-05-25", "description": "George Lucas' space epic revolutionizes special effects and becomes a global phenomenon." },
-    { "title": "Annie Hall Wins Best Picture", "date": "1978-04-03", "description": "Woody Allen's romantic comedy wins over Star Wars." },
-    { "title": "The Deer Hunter Wins Best Picture", "date": "1979-04-09", "description": "The intense Vietnam War drama wins 5 Oscars." },
-    { "title": "Kramer vs. Kramer Wins Best Picture", "date": "1980-04-14", "description": "The divorce drama wins 5 Oscars at the 52nd Academy Awards." },
-    { "title": "Ordinary People Wins Best Picture", "date": "1981-03-31", "description": "Robert Redford's directorial debut wins the top prize." },
-    { "title": "Raiders of the Lost Ark Released", "date": "1981-06-12", "description": "Steven Spielberg and George Lucas collaborate to create the ultimate adventure hero, Indiana Jones." },
-    { "title": "Chariots of Fire Wins Best Picture", "date": "1982-03-29", "description": "The British sports drama wins 4 Oscars." },
-    { "title": "Blade Runner Released", "date": "1982-06-25", "description": "Ridley Scott's sci-fi noir becomes a cult classic and redefines 'cyberpunk' visuals." },
-    { "title": "Gandhi Wins 8 Oscars", "date": "1983-04-11", "description": "The biographical epic wins Best Picture." },
-    { "title": "Terms of Endearment Wins Best Picture", "date": "1984-04-09", "description": "The family drama wins 5 Oscars." },
-    { "title": "Amadeus Wins 8 Oscars", "date": "1985-03-25", "description": "The biographical drama about Mozart wins Best Picture." },
-    { "title": "Out of Africa Wins 7 Oscars", "date": "1986-03-24", "description": "The romantic drama starring Meryl Streep wins Best Picture." },
-    { "title": "Platoon Wins Best Picture", "date": "1987-03-31", "description": "Oliver Stone's war drama wins 4 Oscars." },
-    { "title": "The Last Emperor Wins 9 Oscars", "date": "1988-04-11", "description": "Bernardo Bertolucci's epic wins in every category it was nominated for." },
-    { "title": "Rain Man Wins Best Picture", "date": "1989-03-29", "description": "The road drama starring Dustin Hoffman wins 4 Oscars." },
-    { "title": "Driving Miss Daisy Wins Best Picture", "date": "1990-03-26", "description": "The comedy-drama wins 4 Oscars at the 62nd Academy Awards." },
-    { "title": "Dances with Wolves Wins 7 Oscars", "date": "1991-03-25", "description": "Kevin Costner's Western epic wins Best Picture." },
-    { "title": "The Silence of the Lambs Wins Big Five", "date": "1992-03-30", "description": "The third and most recent film to win all five major Oscars." },
-    { "title": "Unforgiven Wins Best Picture", "date": "1993-03-29", "description": "Clint Eastwood's revisionist Western wins 4 Oscars." },
-    { "title": "Jurassic Park Released", "date": "1993-06-11", "description": "Spielberg's dinosaur epic pioneers the use of CGI in film." },
-    { "title": "Schindler's List Wins 7 Oscars", "date": "1994-03-21", "description": "Steven Spielberg's Holocaust drama wins Best Picture." },
-    { "title": "Forrest Gump Wins 6 Oscars", "date": "1995-03-27", "description": "The drama starring Tom Hanks wins Best Picture." },
-    { "title": "Toy Story Released", "date": "1995-11-22", "description": "Pixar releases the first feature-length computer-animated film." },
-    { "title": "Braveheart Wins 5 Oscars", "date": "1996-03-25", "description": "Mel Gibson's historical epic wins Best Picture." },
-    { "title": "The English Patient Wins 9 Oscars", "date": "1997-03-24", "description": "The romantic war drama wins Best Picture." },
-    { "title": "Titanic Wins 11 Oscars", "date": "1998-03-23", "description": "James Cameron's epic ties the record for most wins and becomes the highest-grossing film of its time." },
-    { "title": "Shakespeare in Love Wins Best Picture", "date": "1999-03-21", "description": "The romantic comedy-drama wins 7 Oscars over Saving Private Ryan." },
-    { "title": "The Matrix Released", "date": "1999-03-31", "description": "The Wachowskis' sci-fi action film revolutionizes visual effects with 'bullet time'." },
-    { "title": "American Beauty Wins 5 Oscars", "date": "2000-03-26", "description": "The drama directed by Sam Mendes wins Best Picture." },
-    { "title": "Gladiator Wins 5 Oscars", "date": "2001-03-25", "description": "Ridley Scott's Roman epic wins Best Picture." },
-    { "title": "Crouching Tiger, Hidden Dragon Released", "date": "2000-12-08", "description": "Ang Lee's wuxia masterpiece brings the genre to global mainstream success." },
-    { "title": "A Beautiful Mind Wins 4 Oscars", "date": "2002-03-24", "description": "The biographical drama about John Nash wins Best Picture." },
-    { "title": "Chicago Wins Best Picture", "date": "2003-03-23", "description": "The first musical to win Best Picture since Oliver! in 1968." },
-    { "title": "The Lord of the Rings: The Return of the King Wins 11 Oscars", "date": "2004-02-29", "description": "Peter Jackson's epic finale ties the record for most wins and sweeps all its nominations." },
-    { "title": "Million Dollar Baby Wins 4 Oscars", "date": "2005-02-27", "description": "Clint Eastwood's boxing drama wins Best Picture." },
-    { "title": "Crash Wins Best Picture", "date": "2006-03-05", "description": "The ensemble drama wins in a major upset over Brokeback Mountain." },
-    { "title": "The Departed Wins Best Picture", "date": "2007-02-25", "description": "Martin Scorsese finally wins Best Director as his film takes the top prize." },
-    { "title": "No Country for Old Men Wins 4 Oscars", "date": "2008-02-24", "description": "The Coen brothers' neo-Western wins Best Picture." },
-    { "title": "The Dark Knight Released", "date": "2008-07-18", "description": "Christopher Nolan's superhero film receives universal acclaim and changes the genre's perception." },
-    { "title": "Slumdog Millionaire Wins 8 Oscars", "date": "2009-02-22", "description": "Danny Boyle's drama set in Mumbai wins Best Picture." },
-    { "title": "Avatar Released", "date": "2009-12-18", "description": "James Cameron's sci-fi epic revolutionizes 3D cinema and becomes the highest-grossing film of all time." },
-    { "title": "The Hurt Locker Wins Best Picture", "date": "2010-03-07", "description": "Kathryn Bigelow becomes the first woman to win Best Director." },
-    { "title": "The King's Speech Wins 4 Oscars", "date": "2011-02-27", "description": "The historical drama wins Best Picture." },
-    { "title": "The Artist Wins Best Picture", "date": "2012-02-26", "description": "The silent, black-and-white film wins the top prize in the digital age." },
-    { "title": "Argo Wins Best Picture", "date": "2013-02-24", "description": "Ben Affleck's thriller wins despite him missing a Best Director nomination." },
-    { "title": "12 Years a Slave Wins Best Picture", "date": "2014-03-02", "description": "Steve McQueen's powerful historical drama wins 3 Oscars." },
-    { "title": "Birdman Wins Best Picture", "date": "2015-02-22", "description": "Alejandro G. Iñárritu's film, seemingly shot in one take, wins the top prize." },
-    { "title": "Spotlight Wins Best Picture", "date": "2016-02-28", "description": "The investigative journalism drama wins 2 Oscars." },
-    { "title": "Moonlight Wins Best Picture", "date": "2017-02-26", "description": "The film wins after a historic envelope mix-up at the 89th Academy Awards." },
-    { "title": "The Shape of Water Wins Best Picture", "date": "2018-03-04", "description": "Guillermo del Toro's fantasy romance wins 4 Oscars." },
-    { "title": "Green Book Wins Best Picture", "date": "2019-02-24", "description": "The biographical comedy-drama wins 3 Oscars." },
-    { "title": "Parasite Wins Best Picture", "date": "2020-02-09", "description": "The first non-English language film to win the Academy Award for Best Picture." },
-    { "title": "Nomadland Wins Best Picture", "date": "2021-04-25", "description": "Chloé Zhao wins Best Director, becoming the second woman and first woman of color to do so." },
-    { "title": "CODA Wins Best Picture", "date": "2022-03-27", "description": "The first film released by a streaming service (Apple TV+) to win Best Picture." },
-    { "title": "Everything Everywhere All at Once Wins 7 Oscars", "date": "2023-03-12", "description": "The multiverse-spanning film wins Best Picture and breaks records for total awards won." },
-    { "title": "Oppenheimer Wins 7 Oscars", "date": "2024-03-10", "description": "Christopher Nolan's biographical thriller wins Best Picture and Best Director." }
-  ]
+  "events" : [ {
+    "title" : "First Moving Image Captured",
+    "date" : "1878-06-15",
+    "description" : "Eadweard Muybridge uses a series of cameras to capture a horse in motion, proving all four hooves leave the ground."
+  }, {
+    "title" : "Roundhay Garden Scene",
+    "date" : "1888-10-14",
+    "description" : "Louis Le Prince films the oldest surviving motion picture in Leeds, England."
+  }, {
+    "title" : "Kinetoscope Patented",
+    "date" : "1891-08-31",
+    "description" : "Thomas Edison patents the Kinetoscope, an early motion picture exhibition device."
+  }, {
+    "title" : "First Public Lumière Screening",
+    "date" : "1895-12-28",
+    "description" : "The Lumière brothers hold the first public screening of ten short films at the Grand Café in Paris."
+  }, {
+    "title" : "A Trip to the Moon Released",
+    "date" : "1902-09-01",
+    "description" : "Georges Méliès releases 'Le Voyage dans la lune', pioneering special effects and narrative storytelling."
+  }, {
+    "title" : "The Great Train Robbery Released",
+    "date" : "1903-12-01",
+    "description" : "Edwin S. Porter's landmark Western introduces cross-cutting and on-location filming."
+  }, {
+    "title" : "First Nickelodeon Opens",
+    "date" : "1905-06",
+    "description" : "The first Nickelodeon theater opens in Pittsburgh, making movies accessible to the masses for five cents."
+  }, {
+    "title" : "Technicolor Corporation Founded",
+    "date" : "1914",
+    "description" : "The Technicolor Motion Picture Corporation is founded, eventually dominating the color film industry."
+  }, {
+    "title" : "The Birth of a Nation Released",
+    "date" : "1915-02-08",
+    "description" : "D.W. Griffith's controversial epic revolutionizes film technique but is criticized for its racist content."
+  }, {
+    "title" : "Charlie Chaplin's 'The Tramp' Debuts",
+    "date" : "1915-04-11",
+    "description" : "Chaplin introduces his iconic 'Little Tramp' character in the film 'The Tramp'."
+  }, {
+    "title" : "Intolerance Released",
+    "date" : "1916-09-05",
+    "description" : "D.W. Griffith releases his ambitious multi-narrative epic as a response to criticisms of his previous work."
+  }, {
+    "title" : "The Cabinet of Dr. Caligari Released",
+    "date" : "1920-02-26",
+    "description" : "A landmark of German Expressionist cinema, featuring stylized sets and a twist ending."
+  }, {
+    "title" : "Nosferatu Released",
+    "date" : "1922-03-04",
+    "description" : "F.W. Murnau's unauthorized adaptation of Dracula becomes a cornerstone of horror cinema."
+  }, {
+    "title" : "Nanook of the North Released",
+    "date" : "1922-06-11",
+    "description" : "Robert J. Flaherty's film is considered the first feature-length documentary."
+  }, {
+    "title" : "The Hunchback of Notre Dame Released",
+    "date" : "1923-09-02",
+    "description" : "Lon Chaney stars in this massive production, cementing his status as 'The Man of a Thousand Faces'."
+  }, {
+    "title" : "The Gold Rush Released",
+    "date" : "1925-06-26",
+    "description" : "Charlie Chaplin's comedy epic about the Klondike Gold Rush becomes a massive success."
+  }, {
+    "title" : "Battleship Potemkin Released",
+    "date" : "1925-12-21",
+    "description" : "Sergei Eisenstein's masterpiece introduces revolutionary montage editing techniques."
+  }, {
+    "title" : "Metropolis Released",
+    "date" : "1927-01-10",
+    "description" : "Fritz Lang's pioneering sci-fi epic features groundbreaking special effects and social commentary."
+  }, {
+    "title" : "The Jazz Singer Released",
+    "date" : "1927-10-06",
+    "description" : "The first feature-length 'talkie' marks the end of the silent era."
+  }, {
+    "title" : "Wings Wins First Best Picture",
+    "date" : "1929-05-16",
+    "description" : "At the first Academy Awards, 'Wings' is named Outstanding Picture (Best Picture)."
+  }, {
+    "title" : "All Quiet on the Western Front Released",
+    "date" : "1930-04-21",
+    "description" : "The powerful anti-war film wins Best Picture at the 3rd Academy Awards."
+  }, {
+    "title" : "Dracula and Frankenstein Released",
+    "date" : "1931",
+    "description" : "Universal Pictures releases two iconic horror films, launching the Universal Monsters era."
+  }, {
+    "title" : "Cimarron Wins Best Picture",
+    "date" : "1931-11-10",
+    "description" : "The first Western to win the Academy Award for Best Picture."
+  }, {
+    "title" : "Grand Hotel Wins Best Picture",
+    "date" : "1932-11-18",
+    "description" : "The only Best Picture winner to receive no other nominations."
+  }, {
+    "title" : "King Kong Released",
+    "date" : "1933-03-02",
+    "description" : "The landmark creature feature showcases Willis O'Brien's stop-motion animation."
+  }, {
+    "title" : "It Happened One Night Wins Big Five",
+    "date" : "1935-02-27",
+    "description" : "The first film to win all five major Academy Awards (Picture, Director, Actor, Actress, Screenplay)."
+  }, {
+    "title" : "Mutiny on the Bounty Wins Best Picture",
+    "date" : "1936-03-05",
+    "description" : "The historical epic starring Clark Gable wins the top prize."
+  }, {
+    "title" : "Snow White and the Seven Dwarfs Released",
+    "date" : "1937-12-21",
+    "description" : "Walt Disney releases the first feature-length cel-animated film."
+  }, {
+    "title" : "The Life of Emile Zola Wins Best Picture",
+    "date" : "1938-03-10",
+    "description" : "The biographical film about the French writer wins the 10th Academy Award for Best Picture."
+  }, {
+    "title" : "You Can't Take It with You Wins Best Picture",
+    "date" : "1939-02-23",
+    "description" : "Frank Capra's comedy wins the top prize at the 11th Academy Awards."
+  }, {
+    "title" : "The Wizard of Oz Released",
+    "date" : "1939-08-25",
+    "description" : "The beloved fantasy film showcases vivid Technicolor and becomes a cultural touchstone."
+  }, {
+    "title" : "Gone with the Wind Released",
+    "date" : "1939-12-15",
+    "description" : "The epic historical romance wins 10 Oscars and remains the highest-grossing film when adjusted for inflation."
+  }, {
+    "title" : "Rebecca Wins Best Picture",
+    "date" : "1941-02-27",
+    "description" : "Alfred Hitchcock's only film to win Best Picture."
+  }, {
+    "title" : "Citizen Kane Released",
+    "date" : "1941-05-01",
+    "description" : "Orson Welles' debut is now widely considered the greatest film ever made."
+  }, {
+    "title" : "How Green Was My Valley Wins Best Picture",
+    "date" : "1942-02-26",
+    "description" : "John Ford's drama wins Best Picture over Citizen Kane."
+  }, {
+    "title" : "Mrs. Miniver Wins Best Picture",
+    "date" : "1943-03-04",
+    "description" : "The wartime drama wins 6 Oscars at the 15th Academy Awards."
+  }, {
+    "title" : "Casablanca Wins Best Picture",
+    "date" : "1944-03-02",
+    "description" : "The classic romantic drama starring Humphrey Bogart and Ingrid Bergman wins the top prize."
+  }, {
+    "title" : "Going My Way Wins Best Picture",
+    "date" : "1945-03-15",
+    "description" : "The musical comedy-drama starring Bing Crosby wins 7 Oscars."
+  }, {
+    "title" : "The Lost Weekend Wins Best Picture",
+    "date" : "1946-03-07",
+    "description" : "Billy Wilder's gritty look at alcoholism wins the top prize."
+  }, {
+    "title" : "The Best Years of Our Lives Wins Best Picture",
+    "date" : "1947-03-13",
+    "description" : "A moving look at veterans returning from WWII wins 7 Oscars."
+  }, {
+    "title" : "Gentleman's Agreement Wins Best Picture",
+    "date" : "1948-03-20",
+    "description" : "The drama about anti-Semitism wins the top prize at the 20th Academy Awards."
+  }, {
+    "title" : "Hamlet Wins Best Picture",
+    "date" : "1949-03-24",
+    "description" : "Laurence Olivier's adaptation is the first British film to win Best Picture."
+  }, {
+    "title" : "Sunset Boulevard Released",
+    "date" : "1950-08-10",
+    "description" : "Billy Wilder's noir masterpiece examines the dark side of Hollywood fame."
+  }, {
+    "title" : "All About Eve Wins 6 Oscars",
+    "date" : "1951-03-29",
+    "description" : "The film receives a record 14 nominations and wins Best Picture."
+  }, {
+    "title" : "An American in Paris Wins Best Picture",
+    "date" : "1952-03-20",
+    "description" : "The vibrant musical starring Gene Kelly wins 6 Oscars."
+  }, {
+    "title" : "The Greatest Show on Earth Wins Best Picture",
+    "date" : "1953-03-19",
+    "description" : "Cecil B. DeMille's circus epic wins the top prize at the 25th Academy Awards."
+  }, {
+    "title" : "From Here to Eternity Wins 8 Oscars",
+    "date" : "1954-03-25",
+    "description" : "The wartime drama wins Best Picture, tying the record for most wins at the time."
+  }, {
+    "title" : "Seven Samurai Released",
+    "date" : "1954-04-26",
+    "description" : "Akira Kurosawa's epic masterpiece redefines action cinema."
+  }, {
+    "title" : "On the Waterfront Wins Best Picture",
+    "date" : "1955-03-30",
+    "description" : "Marlon Brando's powerful performance anchors this 8-Oscar winner."
+  }, {
+    "title" : "Marty Wins Best Picture",
+    "date" : "1956-03-21",
+    "description" : "The first film based on a teleplay to win Best Picture."
+  }, {
+    "title" : "Around the World in 80 Days Wins Best Picture",
+    "date" : "1957-03-27",
+    "description" : "The star-studded adventure wins 5 Oscars at the 29th Academy Awards."
+  }, {
+    "title" : "The Bridge on the River Kwai Wins 7 Oscars",
+    "date" : "1958-03-26",
+    "description" : "David Lean's war epic wins Best Picture."
+  }, {
+    "title" : "Gigi Wins 9 Oscars",
+    "date" : "1959-04-06",
+    "description" : "The musical sets a new record for most wins for a single film at the time."
+  }, {
+    "title" : "Ben-Hur Wins 11 Oscars",
+    "date" : "1960-04-04",
+    "description" : "The massive epic sets a record for most Oscar wins that would not be tied for decades."
+  }, {
+    "title" : "Psycho Released",
+    "date" : "1960-06-16",
+    "description" : "Alfred Hitchcock's thriller shocks audiences and changes horror cinema forever."
+  }, {
+    "title" : "The Apartment Wins Best Picture",
+    "date" : "1961-04-17",
+    "description" : "Billy Wilder's romantic comedy-drama wins the top prize."
+  }, {
+    "title" : "West Side Story Wins 10 Oscars",
+    "date" : "1962-04-09",
+    "description" : "The musical adaptation wins Best Picture."
+  }, {
+    "title" : "Lawrence of Arabia Wins 7 Oscars",
+    "date" : "1963-04-08",
+    "description" : "David Lean's biographical epic wins Best Picture."
+  }, {
+    "title" : "Tom Jones Wins Best Picture",
+    "date" : "1964-04-13",
+    "description" : "The British adventure comedy wins the top prize at the 36th Academy Awards."
+  }, {
+    "title" : "My Fair Lady Wins 8 Oscars",
+    "date" : "1965-04-05",
+    "description" : "The musical starring Audrey Hepburn wins Best Picture."
+  }, {
+    "title" : "The Sound of Music Wins Best Picture",
+    "date" : "1966-04-18",
+    "description" : "The beloved musical wins 5 Oscars and becomes a massive commercial hit."
+  }, {
+    "title" : "A Man for All Seasons Wins Best Picture",
+    "date" : "1967-04-10",
+    "description" : "The historical drama wins 6 Oscars at the 39th Academy Awards."
+  }, {
+    "title" : "2001: A Space Odyssey Released",
+    "date" : "1968-04-03",
+    "description" : "Stanley Kubrick's sci-fi masterpiece revolutionizes visual effects and narrative."
+  }, {
+    "title" : "In the Heat of the Night Wins Best Picture",
+    "date" : "1968-04-10",
+    "description" : "The crime drama starring Sidney Poitier wins 5 Oscars."
+  }, {
+    "title" : "Oliver! Wins Best Picture",
+    "date" : "1969-04-14",
+    "description" : "The musical based on Charles Dickens' novel wins the top prize."
+  }, {
+    "title" : "Midnight Cowboy Wins Best Picture",
+    "date" : "1970-04-07",
+    "description" : "The only X-rated film to ever win Best Picture."
+  }, {
+    "title" : "Patton Wins 7 Oscars",
+    "date" : "1971-04-15",
+    "description" : "The war biopic wins Best Picture; George C. Scott famously refuses his Best Actor Oscar."
+  }, {
+    "title" : "The Godfather Released",
+    "date" : "1972-03-24",
+    "description" : "Francis Ford Coppola's masterpiece wins Best Picture and is considered one of the greatest films ever."
+  }, {
+    "title" : "The French Connection Wins Best Picture",
+    "date" : "1972-04-10",
+    "description" : "The gritty crime thriller wins 5 Oscars."
+  }, {
+    "title" : "The Sting Wins 7 Oscars",
+    "date" : "1974-04-02",
+    "description" : "The caper film starring Newman and Redford wins Best Picture."
+  }, {
+    "title" : "The Godfather Part II Wins Best Picture",
+    "date" : "1975-04-08",
+    "description" : "The first sequel to ever win Best Picture."
+  }, {
+    "title" : "Jaws Released",
+    "date" : "1975-06-20",
+    "description" : "Steven Spielberg's thriller creates the 'summer blockbuster' phenomenon."
+  }, {
+    "title" : "One Flew Over the Cuckoo's Nest Wins Big Five",
+    "date" : "1976-03-29",
+    "description" : "The second film to win all five major Academy Awards."
+  }, {
+    "title" : "Rocky Wins Best Picture",
+    "date" : "1977-03-28",
+    "description" : "The underdog boxing drama wins the top prize over Taxi Driver and Network."
+  }, {
+    "title" : "Star Wars Released",
+    "date" : "1977-05-25",
+    "description" : "George Lucas' space epic revolutionizes special effects and becomes a global phenomenon."
+  }, {
+    "title" : "Annie Hall Wins Best Picture",
+    "date" : "1978-04-03",
+    "description" : "Woody Allen's romantic comedy wins over Star Wars."
+  }, {
+    "title" : "The Deer Hunter Wins Best Picture",
+    "date" : "1979-04-09",
+    "description" : "The intense Vietnam War drama wins 5 Oscars."
+  }, {
+    "title" : "Kramer vs. Kramer Wins Best Picture",
+    "date" : "1980-04-14",
+    "description" : "The divorce drama wins 5 Oscars at the 52nd Academy Awards."
+  }, {
+    "title" : "Ordinary People Wins Best Picture",
+    "date" : "1981-03-31",
+    "description" : "Robert Redford's directorial debut wins the top prize."
+  }, {
+    "title" : "Raiders of the Lost Ark Released",
+    "date" : "1981-06-12",
+    "description" : "Steven Spielberg and George Lucas collaborate to create the ultimate adventure hero, Indiana Jones."
+  }, {
+    "title" : "Chariots of Fire Wins Best Picture",
+    "date" : "1982-03-29",
+    "description" : "The British sports drama wins 4 Oscars."
+  }, {
+    "title" : "Blade Runner Released",
+    "date" : "1982-06-25",
+    "description" : "Ridley Scott's sci-fi noir becomes a cult classic and redefines 'cyberpunk' visuals."
+  }, {
+    "title" : "Gandhi Wins 8 Oscars",
+    "date" : "1983-04-11",
+    "description" : "The biographical epic wins Best Picture."
+  }, {
+    "title" : "Terms of Endearment Wins Best Picture",
+    "date" : "1984-04-09",
+    "description" : "The family drama wins 5 Oscars."
+  }, {
+    "title" : "Amadeus Wins 8 Oscars",
+    "date" : "1985-03-25",
+    "description" : "The biographical drama about Mozart wins Best Picture."
+  }, {
+    "title" : "Out of Africa Wins 7 Oscars",
+    "date" : "1986-03-24",
+    "description" : "The romantic drama starring Meryl Streep wins Best Picture."
+  }, {
+    "title" : "Platoon Wins Best Picture",
+    "date" : "1987-03-31",
+    "description" : "Oliver Stone's war drama wins 4 Oscars."
+  }, {
+    "title" : "The Last Emperor Wins 9 Oscars",
+    "date" : "1988-04-11",
+    "description" : "Bernardo Bertolucci's epic wins in every category it was nominated for."
+  }, {
+    "title" : "Rain Man Wins Best Picture",
+    "date" : "1989-03-29",
+    "description" : "The road drama starring Dustin Hoffman wins 4 Oscars."
+  }, {
+    "title" : "Driving Miss Daisy Wins Best Picture",
+    "date" : "1990-03-26",
+    "description" : "The comedy-drama wins 4 Oscars at the 62nd Academy Awards."
+  }, {
+    "title" : "Dances with Wolves Wins 7 Oscars",
+    "date" : "1991-03-25",
+    "description" : "Kevin Costner's Western epic wins Best Picture."
+  }, {
+    "title" : "The Silence of the Lambs Wins Big Five",
+    "date" : "1992-03-30",
+    "description" : "The third and most recent film to win all five major Oscars."
+  }, {
+    "title" : "Unforgiven Wins Best Picture",
+    "date" : "1993-03-29",
+    "description" : "Clint Eastwood's revisionist Western wins 4 Oscars."
+  }, {
+    "title" : "Jurassic Park Released",
+    "date" : "1993-06-11",
+    "description" : "Spielberg's dinosaur epic pioneers the use of CGI in film."
+  }, {
+    "title" : "Schindler's List Wins 7 Oscars",
+    "date" : "1994-03-21",
+    "description" : "Steven Spielberg's Holocaust drama wins Best Picture."
+  }, {
+    "title" : "Forrest Gump Wins 6 Oscars",
+    "date" : "1995-03-27",
+    "description" : "The drama starring Tom Hanks wins Best Picture."
+  }, {
+    "title" : "Toy Story Released",
+    "date" : "1995-11-22",
+    "description" : "Pixar releases the first feature-length computer-animated film."
+  }, {
+    "title" : "Braveheart Wins 5 Oscars",
+    "date" : "1996-03-25",
+    "description" : "Mel Gibson's historical epic wins Best Picture."
+  }, {
+    "title" : "The English Patient Wins 9 Oscars",
+    "date" : "1997-03-24",
+    "description" : "The romantic war drama wins Best Picture."
+  }, {
+    "title" : "Titanic Wins 11 Oscars",
+    "date" : "1998-03-23",
+    "description" : "James Cameron's epic ties the record for most wins and becomes the highest-grossing film of its time."
+  }, {
+    "title" : "Shakespeare in Love Wins Best Picture",
+    "date" : "1999-03-21",
+    "description" : "The romantic comedy-drama wins 7 Oscars over Saving Private Ryan."
+  }, {
+    "title" : "The Matrix Released",
+    "date" : "1999-03-31",
+    "description" : "The Wachowskis' sci-fi action film revolutionizes visual effects with 'bullet time'."
+  }, {
+    "title" : "American Beauty Wins 5 Oscars",
+    "date" : "2000-03-26",
+    "description" : "The drama directed by Sam Mendes wins Best Picture."
+  }, {
+    "title" : "Crouching Tiger, Hidden Dragon Released",
+    "date" : "2000-12-08",
+    "description" : "Ang Lee's wuxia masterpiece brings the genre to global mainstream success."
+  }, {
+    "title" : "Gladiator Wins 5 Oscars",
+    "date" : "2001-03-25",
+    "description" : "Ridley Scott's Roman epic wins Best Picture."
+  }, {
+    "title" : "A Beautiful Mind Wins 4 Oscars",
+    "date" : "2002-03-24",
+    "description" : "The biographical drama about John Nash wins Best Picture."
+  }, {
+    "title" : "Chicago Wins Best Picture",
+    "date" : "2003-03-23",
+    "description" : "The first musical to win Best Picture since Oliver! in 1968."
+  }, {
+    "title" : "The Lord of the Rings: The Return of the King Wins 11 Oscars",
+    "date" : "2004-02-29",
+    "description" : "Peter Jackson's epic finale ties the record for most wins and sweeps all its nominations."
+  }, {
+    "title" : "Million Dollar Baby Wins 4 Oscars",
+    "date" : "2005-02-27",
+    "description" : "Clint Eastwood's boxing drama wins Best Picture."
+  }, {
+    "title" : "Crash Wins Best Picture",
+    "date" : "2006-03-05",
+    "description" : "The ensemble drama wins in a major upset over Brokeback Mountain."
+  }, {
+    "title" : "The Departed Wins Best Picture",
+    "date" : "2007-02-25",
+    "description" : "Martin Scorsese finally wins Best Director as his film takes the top prize."
+  }, {
+    "title" : "No Country for Old Men Wins 4 Oscars",
+    "date" : "2008-02-24",
+    "description" : "The Coen brothers' neo-Western wins Best Picture."
+  }, {
+    "title" : "The Dark Knight Released",
+    "date" : "2008-07-18",
+    "description" : "Christopher Nolan's superhero film receives universal acclaim and changes the genre's perception."
+  }, {
+    "title" : "Slumdog Millionaire Wins 8 Oscars",
+    "date" : "2009-02-22",
+    "description" : "Danny Boyle's drama set in Mumbai wins Best Picture."
+  }, {
+    "title" : "Avatar Released",
+    "date" : "2009-12-18",
+    "description" : "James Cameron's sci-fi epic revolutionizes 3D cinema and becomes the highest-grossing film of all time."
+  }, {
+    "title" : "The Hurt Locker Wins Best Picture",
+    "date" : "2010-03-07",
+    "description" : "Kathryn Bigelow becomes the first woman to win Best Director."
+  }, {
+    "title" : "The King's Speech Wins 4 Oscars",
+    "date" : "2011-02-27",
+    "description" : "The historical drama wins Best Picture."
+  }, {
+    "title" : "The Artist Wins Best Picture",
+    "date" : "2012-02-26",
+    "description" : "The silent, black-and-white film wins the top prize in the digital age."
+  }, {
+    "title" : "Argo Wins Best Picture",
+    "date" : "2013-02-24",
+    "description" : "Ben Affleck's thriller wins despite him missing a Best Director nomination."
+  }, {
+    "title" : "12 Years a Slave Wins Best Picture",
+    "date" : "2014-03-02",
+    "description" : "Steve McQueen's powerful historical drama wins 3 Oscars."
+  }, {
+    "title" : "Birdman Wins Best Picture",
+    "date" : "2015-02-22",
+    "description" : "Alejandro G. Iñárritu's film, seemingly shot in one take, wins the top prize."
+  }, {
+    "title" : "Spotlight Wins Best Picture",
+    "date" : "2016-02-28",
+    "description" : "The investigative journalism drama wins 2 Oscars."
+  }, {
+    "title" : "Moonlight Wins Best Picture",
+    "date" : "2017-02-26",
+    "description" : "The film wins after a historic envelope mix-up at the 89th Academy Awards."
+  }, {
+    "title" : "The Shape of Water Wins Best Picture",
+    "date" : "2018-03-04",
+    "description" : "Guillermo del Toro's fantasy romance wins 4 Oscars."
+  }, {
+    "title" : "Green Book Wins Best Picture",
+    "date" : "2019-02-24",
+    "description" : "The biographical comedy-drama wins 3 Oscars."
+  }, {
+    "title" : "Parasite Wins Best Picture",
+    "date" : "2020-02-09",
+    "description" : "The first non-English language film to win the Academy Award for Best Picture."
+  }, {
+    "title" : "Nomadland Wins Best Picture",
+    "date" : "2021-04-25",
+    "description" : "Chloé Zhao wins Best Director, becoming the second woman and first woman of color to do so."
+  }, {
+    "title" : "CODA Wins Best Picture",
+    "date" : "2022-03-27",
+    "description" : "The first film released by a streaming service (Apple TV+) to win Best Picture."
+  }, {
+    "title" : "Everything Everywhere All at Once Wins 7 Oscars",
+    "date" : "2023-03-12",
+    "description" : "The multiverse-spanning film wins Best Picture and breaks records for total awards won."
+  }, {
+    "title" : "Oppenheimer Wins 7 Oscars",
+    "date" : "2024-03-10",
+    "description" : "Christopher Nolan's biographical thriller wins Best Picture and Best Director."
+  } ]
 }

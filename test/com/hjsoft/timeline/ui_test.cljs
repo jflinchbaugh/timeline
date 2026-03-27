@@ -109,6 +109,23 @@
       (is (rtl/screen.getByText "Deck: 0/21"))
       (rtl/cleanup))))
 
+(deftest game-screen-tie-test
+  (testing "game screen displays tie banner"
+    (let [game {:timeline [{:title "E1" :date "1000"}]
+                :players [{:id 0 :name "Alice" :hand [{:title "E2" :date "2000"}]}
+                          {:id 1 :name "Bob" :hand [{:title "E3" :date "3000"}]}]
+                :current-player-idx 0
+                :deck []
+                :initial-deck-size 21
+                :status :won
+                :last-result {:correct? false
+                              :card {:title "E4" :date "4000"}
+                              :winners [{:id 0 :name "Alice"}
+                                        {:id 1 :name "Bob"}]}}
+          _ (rtl/render ($ ui/game-screen {:game game}))]
+      (is (seq (rtl/screen.getAllByText #"Alice & Bob Tie!")))
+      (rtl/cleanup))))
+
 (deftest game-screen-wrong-test
   (testing "game screen displays wrong banner"
     (let [game {:timeline [{:title "E1" :date "1000"}]

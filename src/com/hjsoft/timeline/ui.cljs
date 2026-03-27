@@ -95,7 +95,11 @@
         next-player-idx (mod (inc current-player-idx) (count players))
         next-player (get players next-player-idx)
         current-card (or (:card last-result) (first (:hand current-player)))
-        winner (or (:winner last-result) (when (= status :won) current-player))
+        winners (or (:winners last-result)
+                    (when-let [w (:winner last-result)] [w])
+                    (:winners game)
+                    (when-let [w (:winner game)] [w]))
+        game-over? (or (seq winners) (= status :won))
 
         ;; Calculate the correct index for the card in the timeline
         before-card? (fn [card-val timeline-card]
@@ -156,23 +160,29 @@
                       "Restart"))
 
      (d/h2 {:class "turn-message"}
-           (if winner
-             (str (:name winner) " Wins!")
+           (if game-over?
+             (let [names (map :name winners)]
+               (if (> (count names) 1)
+                 (str (str/join " & " names) " Tie!")
+                 (str (first names) " Wins!")))
              (str (:name current-player) "'s Turn")))
 
      (when last-result
        (d/div {:class (str "result-banner "
                            (cond
-                             winner "win"
+                             game-over? "win"
                              (:correct? last-result) "correct"
                              :else "wrong"))}
               (d/h2 (cond
-                      winner (str "\uD83C\uDFC6 " (:name winner) " Wins!")
+                      game-over? (let [names (map :name winners)]
+                                   (if (> (count names) 1)
+                                     (str "\uD83C\uDFC6 " (str/join " & " names) " Tie!")
+                                     (str "\uD83C\uDFC6 " (first names) " Wins!")))
                       (:correct? last-result) "\u2713 Correct!"
                       :else "\u2717 Wrong!"))
-              (when-not (or winner (:correct? last-result))
+              (when-not (or game-over? (:correct? last-result))
                 (d/p "You draw another card."))
-              (if winner
+              (if game-over?
                 (d/div
                  (d/div {:class "final-scores"}
                         (for [p players]

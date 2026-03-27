@@ -57,30 +57,46 @@
   (let [{:keys [players current-player-idx timeline deck]} game
         current-player (get players current-player-idx)
         card (first (:hand current-player))
-        correct? (check-placement timeline card index)]
-    (if correct?
-      (let [new-hand (vec (rest (:hand current-player)))
-            winning? (empty? new-hand)
-            placed-card (assoc card :correct-highlight? true)
-            new-timeline (vec (concat (take index timeline)
-                                      [placed-card]
-                                      (drop index timeline)))
-            new-players (assoc-in players [current-player-idx :hand] new-hand)]
-        (assoc game
-               :timeline new-timeline
-               :players new-players
-               :status (if winning? :won :playing)
-               :last-result {:correct? true
-                             :card placed-card
-                             :winner (when winning? current-player)}))
-      (let [new-card (first deck)
-            new-deck (vec (rest deck))
-            new-hand (-> current-player :hand rest vec (conj new-card))
-            new-players (assoc-in players [current-player-idx :hand] new-hand)]
-        (assoc game
-               :deck new-deck
-               :players new-players
-               :last-result {:correct? false :card card})))))
+        correct? (check-placement timeline card index)
+        new-game (if correct?
+                   (let [new-hand (vec (rest (:hand current-player)))
+                         placed-card (assoc card :correct-highlight? true)
+                         new-timeline (vec (concat (take index timeline)
+                                                   [placed-card]
+                                                   (drop index timeline)))
+                         new-players (assoc-in players [current-player-idx :hand] new-hand)]
+                     (assoc game
+                            :timeline new-timeline
+                            :players new-players
+                            :last-result {:correct? true
+                                          :card placed-card}))
+                   (let [new-card (first deck)
+                         new-deck (vec (rest deck))
+                         new-hand (if (empty? deck)
+                                    (vec (rest (:hand current-player)))
+                                    (-> current-player :hand
+                                        rest vec (conj new-card)))
+                         new-players (assoc-in players [current-player-idx :hand]
+                                               new-hand)]
+                     (assoc game
+                            :deck (vec new-deck)
+                            :players new-players
+                            :last-result {:correct? false :card card})))
+        winning-player (some #(when (empty? (:hand %)) %) (:players new-game))
+        deck-empty? (empty? (:deck new-game))
+        game-over? (or winning-player deck-empty?)
+        winners (cond
+                  winning-player [winning-player]
+                  deck-empty? (let [min-cards (apply min (map (comp count :hand)
+                                                              (:players new-game)))]
+                                (filterv #(= (count (:hand %)) min-cards)
+                                         (:players new-game)))
+                  :else nil)]
+    (assoc new-game
+           :status (if game-over? :won :playing)
+           :last-result (if game-over?
+                          (assoc (:last-result new-game) :winners winners)
+                          (:last-result new-game)))))
 
 (defn next-turn [game]
   (assoc game

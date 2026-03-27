@@ -81,7 +81,34 @@
             new-game (logic/place-card game-wrong 0)]
         (is (= 1 (count (:timeline new-game))))
         (is (= 1 (count (get-in new-game [:players 0 :hand]))))
-        (is (= "E4" (:title (last (get-in new-game [:players 0 :hand])))))))))
+        (is (= "E4" (:title (last (get-in new-game [:players 0 :hand])))))))
+    (testing "Incorrect placement with empty deck"
+      (let [game-no-deck (assoc game :deck [])
+            game-wrong (assoc-in game-no-deck [:players 0 :hand 0] {:title "E3" :date "3000"})
+            new-game (logic/place-card game-wrong 0)]
+        (is (= 1 (count (:timeline new-game))))
+        (is (= 0 (count (get-in new-game [:players 0 :hand]))))
+        (is (= :won (:status new-game)))))
+    (testing "Winner is player with fewest cards when deck runs out"
+      (let [game-multi {:timeline [{:title "E2" :date "2000"}]
+                        :players [{:id 0 :name "P1" :hand [{:title "E3" :date "3000"} {:title "E1" :date "1000"} {:title "E5" :date "5000"}]}
+                                  {:id 1 :name "P2" :hand [{:title "E4" :date "4000"}]}]
+                        :current-player-idx 0
+                        :deck []
+                        :status :playing}
+            new-game (logic/place-card game-multi 0)]
+        (is (= :won (:status new-game)))
+        (is (= ["P2"] (map :name (:winners (:last-result new-game)))))))
+    (testing "Tie when deck runs out"
+      (let [game-multi {:timeline [{:title "E2" :date "2000"}]
+                        :players [{:id 0 :name "P1" :hand [{:title "E3" :date "3000"} {:title "E1" :date "1000"}]}
+                                  {:id 1 :name "P2" :hand [{:title "E4" :date "4000"}]}]
+                        :current-player-idx 0
+                        :deck []
+                        :status :playing}
+            new-game (logic/place-card game-multi 0)]
+        (is (= :won (:status new-game)))
+        (is (= #{"P1" "P2"} (set (map :name (:winners (:last-result new-game))))))))))
 
 (deftest next-turn-test
   (let [game {:timeline [{:title "E1" :date "1000" :correct-highlight? true}]

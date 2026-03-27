@@ -37,6 +37,7 @@
 
 (defnc setup-screen [{:keys [on-start on-select-data current-file datasets]}]
   (let [[names set-names] (hooks/use-state (load-names))
+        input-refs (hooks/use-ref {})
         add-player (fn [] (set-names conj ""))
         handle-name-change (fn [idx event]
                              (let [new-val (.. event -target -value)]
@@ -49,6 +50,10 @@
                        (when can-start?
                          (save-names names)
                          (on-start valid-names)))]
+    (hooks/use-effect [(count names)]
+                      (let [last-idx (dec (count names))]
+                        (when-let [input (get @input-refs last-idx)]
+                          (.focus input))))
     (d/div {:class "setup-screen"}
            (d/h1 (d/a {:href "/" :style {:text-decoration "none" :color "inherit"}} "Timeline"))
 
@@ -65,7 +70,8 @@
                   (d/label "Players:")
                   (for [[idx name] (map-indexed vector names)]
                     (d/div {:key idx :class "player-input-wrapper"}
-                           (d/input {:value name
+                           (d/input {:ref #(swap! input-refs assoc idx %)
+                                     :value name
                                      :placeholder (str "Player " (inc idx) " name")
                                      :on-change #(handle-name-change idx %)}))))
 

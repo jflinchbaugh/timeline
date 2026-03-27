@@ -1,253 +1,253 @@
 {
-  "name" : "Space Exploration",
-  "url" : "https://en.wikipedia.org/wiki/Timeline_of_space_exploration",
-  "theme" : {
-    "primaryColor" : "#6c5ce7",
-    "secondaryColor" : "#a29bfe",
-    "backgroundColor" : "#2d3436",
-    "cardColor" : "#dfe6e9",
-    "textColor" : "#ffffff",
-    "cardTextColor" : "#1e272e"
+  "name": "Space Exploration",
+  "url": "https://en.wikipedia.org/wiki/Timeline_of_space_exploration",
+  "theme": {
+    "primaryColor": "#6c5ce7",
+    "secondaryColor": "#a29bfe",
+    "backgroundColor": "#2d3436",
+    "cardColor": "#dfe6e9",
+    "textColor": "#ffffff",
+    "cardTextColor": "#1e272e"
   },
-  "events" : [ {
-    "title" : "Sputnik 1 Launch",
-    "date" : "1957-10-04",
-    "description" : "The Soviet Union launched the first artificial satellite into Earth orbit."
+  "events": [ {
+    "title": "Sputnik 1 Launch",
+    "date": "1957-10-04",
+    "description": "The Soviet Union launched the first artificial satellite into Earth orbit."
   }, {
-    "title" : "Sputnik 2 (Laika)",
-    "date" : "1957-11-03",
-    "description" : "The first animal, a dog named Laika, was sent into orbit."
+    "title": "Sputnik 2 (Laika)",
+    "date": "1957-11-03",
+    "description": "The first animal, a dog named Laika, was sent into orbit."
   }, {
-    "title" : "Explorer 1 Launch",
-    "date" : "1958-01-31",
-    "description" : "The first US satellite was launched, discovering the Van Allen radiation belt."
+    "title": "Explorer 1 Launch",
+    "date": "1958-01-31",
+    "description": "The first US satellite was launched, discovering the Van Allen radiation belt."
   }, {
-    "title" : "NASA Founded",
-    "date" : "1958-07-29",
-    "description" : "The National Aeronautics and Space Administration was established in the US."
+    "title": "NASA Founded",
+    "date": "1958-07-29",
+    "description": "The National Aeronautics and Space Administration was established in the US."
   }, {
-    "title" : "Luna 1",
-    "date" : "1959-01-02",
-    "description" : "The first spacecraft to reach the vicinity of the Moon and leave Earth orbit."
+    "title": "Luna 1",
+    "date": "1959-01-02",
+    "description": "The first spacecraft to reach the vicinity of the Moon and leave Earth orbit."
   }, {
-    "title" : "Luna 2 Impact",
-    "date" : "1959-09-12",
-    "description" : "The first man-made object to reach the surface of the Moon."
+    "title": "Luna 2 Impact",
+    "date": "1959-09-12",
+    "description": "The first man-made object to reach the surface of the Moon."
   }, {
-    "title" : "Luna 3 Far Side Images",
-    "date" : "1959-10-04",
-    "description" : "The first photographs of the far side of the Moon were transmitted to Earth."
+    "title": "Luna 3 Far Side Images",
+    "date": "1959-10-04",
+    "description": "The first photographs of the far side of the Moon were transmitted to Earth."
   }, {
-    "title" : "Yuri Gagarin (Vostok 1)",
-    "date" : "1961-04-12",
-    "description" : "The first human to travel into space and orbit the Earth."
+    "title": "Yuri Gagarin (Vostok 1)",
+    "date": "1961-04-12",
+    "description": "The first human to travel into space and orbit the Earth."
   }, {
-    "title" : "Alan Shepard (Freedom 7)",
-    "date" : "1961-05-05",
-    "description" : "The first American to travel into space, on a suborbital flight."
+    "title": "Alan Shepard (Freedom 7)",
+    "date": "1961-05-05",
+    "description": "The first American to travel into space, on a suborbital flight."
   }, {
-    "title" : "JFK's Moon Goal Speech",
-    "date" : "1961-05-25",
-    "description" : "President Kennedy proposed the goal of landing a man on the Moon by the end of the decade."
+    "title": "JFK's Moon Goal Speech",
+    "date": "1961-05-25",
+    "description": "President Kennedy proposed the goal of landing a man on the Moon by the end of the decade."
   }, {
-    "title" : "Gherman Titov (Vostok 2)",
-    "date" : "1961-08-06",
-    "description" : "The second person to orbit the Earth and the first to spend a full day in space."
+    "title": "Gherman Titov (Vostok 2)",
+    "date": "1961-08-06",
+    "description": "The second person to orbit the Earth and the first to spend a full day in space."
   }, {
-    "title" : "John Glenn (Friendship 7)",
-    "date" : "1962-02-20",
-    "description" : "The first American to orbit the Earth."
+    "title": "John Glenn (Friendship 7)",
+    "date": "1962-02-20",
+    "description": "The first American to orbit the Earth."
   }, {
-    "title" : "Telstar 1 Launch",
-    "date" : "1962-07-10",
-    "description" : "The first active communications satellite was launched into orbit."
+    "title": "Telstar 1 Launch",
+    "date": "1962-07-10",
+    "description": "The first active communications satellite was launched into orbit."
   }, {
-    "title" : "Mariner 2 Venus Flyby",
-    "date" : "1962-08-27",
-    "description" : "The first successful planetary flyby, reaching Venus."
+    "title": "Mariner 2 Venus Flyby",
+    "date": "1962-08-27",
+    "description": "The first successful planetary flyby, reaching Venus."
   }, {
-    "title" : "Valentina Tereshkova (Vostok 6)",
-    "date" : "1963-06-16",
-    "description" : "The first woman to travel into space."
+    "title": "Valentina Tereshkova (Vostok 6)",
+    "date": "1963-06-16",
+    "description": "The first woman to travel into space."
   }, {
-    "title" : "Mariner 4 Mars Flyby",
-    "date" : "1964-11-28",
-    "description" : "Transmitted the first close-up images of the Martian surface."
+    "title": "Mariner 4 Mars Flyby",
+    "date": "1964-11-28",
+    "description": "Transmitted the first close-up images of the Martian surface."
   }, {
-    "title" : "Alexei Leonov's Spacewalk",
-    "date" : "1965-03-18",
-    "description" : "The first human to conduct an extravehicular activity (EVA) in space."
+    "title": "Alexei Leonov's Spacewalk",
+    "date": "1965-03-18",
+    "description": "The first human to conduct an extravehicular activity (EVA) in space."
   }, {
-    "title" : "Ed White's Spacewalk",
-    "date" : "1965-06-03",
-    "description" : "The first American to conduct a spacewalk, during Gemini 4."
+    "title": "Ed White's Spacewalk",
+    "date": "1965-06-03",
+    "description": "The first American to conduct a spacewalk, during Gemini 4."
   }, {
-    "title" : "Venera 3 Impact",
-    "date" : "1965-11-16",
-    "description" : "The first spacecraft to impact the surface of another planet (Venus)."
+    "title": "Venera 3 Impact",
+    "date": "1965-11-16",
+    "description": "The first spacecraft to impact the surface of another planet (Venus)."
   }, {
-    "title" : "Luna 9 Moon Landing",
-    "date" : "1966-01-31",
-    "description" : "The first spacecraft to achieve a soft landing on the Moon."
+    "title": "Luna 9 Moon Landing",
+    "date": "1966-01-31",
+    "description": "The first spacecraft to achieve a soft landing on the Moon."
   }, {
-    "title" : "Surveyor 1 Landing",
-    "date" : "1966-05-30",
-    "description" : "The first American spacecraft to achieve a soft landing on the Moon."
+    "title": "Surveyor 1 Landing",
+    "date": "1966-05-30",
+    "description": "The first American spacecraft to achieve a soft landing on the Moon."
   }, {
-    "title" : "Apollo 1 Fire",
-    "date" : "1967-01-27",
-    "description" : "A tragic fire during a pre-launch test killed three astronauts."
+    "title": "Apollo 1 Fire",
+    "date": "1967-01-27",
+    "description": "A tragic fire during a pre-launch test killed three astronauts."
   }, {
-    "title" : "Vladimir Komarov (Soyuz 1)",
-    "date" : "1967-04-23",
-    "description" : "The first human to die during a space mission."
+    "title": "Vladimir Komarov (Soyuz 1)",
+    "date": "1967-04-23",
+    "description": "The first human to die during a space mission."
   }, {
-    "title" : "Apollo 7 Launch",
-    "date" : "1968-10-11",
-    "description" : "The first crewed mission of the Apollo program to reach orbit."
+    "title": "Apollo 7 Launch",
+    "date": "1968-10-11",
+    "description": "The first crewed mission of the Apollo program to reach orbit."
   }, {
-    "title" : "Apollo 8 Moon Orbit",
-    "date" : "1968-12-21",
-    "description" : "The first crewed spacecraft to leave Earth orbit and orbit the Moon."
+    "title": "Apollo 8 Moon Orbit",
+    "date": "1968-12-21",
+    "description": "The first crewed spacecraft to leave Earth orbit and orbit the Moon."
   }, {
-    "title" : "Apollo 11 Moon Landing",
-    "date" : "1969-07-20",
-    "description" : "Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon."
+    "title": "Apollo 11 Moon Landing",
+    "date": "1969-07-20",
+    "description": "Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon."
   }, {
-    "title" : "Apollo 13 Crisis",
-    "date" : "1970-04-13",
-    "description" : "An oxygen tank explosion forced the cancellation of the mission and a perilous return."
+    "title": "Apollo 13 Crisis",
+    "date": "1970-04-13",
+    "description": "An oxygen tank explosion forced the cancellation of the mission and a perilous return."
   }, {
-    "title" : "Venera 7 Venus Landing",
-    "date" : "1970-08-17",
-    "description" : "The first spacecraft to successfully land on another planet and transmit data."
+    "title": "Venera 7 Venus Landing",
+    "date": "1970-08-17",
+    "description": "The first spacecraft to successfully land on another planet and transmit data."
   }, {
-    "title" : "Luna 16 Sample Return",
-    "date" : "1970-09-12",
-    "description" : "The first robotic probe to return a lunar soil sample to Earth."
+    "title": "Luna 16 Sample Return",
+    "date": "1970-09-12",
+    "description": "The first robotic probe to return a lunar soil sample to Earth."
   }, {
-    "title" : "Salyut 1 Launch",
-    "date" : "1971-04-19",
-    "description" : "The world's first space station was launched by the Soviet Union."
+    "title": "Salyut 1 Launch",
+    "date": "1971-04-19",
+    "description": "The world's first space station was launched by the Soviet Union."
   }, {
-    "title" : "Mars 3 Landing",
-    "date" : "1971-05-28",
-    "description" : "The first spacecraft to achieve a soft landing on Mars."
+    "title": "Mars 3 Landing",
+    "date": "1971-05-28",
+    "description": "The first spacecraft to achieve a soft landing on Mars."
   }, {
-    "title" : "Pioneer 10 Launch",
-    "date" : "1972-03-02",
-    "description" : "The first spacecraft to travel through the asteroid belt and visit Jupiter."
+    "title": "Pioneer 10 Launch",
+    "date": "1972-03-02",
+    "description": "The first spacecraft to travel through the asteroid belt and visit Jupiter."
   }, {
-    "title" : "Apollo 17 Landing",
-    "date" : "1972-12-07",
-    "description" : "The final mission of the Apollo program and the last time humans walked on the Moon."
+    "title": "Apollo 17 Landing",
+    "date": "1972-12-07",
+    "description": "The final mission of the Apollo program and the last time humans walked on the Moon."
   }, {
-    "title" : "Skylab Launch",
-    "date" : "1973-05-14",
-    "description" : "The first United States space station was launched."
+    "title": "Skylab Launch",
+    "date": "1973-05-14",
+    "description": "The first United States space station was launched."
   }, {
-    "title" : "Mariner 10 Mercury Flyby",
-    "date" : "1973-11-03",
-    "description" : "The first spacecraft to use gravitational assist to visit another planet."
+    "title": "Mariner 10 Mercury Flyby",
+    "date": "1973-11-03",
+    "description": "The first spacecraft to use gravitational assist to visit another planet."
   }, {
-    "title" : "Apollo-Soyuz Test Project",
-    "date" : "1975-07-15",
-    "description" : "The first joint US-Soviet space flight, docking in orbit."
+    "title": "Apollo-Soyuz Test Project",
+    "date": "1975-07-15",
+    "description": "The first joint US-Soviet space flight, docking in orbit."
   }, {
-    "title" : "Viking 1 Mars Landing",
-    "date" : "1975-08-20",
-    "description" : "The first of two probes to successfully land and operate on Mars."
+    "title": "Viking 1 Mars Landing",
+    "date": "1975-08-20",
+    "description": "The first of two probes to successfully land and operate on Mars."
   }, {
-    "title" : "Voyager 2 Launch",
-    "date" : "1977-08-20",
-    "description" : "The only spacecraft to visit all four outer planets (Jupiter, Saturn, Uranus, Neptune)."
+    "title": "Voyager 2 Launch",
+    "date": "1977-08-20",
+    "description": "The only spacecraft to visit all four outer planets (Jupiter, Saturn, Uranus, Neptune)."
   }, {
-    "title" : "Voyager 1 Launch",
-    "date" : "1977-09-05",
-    "description" : "The furthest man-made object from Earth and the first to enter interstellar space."
+    "title": "Voyager 1 Launch",
+    "date": "1977-09-05",
+    "description": "The furthest man-made object from Earth and the first to enter interstellar space."
   }, {
-    "title" : "Pioneer Venus 1",
-    "date" : "1978-05-20",
-    "description" : "Conducted the first radar mapping of the surface of Venus."
+    "title": "Pioneer Venus 1",
+    "date": "1978-05-20",
+    "description": "Conducted the first radar mapping of the surface of Venus."
   }, {
-    "title" : "Columbia STS-1 Launch",
-    "date" : "1981-04-12",
-    "description" : "The first orbital flight of the Space Shuttle program."
+    "title": "Columbia STS-1 Launch",
+    "date": "1981-04-12",
+    "description": "The first orbital flight of the Space Shuttle program."
   }, {
-    "title" : "Sally Ride in Space",
-    "date" : "1983-06-18",
-    "description" : "Sally Ride became the first American woman to travel into space."
+    "title": "Sally Ride in Space",
+    "date": "1983-06-18",
+    "description": "Sally Ride became the first American woman to travel into space."
   }, {
-    "title" : "Guion Bluford in Space",
-    "date" : "1983-08-30",
-    "description" : "The first African American to travel into space."
+    "title": "Guion Bluford in Space",
+    "date": "1983-08-30",
+    "description": "The first African American to travel into space."
   }, {
-    "title" : "Challenger Disaster",
-    "date" : "1986-01-28",
-    "description" : "The Space Shuttle Challenger broke apart 73 seconds after liftoff."
+    "title": "Challenger Disaster",
+    "date": "1986-01-28",
+    "description": "The Space Shuttle Challenger broke apart 73 seconds after liftoff."
   }, {
-    "title" : "Mir Space Station Launch",
-    "date" : "1986-02-19",
-    "description" : "The first module of the long-term Soviet/Russian space station was launched."
+    "title": "Mir Space Station Launch",
+    "date": "1986-02-19",
+    "description": "The first module of the long-term Soviet/Russian space station was launched."
   }, {
-    "title" : "Hubble Telescope Launch",
-    "date" : "1990-04-24",
-    "description" : "The space telescope that revolutionized astronomy was deployed from the Shuttle."
+    "title": "Hubble Telescope Launch",
+    "date": "1990-04-24",
+    "description": "The space telescope that revolutionized astronomy was deployed from the Shuttle."
   }, {
-    "title" : "Mars Pathfinder Landing",
-    "date" : "1996-12-04",
-    "description" : "Deployed the first successful robotic rover, Sojourner, on Mars."
+    "title": "Mars Pathfinder Landing",
+    "date": "1996-12-04",
+    "description": "Deployed the first successful robotic rover, Sojourner, on Mars."
   }, {
-    "title" : "Cassini-Huygens Launch",
-    "date" : "1997-10-15",
-    "description" : "A mission to study Saturn and its moons, including landing on Titan."
+    "title": "Cassini-Huygens Launch",
+    "date": "1997-10-15",
+    "description": "A mission to study Saturn and its moons, including landing on Titan."
   }, {
-    "title" : "Zarya (ISS) Launch",
-    "date" : "1998-11-20",
-    "description" : "The first module of the International Space Station was launched."
+    "title": "Zarya (ISS) Launch",
+    "date": "1998-11-20",
+    "description": "The first module of the International Space Station was launched."
   }, {
-    "title" : "Spirit Rover Landing",
-    "date" : "2004-01-04",
-    "description" : "The first of the twin Mars Exploration Rovers landed on the Red Planet."
+    "title": "Spirit Rover Landing",
+    "date": "2004-01-04",
+    "description": "The first of the twin Mars Exploration Rovers landed on the Red Planet."
   }, {
-    "title" : "Opportunity Rover Landing",
-    "date" : "2004-01-25",
-    "description" : "The second of the twin rovers landed, operating for nearly 15 years."
+    "title": "Opportunity Rover Landing",
+    "date": "2004-01-25",
+    "description": "The second of the twin rovers landed, operating for nearly 15 years."
   }, {
-    "title" : "SpaceShipOne Flight",
-    "date" : "2004-09-29",
-    "description" : "The first private spacecraft to reach space twice in two weeks, winning the X Prize."
+    "title": "SpaceShipOne Flight",
+    "date": "2004-09-29",
+    "description": "The first private spacecraft to reach space twice in two weeks, winning the X Prize."
   }, {
-    "title" : "New Horizons Launch",
-    "date" : "2006-01-19",
-    "description" : "Launched on a mission to visit Pluto and the Kuiper Belt."
+    "title": "New Horizons Launch",
+    "date": "2006-01-19",
+    "description": "Launched on a mission to visit Pluto and the Kuiper Belt."
   }, {
-    "title" : "Kepler Telescope Launch",
-    "date" : "2009-03-07",
-    "description" : "A mission designed to discover Earth-sized planets orbiting other stars."
+    "title": "Kepler Telescope Launch",
+    "date": "2009-03-07",
+    "description": "A mission designed to discover Earth-sized planets orbiting other stars."
   }, {
-    "title" : "Curiosity Rover Landing",
-    "date" : "2012-08-06",
-    "description" : "The car-sized rover landed in Gale Crater to search for evidence of past habitability."
+    "title": "Curiosity Rover Landing",
+    "date": "2012-08-06",
+    "description": "The car-sized rover landed in Gale Crater to search for evidence of past habitability."
   }, {
-    "title" : "Rosetta Comet Landing",
-    "date" : "2014-11-12",
-    "description" : "The Philae lander achieved the first soft landing on a comet nucleus (67P)."
+    "title": "Rosetta Comet Landing",
+    "date": "2014-11-12",
+    "description": "The Philae lander achieved the first soft landing on a comet nucleus (67P)."
   }, {
-    "title" : "Pluto Flyby",
-    "date" : "2015-07-14",
-    "description" : "New Horizons conducted the first close-up study of Pluto and its moons."
+    "title": "Pluto Flyby",
+    "date": "2015-07-14",
+    "description": "New Horizons conducted the first close-up study of Pluto and its moons."
   }, {
-    "title" : "SpaceX First Land Landing",
-    "date" : "2015-12-21",
-    "description" : "The first time an orbital rocket's first stage successfully landed back on land."
+    "title": "SpaceX First Land Landing",
+    "date": "2015-12-21",
+    "description": "The first time an orbital rocket's first stage successfully landed back on land."
   }, {
-    "title" : "SpaceX First Sea Landing",
-    "date" : "2016-04-08",
-    "description" : "The first successful landing of an orbital rocket stage on a drone ship at sea."
+    "title": "SpaceX First Sea Landing",
+    "date": "2016-04-08",
+    "description": "The first successful landing of an orbital rocket stage on a drone ship at sea."
   }, {
-    "title" : "James Webb Telescope Launch",
-    "date" : "2021-12-25",
-    "description" : "The most powerful space telescope ever built was launched to study the early universe."
+    "title": "James Webb Telescope Launch",
+    "date": "2021-12-25",
+    "description": "The most powerful space telescope ever built was launched to study the early universe."
   } ]
 }

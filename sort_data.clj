@@ -7,7 +7,6 @@
         upper-date (str/upper-case date-str)
         bc? (or (str/ends-with? upper-date " BC")
                 (str/ends-with? upper-date " BCE"))
-        ;; Remove era suffixes and trim
         clean-date (str/replace upper-date #"\s*(BC|BCE|AD|CE)$" "")
         parts (str/split clean-date #"-")]
     (try
@@ -15,8 +14,6 @@
             month (if (> (count parts) 1) (Long/parseLong (str/trim (second parts))) 1)
             day (if (> (count parts) 2) (Long/parseLong (str/trim (nth parts 2))) 1)]
         (if bc?
-          ;; BC dates: earlier years are "larger" in magnitude but "smaller" in time.
-          ;; -500-01-01 should be smaller than -500-12-31.
           (+ (* (- year) 10000) (* month 100) day)
           (+ (* year 10000) (* month 100) day)))
       (catch Exception _
@@ -30,9 +27,12 @@
       (println "Sorting" file-path)
       (let [data (json/parse-string (slurp file-path) true)
             sorted-events (sort-by #(parse-date (:date %)) (:events data))
-            new-data (assoc data :events sorted-events)]
-        (with-open [w (io/writer file-path)]
-          (json/generate-stream new-data w {:pretty true}))))
+            new-data (assoc data :events sorted-events)
+            ;; Cheshire's pretty printer adds a space before the colon.
+            ;; We replace " : " with ": " to match the original style.
+            json-str (json/generate-string new-data {:pretty true})
+            fixed-json (str/replace json-str #"\" : " "\": ")]
+        (spit file-path fixed-json)))
     (println "File not found:" file-path)))
 
 (def data-dir "resources/public/data/")

@@ -260,9 +260,10 @@ input {
 }
 
 .result-banner {
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 12px;
-    margin-bottom: 30px;
+    margin: 0 auto 20px;
+    max-width: 600px;
     animation: fadeIn 0.3s ease-in;
     text-align: center;
     position: -webkit-sticky;
@@ -270,6 +271,19 @@ input {
     top: 0;
     z-index: 1100;
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.result-banner h2 {
+    margin: 5px 0;
+}
+
+.result-banner p {
+    margin: 5px 0;
+}
+
+.result-banner button {
+    padding: 10px 20px;
+    margin-top: 10px;
 }
 
 .result-banner.win { background-color: gold; color: black; }

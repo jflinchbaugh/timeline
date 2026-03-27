@@ -13,7 +13,17 @@
     (is (< (logic/parse-date-val "1969-07-20")
            (logic/parse-date-val "1969-07-21")))
     (is (< (logic/parse-date-val "2021-01")
-           (logic/parse-date-val "2021-02")))))
+           (logic/parse-date-val "2021-02")))
+    (is (< (logic/parse-date-val "2021")
+           (logic/parse-date-val "2021-02")))
+    (is (< (logic/parse-date-val "393 AD")
+           (logic/parse-date-val "394")))
+    (is (< (logic/parse-date-val "0")
+           (logic/parse-date-val "393 AD")))
+    (is (= (logic/parse-date-val "393 AD")
+           (logic/parse-date-val "393 CE")))
+    (is (= (logic/parse-date-val "3000 BC")
+           (logic/parse-date-val "3000 BCE")))))
 
 (deftest init-game-test
   (let [events (map #(hash-map :title (str %) :date (str %)) (range 50))
@@ -23,7 +33,8 @@
     (is (= 1 (count (:timeline game))))
     (is (= 10 (count (get-in game [:players 0 :hand]))))
     (is (= 10 (count (get-in game [:players 1 :hand]))))
-    (is (= 29 (count (:deck game))))))
+    (is (= 29 (count (:deck game))))
+    (is (= 49 (:initial-deck-size game)))))
 
 (deftest check-placement-test
   (let [timeline [{:date "1000"} {:date "2000"}]]

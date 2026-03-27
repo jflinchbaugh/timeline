@@ -80,10 +80,11 @@
                            :hand [{:title "Event 2" :date "2000"}]}]
                 :current-player-idx 0
                 :deck (repeat 40 {:title "Deck Card" :date "2020"})
+                :initial-deck-size 100
                 :status :playing}
           result (rtl/render ($ ui/game-screen {:game game}))]
       (is (rtl/screen.getByText #"Deck:"))
-      (is (rtl/screen.getByText "40 cards"))
+      (is (rtl/screen.getByText "40/100"))
       (rtl/cleanup))))
 
 (deftest game-screen-win-test
@@ -96,6 +97,8 @@
                            :name "Bob"
                            :hand [{:title "E2" :date "2000"}]}]
                 :current-player-idx 0
+                :deck []
+                :initial-deck-size 21
                 :status :won
                 :winner {:id 0 :name "Alice"}
                 :last-result {:correct? true :winner {:id 0 :name "Alice"}}}
@@ -103,6 +106,7 @@
       (is (seq (rtl/screen.getAllByText #"Alice Wins!")))
       (is (rtl/screen.getByText "Alice: 0 cards left"))
       (is (rtl/screen.getByText "Bob: 1 cards left"))
+      (is (rtl/screen.getByText "Deck: 0/21"))
       (rtl/cleanup))))
 
 (deftest game-screen-wrong-test

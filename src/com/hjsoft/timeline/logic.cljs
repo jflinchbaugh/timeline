@@ -1,14 +1,15 @@
 (ns com.hjsoft.timeline.logic)
 
 (defn parse-date-val
-  "Converts a date string (YYYY, YYYY-MM, or YYYY-MM-DD, optional BC)
+  "Converts a date string (YYYY, YYYY-MM, or YYYY-MM-DD, optional BC/BCE/AD/CE)
    to a comparable numerical value."
   [date-str]
-  (let [matches (re-find #"(\d+)(?:-(\d+))?(?:-(\d+))?\s*(BC)?" date-str)
-        [_ y m d bc?] matches
+  (let [matches (re-find #"(\d+)(?:-(\d+))?(?:-(\d+))?\s*(BC|BCE|AD|CE)?" date-str)
+        [_ y m d suffix] matches
         year (js/parseInt y 10)
         month (if m (js/parseInt m 10) 1)
-        day (if d (js/parseInt d 10) 1)]
+        day (if d (js/parseInt d 10) 1)
+        bc? (or (= suffix "BC") (= suffix "BCE"))]
     (if bc?
       ;; BC dates: 3000 BC is smaller than 2999 BC.
       ;; We use 13 for months and 416 (13*32) for days to ensure

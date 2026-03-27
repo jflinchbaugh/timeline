@@ -34,7 +34,7 @@
     (is (= 10 (count (get-in game [:players 0 :hand]))))
     (is (= 10 (count (get-in game [:players 1 :hand]))))
     (is (= 29 (count (:deck game))))
-    (is (= 49 (:initial-deck-size game)))))
+    (is (= 50 (:initial-deck-size game)))))
 
 (deftest check-placement-test
   (let [timeline [{:date "1000"} {:date "2000"}]]

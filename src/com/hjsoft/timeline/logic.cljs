@@ -37,7 +37,7 @@
      :players players
      :current-player-idx 0
      :deck deck
-     :initial-deck-size (count dealer-deck)
+     :initial-deck-size (inc (count dealer-deck))
      :status :playing
      :message nil
      :last-result nil}))

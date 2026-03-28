@@ -8,7 +8,7 @@
 (defn- save-names [names]
   (let [to-save (filterv #(not (str/blank? %)) names)]
     (js/localStorage.setItem "timeline-player-names"
-      (js/JSON.stringify (clj->js to-save)))))
+                             (js/JSON.stringify (clj->js to-save)))))
 
 (defn- load-names []
   (try
@@ -60,8 +60,8 @@
                             (.focus input)))))
     (d/div {:class "setup-screen"}
            (d/h1
-             (d/a {:href js/window.location.pathname}
-               "Timeline"))
+            (d/a {:href js/window.location.pathname}
+                 "Timeline"))
 
            (d/div {:class "field-group"}
                   (d/label "Select Theme:")
@@ -79,8 +79,8 @@
                            (d/input {:ref #(swap! input-refs assoc idx %)
                                      :value name
                                      :placeholder (str "Player "
-                                                    (inc idx)
-                                                    " name")
+                                                       (inc idx)
+                                                       " name")
                                      :on-change #(handle-name-change idx %)}))))
 
            (d/div {:class "button-group"}
@@ -193,11 +193,11 @@
                       game-over? (let [names (map :name winners)]
                                    (if (> (count names) 1)
                                      (str "\uD83C\uDFC6 "
-                                       (str/join " & " names)
-                                       " Tie!")
+                                          (str/join " & " names)
+                                          " Tie!")
                                      (str "\uD83C\uDFC6 "
-                                       (first names)
-                                       " Wins!")))
+                                          (first names)
+                                          " Wins!")))
                       (:correct? last-result) "\u2713 Correct!"
                       :else "\u2717 Wrong!"))
               (when-not (or game-over? (:correct? last-result))
@@ -208,13 +208,13 @@
                         (for [p players]
                           (d/p {:key (:id p)}
                                (str (:name p)
-                                 ": "
-                                 (count (:hand p))
-                                 " cards left")))
+                                    ": "
+                                    (count (:hand p))
+                                    " cards left")))
                         (d/p (d/strong (str "Deck: "
-                                         (count deck)
-                                         "/"
-                                         initial-deck-size))))
+                                            (count deck)
+                                            "/"
+                                            initial-deck-size))))
                  (d/button {:on-click handle-restart :class "button-black"}
                            "Play Again"))
                 (d/button {:on-click handle-next-turn :class "button-white"}
@@ -246,6 +246,13 @@
                                   :on-click #(handle-place (inc idx))}
                                  "Place here")))))
      (d/div {:class "footer"}
-            (when source-url
-              (d/span
-                (d/a {:href source-url :target "_blank"} "Source")))))))
+            (d/div
+             (d/a {:href "https://github.com/jflinchbaugh/timeline"
+                   :target "_blank"}
+                  "GitHub")
+             (when source-url
+               (d/span
+                (d/span " | ")
+                (d/a {:href source-url
+                      :target "_blank"}
+                     "Data Source"))))))))

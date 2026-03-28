@@ -4,7 +4,9 @@
   "Converts a date string (YYYY, YYYY-MM, or YYYY-MM-DD, optional BC/BCE/AD/CE)
    to a comparable numerical value."
   [date-str]
-  (let [matches (re-find #"(\d+)(?:-(\d+))?(?:-(\d+))?\s*(BC|BCE|AD|CE)?" date-str)
+  (let [matches (re-find
+                 #"(\d+)(?:-(\d+))?(?:-(\d+))?\s*(BC|BCE|AD|CE)?"
+                 date-str)
         [_ y m d suffix] matches
         year (js/parseInt y 10)
         month (if m (js/parseInt m 10) 1)
@@ -64,7 +66,9 @@
                          new-timeline (vec (concat (take index timeline)
                                                    [placed-card]
                                                    (drop index timeline)))
-                         new-players (assoc-in players [current-player-idx :hand] new-hand)]
+                         new-players (assoc-in players
+                                               [current-player-idx :hand]
+                                               new-hand)]
                      (assoc game
                             :timeline new-timeline
                             :players new-players
@@ -76,7 +80,8 @@
                                     (vec (rest (:hand current-player)))
                                     (-> current-player :hand
                                         rest vec (conj new-card)))
-                         new-players (assoc-in players [current-player-idx :hand]
+                         new-players (assoc-in players
+                                               [current-player-idx :hand]
                                                new-hand)]
                      (assoc game
                             :deck (vec new-deck)
@@ -87,8 +92,10 @@
         game-over? (or winning-player deck-empty?)
         winners (cond
                   winning-player [winning-player]
-                  deck-empty? (let [min-cards (apply min (map (comp count :hand)
-                                                              (:players new-game)))]
+                  deck-empty? (let [min-cards (apply
+                                               min
+                                               (map (comp count :hand)
+                                                    (:players new-game)))]
                                 (filterv #(= (count (:hand %)) min-cards)
                                          (:players new-game)))
                   :else nil)]

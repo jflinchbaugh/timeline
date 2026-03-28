@@ -1,0 +1,352 @@
+{
+  "name": "Global Odyssey: A History of Humanity",
+  "url": "https://en.wikipedia.org/wiki/Human_history",
+  "theme": {
+    "primaryColor": "#8B4513",
+    "secondaryColor": "#DAA520",
+    "backgroundColor": "#FDF5E6",
+    "cardColor": "#FFFFFF",
+    "textColor": "#2F4F4F"
+  },
+  "events": [ {
+    "date": "10000 BC",
+    "title": "The Agricultural Revolution",
+    "description": "Humans begin transitioning from hunter-gatherer lifestyles to permanent settlements and farming."
+  }, {
+    "date": "3500 BC",
+    "title": "Invention of the Wheel",
+    "description": "The earliest known use of the wheel occurs in Mesopotamia (modern-day Iraq)."
+  }, {
+    "date": "3200 BC",
+    "title": "Invention of Writing",
+    "description": "Sumerians develop Cuneiform, one of the earliest systems of writing."
+  }, {
+    "date": "2560 BC",
+    "title": "Completion of the Great Pyramid of Giza",
+    "description": "Built as a tomb for Pharaoh Khufu, it remains the oldest of the Seven Wonders of the Ancient World."
+  }, {
+    "date": "1754 BC",
+    "title": "Code of Hammurabi",
+    "description": "One of the earliest and most complete written legal codes is established in Babylon."
+  }, {
+    "date": "776 BC",
+    "title": "First Ancient Olympic Games",
+    "description": "The first recorded athletic competition is held in Olympia, Greece."
+  }, {
+    "date": "753 BC",
+    "title": "Founding of Rome",
+    "description": "The legendary founding of the city of Rome by Romulus and Remus."
+  }, {
+    "date": "508 BC",
+    "title": "Athenian Democracy Established",
+    "description": "Cleisthenes introduces a system of political reforms in Athens, the basis of modern democracy."
+  }, {
+    "date": "334 BC",
+    "title": "Alexander the Great Begins Conquests",
+    "description": "The Macedonian king crosses the Hellespont to begin his campaign against the Persian Empire."
+  }, {
+    "date": "221 BC",
+    "title": "Unification of China",
+    "description": "Qin Shi Huang becomes the first emperor of a unified China and begins building the Great Wall."
+  }, {
+    "date": "44 BC",
+    "title": "Assassination of Julius Caesar",
+    "description": "The Roman dictator is stabbed by senators on the Ides of March."
+  }, {
+    "date": "0079-08-24",
+    "title": "Eruption of Mount Vesuvius",
+    "description": "The volcano erupts, burying the Roman cities of Pompeii and Herculaneum in ash."
+  }, {
+    "date": "0476",
+    "title": "Fall of the Western Roman Empire",
+    "description": "The Germanic chieftain Odoacer deposes the last Western Roman Emperor, Romulus Augustulus."
+  }, {
+    "date": "0622",
+    "title": "The Hijra",
+    "description": "The Prophet Muhammad and his followers migrate from Mecca to Medina, marking the start of the Islamic calendar."
+  }, {
+    "date": "0800-12-25",
+    "title": "Charlemagne Crowned Emperor",
+    "description": "Pope Leo III crowns Charlemagne as Holy Roman Emperor in Rome."
+  }, {
+    "date": "1066-10-14",
+    "title": "Battle of Hastings",
+    "description": "William the Conqueror defeats King Harold II, beginning the Norman Conquest of England."
+  }, {
+    "date": "1096",
+    "title": "The First Crusade Begins",
+    "description": "European Christians set out to reclaim the Holy Land from Muslim rule."
+  }, {
+    "date": "1150",
+    "title": "Completion of Angkor Wat",
+    "description": "The massive Hindu temple complex is completed in present-day Cambodia."
+  }, {
+    "date": "1206",
+    "title": "Genghis Khan Unites Mongols",
+    "description": "Temüjin is proclaimed Genghis Khan, leader of the Mongol Empire."
+  }, {
+    "date": "1215-06-15",
+    "title": "Magna Carta Signed",
+    "description": "King John of England signs the 'Great Charter,' establishing that the monarch is not above the law."
+  }, {
+    "date": "1271",
+    "title": "Marco Polo Sets Out for China",
+    "description": "The Venetian merchant begins his famous journey to the court of Kublai Khan."
+  }, {
+    "date": "1347",
+    "title": "Black Death Arrives in Europe",
+    "description": "The bubonic plague begins spreading across the continent, eventually killing roughly 30-60% of the population."
+  }, {
+    "date": "1440",
+    "title": "Invention of the Printing Press",
+    "description": "Johannes Gutenberg develops the movable-type printing press, revolutionizing information sharing."
+  }, {
+    "date": "1453-05-29",
+    "title": "Fall of Constantinople",
+    "description": "The Ottoman Empire captures the capital of the Byzantine Empire, marking the end of the Middle Ages."
+  }, {
+    "date": "1492-10-12",
+    "title": "Columbus Reaches the Americas",
+    "description": "The Italian explorer, sailing for Spain, lands in the Bahamas, thinking he has reached Asia."
+  }, {
+    "date": "1503",
+    "title": "Leonardo da Vinci Paints the Mona Lisa",
+    "description": "The Italian Renaissance polymath begins work on his most famous portrait."
+  }, {
+    "date": "1517-10-31",
+    "title": "The Protestant Reformation Begins",
+    "description": "Martin Luther reportedly nails his 95 Theses to the door of the Castle Church in Wittenberg."
+  }, {
+    "date": "1519-09-20",
+    "title": "Magellan's Circumnavigation Begins",
+    "description": "Ferdinand Magellan sets sail on the first expedition to sail around the world."
+  }, {
+    "date": "1521-08-13",
+    "title": "Fall of the Aztec Empire",
+    "description": "Spanish conquistador Hernán Cortés captures Tenochtitlan."
+  }, {
+    "date": "1588-08-08",
+    "title": "Defeat of the Spanish Armada",
+    "description": "An English fleet defeats the invasion force sent by King Philip II of Spain."
+  }, {
+    "date": "1603",
+    "title": "Establishment of the Tokugawa Shogunate",
+    "description": "Ieyasu Tokugawa is appointed Shogun, beginning a long period of peace and isolation in Japan."
+  }, {
+    "date": "1610",
+    "title": "Galileo Observes Jupiter's Moons",
+    "description": "Galileo Galilei uses a telescope to discover four moons orbiting Jupiter, challenging the geocentric model."
+  }, {
+    "date": "1620-11-21",
+    "title": "Mayflower Compact Signed",
+    "description": "Pilgrims sign the first governing document of Plymouth Colony."
+  }, {
+    "date": "1632",
+    "title": "Construction of the Taj Mahal Begins",
+    "description": "The Mughal Emperor Shah Jahan commissions the mausoleum for his favorite wife."
+  }, {
+    "date": "1666-09-02",
+    "title": "Great Fire of London",
+    "description": "A major conflagration sweeps through the central parts of London."
+  }, {
+    "date": "1687-07-05",
+    "title": "Newton Publishes Principia Mathematica",
+    "description": "Isaac Newton lays out his laws of motion and universal gravitation."
+  }, {
+    "date": "1760",
+    "title": "Start of the Industrial Revolution",
+    "description": "The transition to new manufacturing processes begins in Great Britain."
+  }, {
+    "date": "1776-07-04",
+    "title": "U.S. Declaration of Independence",
+    "description": "The Thirteen Colonies declare themselves free from British rule."
+  }, {
+    "date": "1789-07-14",
+    "title": "Storming of the Bastille",
+    "description": "Parisian citizens storm the medieval fortress and prison, sparking the French Revolution."
+  }, {
+    "date": "1791-08-21",
+    "title": "Haitian Revolution Begins",
+    "description": "A successful slave revolt begins against French colonial rule in Saint-Domingue."
+  }, {
+    "date": "1796-05-14",
+    "title": "First Smallpox Vaccine",
+    "description": "Edward Jenner performs the first vaccination against smallpox."
+  }, {
+    "date": "1804-12-02",
+    "title": "Napoleon Crowns Himself Emperor",
+    "description": "Napoleon Bonaparte is crowned Emperor of the French at Notre-Dame Cathedral."
+  }, {
+    "date": "1815-06-18",
+    "title": "Battle of Waterloo",
+    "description": "Napoleon's final defeat at the hands of the Duke of Wellington and Gebhard Leberecht von Blücher."
+  }, {
+    "date": "1831",
+    "title": "Voyage of the HMS Beagle Begins",
+    "description": "Charles Darwin sets sail on a five-year journey that will lead to his theory of evolution."
+  }, {
+    "date": "1837",
+    "title": "Samuel Morse Patents the Telegraph",
+    "description": "The invention revolutionizes long-distance communication."
+  }, {
+    "date": "1848",
+    "title": "The Year of Revolutions",
+    "description": "A series of political upheavals occurs throughout Europe."
+  }, {
+    "date": "1859-11-24",
+    "title": "Publication of On the Origin of Species",
+    "description": "Charles Darwin introduces his theory of natural selection."
+  }, {
+    "date": "1861-04-12",
+    "title": "American Civil War Begins",
+    "description": "Confederate forces fire on Fort Sumter, South Carolina."
+  }, {
+    "date": "1869-11-17",
+    "title": "Suez Canal Opens",
+    "description": "The artificial waterway connecting the Mediterranean and Red Seas is officially opened."
+  }, {
+    "date": "1876-03-10",
+    "title": "First Successful Telephone Call",
+    "description": "Alexander Graham Bell speaks to his assistant, Thomas Watson."
+  }, {
+    "date": "1879-12-31",
+    "title": "Edison Demonstrates the Light Bulb",
+    "description": "Thomas Edison gives his first public demonstration of the incandescent light bulb."
+  }, {
+    "date": "1884",
+    "title": "Berlin Conference",
+    "description": "European powers meet to regulate colonization and trade in Africa."
+  }, {
+    "date": "1896-04-06",
+    "title": "First Modern Olympic Games",
+    "description": "The first international Olympic Games of the modern era open in Athens."
+  }, {
+    "date": "1903-12-17",
+    "title": "Wright Brothers' First Flight",
+    "description": "Orville and Wilbur Wright achieve the first controlled, sustained flight of a powered aircraft."
+  }, {
+    "date": "1912-04-15",
+    "title": "Sinking of the RMS Titanic",
+    "description": "The 'unsinkable' ship hits an iceberg and sinks in the North Atlantic."
+  }, {
+    "date": "1914-06-28",
+    "title": "Assassination of Archduke Franz Ferdinand",
+    "description": "The event in Sarajevo triggers a chain of events leading to World War I."
+  }, {
+    "date": "1917-10-24",
+    "title": "The Russian Revolution",
+    "description": "The Bolsheviks led by Lenin seize power in Russia."
+  }, {
+    "date": "1920-01-10",
+    "title": "League of Nations Founded",
+    "description": "The first intergovernmental organization to maintain world peace is established."
+  }, {
+    "date": "1927",
+    "title": "The Jazz Singer Released",
+    "description": "The first 'talkie' feature film marks the end of the silent film era."
+  }, {
+    "date": "1928-09-28",
+    "title": "Discovery of Penicillin",
+    "description": "Alexander Fleming discovers the first antibiotic substance."
+  }, {
+    "date": "1929-10-29",
+    "title": "Black Tuesday Stock Market Crash",
+    "description": "The Wall Street crash signals the beginning of the Great Depression."
+  }, {
+    "date": "1939-09-01",
+    "title": "World War II Begins",
+    "description": "Germany invades Poland, leading Britain and France to declare war."
+  }, {
+    "date": "1944-06-06",
+    "title": "D-Day Landings",
+    "description": "Allied forces invade the beaches of Normandy, France."
+  }, {
+    "date": "1945-08-06",
+    "title": "Atomic Bombing of Hiroshima",
+    "description": "The first atomic bomb used in warfare is dropped by the United States."
+  }, {
+    "date": "1945-10-24",
+    "title": "United Nations Founded",
+    "description": "The UN is established to prevent future world conflicts."
+  }, {
+    "date": "1947-08-15",
+    "title": "Independence of India and Pakistan",
+    "description": "British rule in India ends, resulting in the partition of the subcontinent."
+  }, {
+    "date": "1948-12-10",
+    "title": "Universal Declaration of Human Rights",
+    "description": "The UN General Assembly adopts a milestone document in the history of human rights."
+  }, {
+    "date": "1953-05-29",
+    "title": "First Ascent of Mount Everest",
+    "description": "Sir Edmund Hillary and Tenzing Norgay reach the summit of the world's highest peak."
+  }, {
+    "date": "1954-05-17",
+    "title": "Brown v. Board of Education",
+    "description": "The U.S. Supreme Court rules that racial segregation in public schools is unconstitutional."
+  }, {
+    "date": "1957-10-04",
+    "title": "Launch of Sputnik 1",
+    "description": "The Soviet Union launches the first artificial satellite into orbit."
+  }, {
+    "date": "1961-08-13",
+    "title": "Construction of the Berlin Wall Begins",
+    "description": "East Germany begins building the wall to prevent citizens from fleeing to the West."
+  }, {
+    "date": "1963-08-28",
+    "title": "I Have a Dream Speech",
+    "description": "Martin Luther King Jr. delivers his famous speech during the March on Washington."
+  }, {
+    "date": "1969-07-20",
+    "title": "Apollo 11 Moon Landing",
+    "description": "Neil Armstrong and Buzz Aldrin become the first humans to walk on the moon."
+  }, {
+    "date": "1974-08-09",
+    "title": "Richard Nixon Resigns",
+    "description": "The 37th U.S. President becomes the first to resign from office due to the Watergate scandal."
+  }, {
+    "date": "1977-05-25",
+    "title": "Star Wars Released",
+    "description": "George Lucas's space opera changes cinema and pop culture forever."
+  }, {
+    "date": "1981-08-12",
+    "title": "IBM PC Released",
+    "description": "The launch of the Model 5150 helps popularize the personal computer."
+  }, {
+    "date": "1986-04-26",
+    "title": "Chernobyl Disaster",
+    "description": "A catastrophic nuclear accident occurs at the Chernobyl Nuclear Power Plant in Ukraine."
+  }, {
+    "date": "1989-11-09",
+    "title": "Fall of the Berlin Wall",
+    "description": "The wall is opened, leading to the reunification of Germany and the end of the Cold War."
+  }, {
+    "date": "1990-02-11",
+    "title": "Nelson Mandela Released",
+    "description": "The anti-apartheid leader is freed from prison after 27 years."
+  }, {
+    "date": "1991-08-06",
+    "title": "First Web Page Published",
+    "description": "Tim Berners-Lee publishes the first website on the World Wide Web."
+  }, {
+    "date": "1994-04-07",
+    "title": "Rwandan Genocide Begins",
+    "description": "A mass slaughter of Tutsi in Rwanda begins, lasting for 100 days."
+  }, {
+    "date": "1997-07-01",
+    "title": "Handover of Hong Kong",
+    "description": "Britain transfers sovereignty of Hong Kong to the People's Republic of China."
+  }, {
+    "date": "2001-09-11",
+    "title": "September 11 Attacks",
+    "description": "Terrorist attacks on the World Trade Center and the Pentagon change global security."
+  }, {
+    "date": "2008-11-04",
+    "title": "Election of Barack Obama",
+    "description": "The first African American President of the United States is elected."
+  }, {
+    "date": "2020-03-11",
+    "title": "COVID-19 Pandemic Declared",
+    "description": "The World Health Organization declares the global outbreak a pandemic."
+  } ]
+}

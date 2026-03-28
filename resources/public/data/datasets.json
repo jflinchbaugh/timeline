@@ -1,5 +1,6 @@
 [
   {"filename": "history.json", "name": "World History"},
+  {"filename": "human_history.json", "name": "History of Humanity"},
   {"filename": "science.json", "name": "Scientific Discoveries"},
   {"filename": "inventions.json", "name": "Inventions"},
   {"filename": "space.json", "name": "Space Exploration"},

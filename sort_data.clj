@@ -35,13 +35,6 @@
         (spit file-path fixed-json)))
     (println "File not found:" file-path)))
 
-(def data-dir "resources/public/data/")
-(def files ["cinema.json" "computer.json" "datasets.json" "grateful_dead.json"
-            "history.json" "inventions.json" "olympics.json" "science.json"
-            "space.json" "videogames.json"])
-
-(if (seq *command-line-args*)
+(when (seq *command-line-args*)
   (doseq [f *command-line-args*]
-    (sort-json-file f))
-  (doseq [f files]
-    (sort-json-file (str data-dir f))))
+    (sort-json-file f)))

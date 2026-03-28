@@ -1,32 +1,33 @@
 (ns com.hjsoft.timeline.ui-test
   (:require [com.hjsoft.timeline.test-env]
-            [cljs.test :refer [deftest is testing]]
+            [cljs.test :refer [deftest is testing use-fixtures]]
             [helix.core :refer [$]]
             [com.hjsoft.timeline.ui :as ui]
             ["@testing-library/react" :as rtl]))
 
+(use-fixtures :each
+  {:after rtl/cleanup})
+
 (deftest card-component-test
   (testing "Card rendering"
     (let [card {:title "Test Event" :date "2021" :description "Test Desc"}
-          result (rtl/render ($ ui/card {:card card :revealed? true}))]
+          _ (rtl/render ($ ui/card {:card card :revealed? true}))]
       (is (rtl/screen.getByText "Test Event"))
       (is (rtl/screen.getByText "2021"))
-      (is (rtl/screen.getByText "Test Desc"))
-      (rtl/cleanup))))
+      (is (rtl/screen.getByText "Test Desc")))))
 
 (deftest setup-screen-test
   (testing "Setup screen interaction"
     (let [started? (atom false)
-          result (rtl/render ($ ui/setup-screen
-                               {:on-start #(reset! started? true)
-                                :current-file "history.json"}))]
-      (let [input (rtl/screen.getByPlaceholderText "Player 1 name")
-            button (rtl/screen.getByText "Start Game")]
-        (rtl/fireEvent.change input #js {:target #js {:value "Alice"}})
+          _ (rtl/render ($ ui/setup-screen
+                                {:on-start #(reset! started? true)
+                                 :current-file "history.json"}))
+          input (rtl/screen.getByPlaceholderText "Player 1 name")
+          button (rtl/screen.getByText "Start Game")]
+      (rtl/fireEvent.change input #js {:target #js {:value "Alice"}})
         ;; Button should be enabled now
-        (rtl/fireEvent.click button)
-        (is @started?)
-        (rtl/cleanup)))))
+      (rtl/fireEvent.click button)
+      (is @started?))))
 
 (deftest setup-screen-persistence-test
   (testing "Setup screen saves and culls blank names"
@@ -55,22 +56,20 @@
 
         (is @started?)
         (let [stored (js/JSON.parse
-                       (.getItem js/localStorage "timeline-player-names"))
+                      (.getItem js/localStorage "timeline-player-names"))
               stored-clj (js->clj stored)]
           (is (= ["Alice" "Bob"] stored-clj)
-            "only provided names are remembered")))
-      (rtl/cleanup)))
+              "only provided names are remembered")))))
 
   (testing "Setup screen loads names from localStorage"
     (.setItem js/localStorage
-      "timeline-player-names"
-      (js/JSON.stringify #js ["Charlie" "Dave"]))
+              "timeline-player-names"
+              (js/JSON.stringify #js ["Charlie" "Dave"]))
     (let [_ (rtl/render ($ ui/setup-screen
                            {:on-start #()
                             :current-file "history.json"}))]
       (is (rtl/screen.getByDisplayValue "Charlie"))
-      (is (rtl/screen.getByDisplayValue "Dave"))
-      (rtl/cleanup))))
+      (is (rtl/screen.getByDisplayValue "Dave")))))
 
 (deftest game-screen-deck-count-test
   (testing "game screen displays deck count"
@@ -82,10 +81,9 @@
                 :deck (repeat 40 {:title "Deck Card" :date "2020"})
                 :initial-deck-size 100
                 :status :playing}
-          result (rtl/render ($ ui/game-screen {:game game}))]
+          _ (rtl/render ($ ui/game-screen {:game game}))]
       (is (rtl/screen.getByText #"Deck:"))
-      (is (rtl/screen.getByText "40/100"))
-      (rtl/cleanup))))
+      (is (rtl/screen.getByText "40/100")))))
 
 (deftest game-screen-win-test
   (testing "game screen displays winning banner and final scores"
@@ -102,12 +100,11 @@
                 :status :won
                 :winner {:id 0 :name "Alice"}
                 :last-result {:correct? true :winner {:id 0 :name "Alice"}}}
-          result (rtl/render ($ ui/game-screen {:game game}))]
+          _ (rtl/render ($ ui/game-screen {:game game}))]
       (is (seq (rtl/screen.getAllByText #"Alice Wins!")))
       (is (rtl/screen.getByText "Alice: 0 cards left"))
       (is (rtl/screen.getByText "Bob: 1 cards left"))
-      (is (rtl/screen.getByText "Deck: 0/21"))
-      (rtl/cleanup))))
+      (is (rtl/screen.getByText "Deck: 0/21")))))
 
 (deftest game-screen-tie-test
   (testing "game screen displays tie banner"
@@ -123,8 +120,7 @@
                               :winners [{:id 0 :name "Alice"}
                                         {:id 1 :name "Bob"}]}}
           _ (rtl/render ($ ui/game-screen {:game game}))]
-      (is (seq (rtl/screen.getAllByText #"Alice & Bob Tie!")))
-      (rtl/cleanup))))
+      (is (seq (rtl/screen.getAllByText #"Alice & Bob Tie!"))))))
 
 (deftest game-screen-wrong-test
   (testing "game screen displays wrong banner"
@@ -145,8 +141,7 @@
       (is (rtl/screen.getByText "Next Player: Bob"))
       ;; Card should be shown in timeline with date revealed
       (is (rtl/screen.getByText "E2"))
-      (is (rtl/screen.getByText "2000"))
-      (rtl/cleanup))))
+      (is (rtl/screen.getByText "2000")))))
 
 (deftest game-screen-restart-test
   (testing "game screen displays restart button and handles click"
@@ -165,8 +160,7 @@
                                            (reset! restarted? true)))}))]
       (let [button (rtl/screen.getByText "Restart")]
         (rtl/fireEvent.click button)
-        (is @restarted?))
-      (rtl/cleanup))))
+        (is @restarted?)))))
 
 (deftest game-screen-source-link-test
   (testing "game screen displays source link when source-url is provided"
@@ -183,5 +177,4 @@
                             :source-url source-url}))]
       (let [link (rtl/screen.getByText "Source")]
         (is (= (.getAttribute link "href") source-url))
-        (is (= (.getAttribute link "target") "_blank")))
-      (rtl/cleanup))))
+        (is (= (.getAttribute link "target") "_blank"))))))

@@ -57,16 +57,12 @@
       (let [timeline-precise [{:date "2021-01"} {:date "2021-03"}]]
         (is (logic/check-placement timeline-precise {:date "2021-02"} 1))
         (is (not (logic/check-placement
-                   timeline-precise
-                   {:date "2021-04"}
-                   1)))))))
+                  timeline-precise
+                  {:date "2021-04"}
+                  1)))))))
 
 (deftest place-card-test
-  (let [events [{:title "E1" :date "1000"}
-                {:title "E2" :date "2000"}
-                {:title "E3" :date "3000"}
-                {:title "E4" :date "4000"}]
-        game {:timeline [{:title "E2" :date "2000"}]
+  (let [game {:timeline [{:title "E2" :date "2000"}]
               :players [{:id 0 :name "P1" :hand [{:title "E1" :date "1000"}]}]
               :current-player-idx 0
               :deck [{:title "E4" :date "4000"}]
@@ -114,8 +110,8 @@
   (let [game {:timeline [{:title "E1" :date "1000" :correct-highlight? true}]
               :players [{:id 0 :name "P1"} {:id 1 :name "P2"}]
               :current-player-idx 0
-              :last-result {:correct? true}}]
-    (let [next-game (logic/next-turn game)]
-      (is (= 1 (:current-player-idx next-game)))
-      (is (nil? (:last-result next-game)))
-      (is (not (:correct-highlight? (first (:timeline next-game))))))))
+              :last-result {:correct? true}}
+        next-game (logic/next-turn game)]
+    (is (= 1 (:current-player-idx next-game)))
+    (is (nil? (:last-result next-game)))
+    (is (not (:correct-highlight? (first (:timeline next-game)))))))

@@ -25,7 +25,7 @@
 (defn- create-player [idx name dealer-deck]
   {:id idx
    :name name
-   :hand (take 10 (drop (* idx 10) dealer-deck))})
+   :hand (vec (take 10 (drop (* idx 10) dealer-deck)))})
 
 (defn init-game [events player-names]
   (let [shuffled (shuffle-deck events)
@@ -34,7 +34,7 @@
         players (vec (map-indexed (fn [idx name]
                                     (create-player idx name dealer-deck))
                                   player-names))
-        deck (drop (* (count player-names) 10) dealer-deck)]
+        deck (vec (drop (* (count player-names) 10) dealer-deck))]
     {:timeline [initial-card]
      :players players
      :current-player-idx 0
@@ -46,12 +46,10 @@
 
 (defn check-placement [timeline card index]
   (let [card-val (parse-date-val (:date card))
-        before (if (> index 0)
-                 (parse-date-val (:date (get timeline (dec index))))
-                 nil)
-        after (if (< index (count timeline))
-                (parse-date-val (:date (get timeline index)))
-                nil)]
+        before (when (> index 0)
+                 (parse-date-val (:date (get timeline (dec index)))))
+        after (when (< index (count timeline))
+                (parse-date-val (:date (get timeline index))))]
     (and (or (nil? before) (<= before card-val))
          (or (nil? after) (>= after card-val)))))
 
@@ -60,9 +58,9 @@
         current-player (get players current-player-idx)
         new-hand (vec (rest (:hand current-player)))
         placed-card (assoc card :correct-highlight? true)
-        new-timeline (vec (concat (take index timeline)
+        new-timeline (vec (concat (subvec timeline 0 index)
                                   [placed-card]
-                                  (drop index timeline)))]
+                                  (subvec timeline index)))]
     (assoc game
            :timeline new-timeline
            :players (assoc-in players [current-player-idx :hand] new-hand)
@@ -73,21 +71,20 @@
         current-player (get players current-player-idx)
         new-card (first deck)
         new-deck (vec (rest deck))
-        new-hand (if (empty? deck)
-                   (vec (rest (:hand current-player)))
-                   (-> current-player :hand rest vec (conj new-card)))]
+        new-hand (if (seq deck)
+                   (conj (vec (rest (:hand current-player))) new-card)
+                   (vec (rest (:hand current-player))))]
     (assoc game
            :deck new-deck
            :players (assoc-in players [current-player-idx :hand] new-hand)
            :last-result {:correct? false :card card})))
 
 (defn- calculate-winners [players deck]
-  (let [winning-player (some #(when (empty? (:hand %)) %) players)
-        deck-empty? (empty? deck)]
+  (let [winning-player (some #(when (empty? (:hand %)) %) players)]
     (cond
       winning-player [winning-player]
-      deck-empty? (let [min-cards (apply min (map (comp count :hand) players))]
-                    (filterv #(= (count (:hand %)) min-cards) players))
+      (empty? deck) (let [min-cards (apply min (map (comp count :hand) players))]
+                      (filterv #(= (count (:hand %)) min-cards) players))
       :else nil)))
 
 (defn- check-game-over [game]

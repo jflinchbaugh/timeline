@@ -1,0 +1,329 @@
+{
+  "name": "Friends: The Television Series",
+  "url": "https://en.wikipedia.org/wiki/Friends",
+  "theme": {
+    "primaryColor": "#FFD700",
+    "secondaryColor": "#007BFF",
+    "backgroundColor": "#20232A",
+    "cardColor": "#FFFFFF",
+    "textColor": "#FFFFFF",
+    "cardTextColor": "#333333"
+  },
+  "events": [ {
+    "date": "1994-09-22",
+    "title": "The Pilot",
+    "description": "Rachel Green flees her wedding and moves in with Monica Geller. Ross is depressed over his divorce from Carol."
+  }, {
+    "date": "1994-10-20",
+    "title": "The One with the East German Laundry Detergent",
+    "description": "Ross and Rachel have their first unofficial 'date' while doing laundry together."
+  }, {
+    "date": "1994-11-10",
+    "title": "The One Where Nana Dies Twice",
+    "description": "The Geller family deals with the passing of Nana, who briefly 'wakes up' after being declared dead."
+  }, {
+    "date": "1994-12-15",
+    "title": "The One with the Monkey",
+    "description": "Ross adopts Marcel, a capuchin monkey, to combat his loneliness."
+  }, {
+    "date": "1995-02-23",
+    "title": "The One with the Stoned Guy",
+    "description": "Jon Lovitz guest stars as a restaurateur who shows up high to an interview with Monica."
+  }, {
+    "date": "1995-03-09",
+    "title": "The One with All the Poker",
+    "description": "The girls learn to play poker to beat the guys; Rachel loses to Ross but he lets her win."
+  }, {
+    "date": "1995-05-11",
+    "title": "The One with the Birth",
+    "description": "Ross's son, Ben Geller, is born. Susan and Ross argue over the middle name."
+  }, {
+    "date": "1995-05-18",
+    "title": "The One Where Rachel Finds Out",
+    "description": "Rachel learns that Ross is in love with her while he is away in China for a paleontology dig."
+  }, {
+    "date": "1995-09-21",
+    "title": "The One with Ross's New Girlfriend",
+    "description": "Ross returns from China with Julie, devastating Rachel who was waiting for him at the airport."
+  }, {
+    "date": "1995-11-09",
+    "title": "The One Where Ross Finds Out",
+    "description": "Ross and Rachel share their first real kiss in the rain outside Central Perk."
+  }, {
+    "date": "1996-01-28",
+    "title": "The One After the Superbowl",
+    "description": "The highest-rated episode of the series, featuring guest stars Julia Roberts and Jean-Claude Van Damme."
+  }, {
+    "date": "1996-02-01",
+    "title": "The One with the Prom Video",
+    "description": "Rachel sees an old video of Ross offering to take her to prom and finally forgives him. 'He's her lobster!'"
+  }, {
+    "date": "1996-02-15",
+    "title": "The One Where Joey Moves Out",
+    "description": "Following his success on 'Days of Our Lives,' Joey moves into his own luxury apartment."
+  }, {
+    "date": "1996-03-21",
+    "title": "The One Where Dr. Ramoray Dies",
+    "description": "Joey is killed off 'Days of Our Lives' by falling down an elevator shaft after angering the writers."
+  }, {
+    "date": "1996-05-16",
+    "title": "The One with Barry and Mindy's Wedding",
+    "description": "Rachel serves as maid of honor for her ex-fiancé and sings 'Copacabana' to save face."
+  }, {
+    "date": "1996-09-19",
+    "title": "The One with the Princess Leia Fantasy",
+    "description": "Season 3 premieres with Ross revealing his geeky fantasy to Rachel."
+  }, {
+    "date": "1996-10-31",
+    "title": "The One with the Flashback",
+    "description": "Janice asks the group if any of them have ever slept together, leading to a series of near-miss flashbacks."
+  }, {
+    "date": "1996-11-21",
+    "title": "The One with the Football",
+    "description": "The Gellers compete for the 'Geller Cup' in a Thanksgiving touch football game."
+  }, {
+    "date": "1996-12-12",
+    "title": "The One Where Rachel Quits",
+    "description": "Rachel finally quits her job as a waitress at Central Perk to pursue a career in fashion."
+  }, {
+    "date": "1997-02-13",
+    "title": "The One Where Ross and Rachel Take a Break",
+    "description": "Ross sleeps with Chloe, the copy girl, after he and Rachel decide to 'take a break' during their anniversary."
+  }, {
+    "date": "1997-02-20",
+    "title": "The One with the Morning After",
+    "description": "Rachel finds out about Ross's infidelity, leading to their first official breakup."
+  }, {
+    "date": "1997-04-10",
+    "title": "The One with the Tiny T-Shirt",
+    "description": "Ross struggles to move on from Rachel as she begins dating Mark from Bloomingdale's."
+  }, {
+    "date": "1997-05-15",
+    "title": "The One at the Beach",
+    "description": "The group travels to a beach house where Bonnie shaves her head and Rachel reveals she still loves Ross."
+  }, {
+    "date": "1997-09-25",
+    "title": "The One with the Jellyfish",
+    "description": "Monica is stung by a jellyfish, leading to a legendary story involving Chandler and Joey."
+  }, {
+    "date": "1997-10-30",
+    "title": "The One with the Dirty Girl",
+    "description": "Ross dates a beautiful scientist (Rebecca Romijn) whose apartment is a disaster zone."
+  }, {
+    "date": "1998-01-08",
+    "title": "The One with Phoebe's Uterus",
+    "description": "Phoebe agrees to be a surrogate for her half-brother Frank Jr. and his wife Alice."
+  }, {
+    "date": "1998-01-15",
+    "title": "The One with the Embryos",
+    "description": "The guys win Monica and Rachel's apartment in a trivia contest. Phoebe is successfully implanted with embryos."
+  }, {
+    "date": "1998-02-26",
+    "title": "The One with the Fake Party",
+    "description": "Rachel throws a 'fake party' for Emily just to spend time with her crush, Joshua."
+  }, {
+    "date": "1998-04-16",
+    "title": "The One with All the Haste",
+    "description": "Monica and Rachel switch apartments back with the guys after a high-stakes bet."
+  }, {
+    "date": "1998-05-07",
+    "title": "The One with Ross's Wedding",
+    "description": "In London, Ross says 'Rachel' at the altar. Monica and Chandler sleep together for the first time."
+  }, {
+    "date": "1998-09-24",
+    "title": "The One After Ross Says Rachel",
+    "description": "Season 5 begins with the fallout of Ross's wedding disaster and the start of Monica and Chandler's secret romance."
+  }, {
+    "date": "1998-10-08",
+    "title": "The One Hundredth",
+    "description": "Phoebe gives birth to triplets: Frank Jr. Jr., Leslie, and Chandler."
+  }, {
+    "date": "1998-11-19",
+    "title": "The One with All the Thanksgivings",
+    "description": "The group shares their worst Thanksgiving memories; Monica puts a turkey on her head."
+  }, {
+    "date": "1999-01-07",
+    "title": "The One with All the Resolutions",
+    "description": "Ross's resolution to try something new every day leads to a disaster with leather pants."
+  }, {
+    "date": "1999-02-11",
+    "title": "The One Where Everybody Finds Out",
+    "description": "Phoebe and Rachel 'mess' with Monica and Chandler after learning their secret. 'They don't know we know they know we know!'"
+  }, {
+    "date": "1999-04-01",
+    "title": "The One with the Cop",
+    "description": "Ross buys a new couch and repeatedly yells 'PIVOT!' as he, Rachel, and Chandler try to carry it upstairs."
+  }, {
+    "date": "1999-05-20",
+    "title": "The One in Vegas",
+    "description": "Monica and Chandler almost marry in Vegas, only to see a drunken Ross and Rachel emerge from a chapel married."
+  }, {
+    "date": "1999-09-23",
+    "title": "The One After Vegas",
+    "description": "Ross and Rachel realize they are married. Ross tries to avoid a third divorce."
+  }, {
+    "date": "1999-10-07",
+    "title": "The One with Ross's Denial",
+    "description": "Rachel officially moves out of Monica's apartment to give Monica and Chandler space to live together."
+  }, {
+    "date": "1999-10-14",
+    "title": "The One with Joey's Porsche",
+    "description": "Joey finds a set of Porsche keys and pretends to own the car to get attention."
+  }, {
+    "date": "1999-11-18",
+    "title": "The One Where Ross Got High",
+    "description": "Rachel makes a 'trifle' that contains beef and peas. The Gellers find out Chandler and Monica are living together."
+  }, {
+    "date": "1999-11-25",
+    "title": "The One with the Routine",
+    "description": "Monica and Ross perform their high school dance routine on 'Dick Clark's New Year's Rockin' Eve.'"
+  }, {
+    "date": "2000-02-10",
+    "title": "The One with the Unagi",
+    "description": "Ross tries to teach Rachel and Phoebe about the state of total awareness known as 'Unagi.'"
+  }, {
+    "date": "2000-02-17",
+    "title": "The One That Could Have Been",
+    "description": "A two-part episode imagining how the friends' lives would be different if they had made different choices."
+  }, {
+    "date": "2000-05-11",
+    "title": "The One with the Ring",
+    "description": "Chandler and Phoebe go shopping for an engagement ring for Monica."
+  }, {
+    "date": "2000-05-18",
+    "title": "The One with the Proposal",
+    "description": "After a series of complications involving Richard, Chandler proposes to Monica in a candlelit apartment."
+  }, {
+    "date": "2000-10-12",
+    "title": "The One with Monica's Thunder",
+    "description": "Monica is upset when Ross and Rachel's kiss steals the spotlight from her engagement celebration."
+  }, {
+    "date": "2000-11-23",
+    "title": "The One Where Chandler Doesn't Like Dogs",
+    "description": "Chandler reveals his secret fear of dogs. Rachel invites her assistant Tag to Thanksgiving."
+  }, {
+    "date": "2000-12-14",
+    "title": "The One with the Holiday Armadillo",
+    "description": "Ross dresses as the 'Holiday Armadillo' to teach Ben about Hanukkah."
+  }, {
+    "date": "2001-02-08",
+    "title": "The One Where They're Up All Night",
+    "description": "The group spends a sleepless night on a roof, in a car, and in various other awkward situations."
+  }, {
+    "date": "2001-02-15",
+    "title": "The One Where Rosita Dies",
+    "description": "Joey's beloved recliner, Rosita, is accidentally broken, leading to a comedic cover-up."
+  }, {
+    "date": "2001-04-19",
+    "title": "The One with Rachel's Big Kiss",
+    "description": "Rachel's old college friend (Winona Ryder) visits, and they reminisce about a drunken kiss."
+  }, {
+    "date": "2001-05-17",
+    "title": "The One with Monica and Chandler's Wedding",
+    "description": "Monica and Chandler marry. Phoebe finds a positive pregnancy test and assumes it's Monica's."
+  }, {
+    "date": "2001-09-27",
+    "title": "The One After 'I Do'",
+    "description": "Rachel reveals to Phoebe and Monica that she is the one who is pregnant."
+  }, {
+    "date": "2001-10-18",
+    "title": "The One with the Red Sweater",
+    "description": "The father of Rachel's baby is revealed to be Ross after Phoebe finds his red sweater."
+  }, {
+    "date": "2001-11-01",
+    "title": "The One with the Halloween Party",
+    "description": "Sean Penn guest stars at a Halloween party where Ross dresses as 'Spud-nik.'"
+  }, {
+    "date": "2001-11-22",
+    "title": "The One with the Rumor",
+    "description": "Brad Pitt guest stars as a former high school classmate who co-founded the 'I Hate Rachel Green' club."
+  }, {
+    "date": "2002-01-10",
+    "title": "The One Where Joey Dates Rachel",
+    "description": "Joey takes Rachel on a 'date' to cheer her up and realizes he is actually falling in love with her."
+  }, {
+    "date": "2002-02-07",
+    "title": "The One with the Birthing Video",
+    "description": "Mona finds out Rachel is living with Ross. Chandler accidentally watches a graphic birthing video."
+  }, {
+    "date": "2002-04-04",
+    "title": "The One with Joey's Interview",
+    "description": "Joey prepares for an interview with Soap Opera Digest with the help of the group."
+  }, {
+    "date": "2002-05-16",
+    "title": "The One Where Rachel Has a Baby",
+    "description": "Rachel gives birth to Emma Geller-Greene. Joey accidentally 'proposes' to Rachel."
+  }, {
+    "date": "2002-09-26",
+    "title": "The One Where No One Proposes",
+    "description": "Ross and Rachel deal with the misunderstanding of Joey's accidental proposal."
+  }, {
+    "date": "2002-10-31",
+    "title": "The One with Phoebe's Birthday Dinner",
+    "description": "Only Phoebe and Joey show up on time for her birthday dinner as the others are delayed by drama."
+  }, {
+    "date": "2002-11-21",
+    "title": "The One with Rachel's Other Sister",
+    "description": "Christina Applegate guest stars as Rachel's self-centered sister, Amy, at Thanksgiving."
+  }, {
+    "date": "2003-01-09",
+    "title": "The One with Phoebe's Rats",
+    "description": "Phoebe's pet rat has babies, and she insists on keeping them, much to Mike's dismay."
+  }, {
+    "date": "2003-02-13",
+    "title": "The One with the Mugging",
+    "description": "Phoebe realizes she once mugged Ross when they were teenagers."
+  }, {
+    "date": "2003-03-13",
+    "title": "The One with the Memorial Service",
+    "description": "Ross posts a fake obituary for himself on his college alumni site to see who will attend his memorial."
+  }, {
+    "date": "2003-05-22",
+    "title": "The One in Barbados",
+    "description": "In Barbados, Charlie breaks up with Joey for Ross, and Rachel and Joey finally kiss."
+  }, {
+    "date": "2003-09-25",
+    "title": "The One After Joey and Rachel Kiss",
+    "description": "Season 10 begins with the group navigating the new romantic dynamics from the Barbados trip."
+  }, {
+    "date": "2003-10-02",
+    "title": "The One Where Ross Is Fine",
+    "description": "Ross tries to prove he is 'fine' with Joey and Rachel's relationship by hosting a disastrous fajita dinner."
+  }, {
+    "date": "2003-11-20",
+    "title": "The One with the Late Thanksgiving",
+    "description": "Monica and Chandler get the news that a birth mother has chosen them to adopt her baby."
+  }, {
+    "date": "2004-01-15",
+    "title": "The One with the Home Study",
+    "description": "A social worker visits Monica and Chandler. Danny DeVito guest stars as a stripper for Phoebe's bachelorette party."
+  }, {
+    "date": "2004-02-12",
+    "title": "The One with Phoebe's Wedding",
+    "description": "Phoebe and Mike marry in a beautiful outdoor ceremony during a New York City blizzard."
+  }, {
+    "date": "2004-02-19",
+    "title": "The One Where Joey Speaks French",
+    "description": "Phoebe tries to teach Joey French for an audition, but he only speaks gibberish."
+  }, {
+    "date": "2004-02-26",
+    "title": "The One with Princess Consuela",
+    "description": "Phoebe legally changes her name to Princess Consuela Banana Hammock. Mike changes his to Crap Bag."
+  }, {
+    "date": "2004-04-29",
+    "title": "The One with Rachel's Going Away Party",
+    "description": "The group throws a party for Rachel before her move to Paris. She and Ross spend one last night together."
+  }, {
+    "date": "2004-05-06",
+    "title": "The Last One",
+    "description": "The series finale. Rachel 'gets off the plane' for Ross. Monica and Chandler bring home twins. The six friends leave their keys."
+  }, {
+    "date": "2004-09-09",
+    "title": "Joey Spin-off Premieres",
+    "description": "Following the series finale of Friends, Matt LeBlanc returns as Joey Tribbiani in his own spin-off series."
+  }, {
+    "date": "2021-05-27",
+    "title": "Friends: The Reunion",
+    "description": "The cast returns to the original soundstage for an unscripted special to reminisce about the show."
+  } ]
+}

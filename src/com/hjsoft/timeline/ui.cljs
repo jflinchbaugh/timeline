@@ -247,4 +247,5 @@
                                  "Place here")))))
      (d/div {:class "footer"}
             (when source-url
-              (d/a {:href source-url :target "_blank"} "Source"))))))
+              (d/span
+                (d/a {:href source-url :target "_blank"} "Source")))))))

@@ -36,8 +36,9 @@
     (println "File not found:" file-path)))
 
 (def data-dir "resources/public/data/")
-(def files ["cinema.json" "computer.json" "history.json" "inventions.json" 
-            "olympics.json" "science.json" "space.json" "videogames.json"])
+(def files ["cinema.json" "computer.json" "datasets.json" "grateful_dead.json"
+            "history.json" "inventions.json" "olympics.json" "science.json"
+            "space.json" "videogames.json"])
 
 (if (seq *command-line-args*)
   (doseq [f *command-line-args*]

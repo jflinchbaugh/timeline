@@ -8,6 +8,7 @@
   {"filename": "videogames.json", "name": "Video Game History"},
   {"filename": "cinema.json", "name": "Cinema & Film"},
   {"filename": "friends.json", "name": "Friends (TV Series)"},
+  {"filename": "seinfeld.json", "name": "Seinfeld: A Show About Nothing"},
   {"filename": "olympics.json", "name": "The Olympic Games (Easy)"},
   {"filename": "grateful_dead.json", "name": "Grateful Dead and Company"}
 ]

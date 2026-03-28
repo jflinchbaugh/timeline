@@ -1,0 +1,333 @@
+{
+  "name": "Seinfeld: A Show About Nothing",
+  "url": "https://en.wikipedia.org/wiki/Seinfeld",
+  "theme": {
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#C8102E",
+    "backgroundColor": "#F5F5F5",
+    "cardColor": "#FFFFFF",
+    "textColor": "#212121",
+    "cardTextColor": "#333333"
+  },
+  "events": [ {
+    "date": "1989-07-05",
+    "title": "The Seinfeld Chronicles",
+    "description": "The pilot episode airs. Kramer is called 'Kessler' and Elaine does not yet appear."
+  }, {
+    "date": "1990-05-31",
+    "title": "The Stake Out",
+    "description": "The first official episode of the series introduces Julia Louis-Dreyfus as Elaine Benes."
+  }, {
+    "date": "1990-06-14",
+    "title": "Male Unbonding",
+    "description": "The only episode in the series with a title that doesn't start with 'The'."
+  }, {
+    "date": "1990-06-21",
+    "title": "The Stock Tip",
+    "description": "Season 1 finale. George and Jerry lose money on a stock while Kramer makes a killing."
+  }, {
+    "date": "1991-01-23",
+    "title": "The Ex-Girlfriend",
+    "description": "Season 2 premieres. The show moves to a permanent time slot and starts building its audience."
+  }, {
+    "date": "1991-02-06",
+    "title": "The Jacket",
+    "description": "Jerry buys an expensive suede jacket. We meet Elaine's terrifying father, Alton Benes."
+  }, {
+    "date": "1991-04-18",
+    "title": "The Revenge",
+    "description": "George quits his job in a huff and tries to show up the next day as if it never happened."
+  }, {
+    "date": "1991-05-23",
+    "title": "The Chinese Restaurant",
+    "description": "A landmark 'bottle episode' where the group spends the entire half-hour waiting for a table."
+  }, {
+    "date": "1991-09-18",
+    "title": "The Note",
+    "description": "Season 3 premieres. Jerry, George, and Elaine get fake doctor's notes for massages."
+  }, {
+    "date": "1991-10-02",
+    "title": "The Pen",
+    "description": "Jerry and Elaine visit his parents in Florida. Jerry 'takes' an astronaut pen from Jack Klompus."
+  }, {
+    "date": "1991-10-16",
+    "title": "The Library",
+    "description": "Introduces Library Cop Lt. Joe Bookman, who investigates Jerry for a book overdue since 1971."
+  }, {
+    "date": "1991-10-30",
+    "title": "The Parking Garage",
+    "description": "The group gets lost in a mall parking garage for the entire episode."
+  }, {
+    "date": "1991-11-06",
+    "title": "The Cafe",
+    "description": "Jerry tries to help Babu Bhatt by suggesting he change his restaurant's menu to 'all-Pakistani'."
+  }, {
+    "date": "1991-12-04",
+    "title": "The Alternate Side",
+    "description": "Kramer gets a line in a Woody Allen movie: 'These pretzels are making me thirsty!'"
+  }, {
+    "date": "1991-12-11",
+    "title": "The Red Dot",
+    "description": "George buys Elaine a discounted cashmere sweater with a red dot; he has sex with a cleaning lady."
+  }, {
+    "date": "1992-01-15",
+    "title": "The Pez Dispenser",
+    "description": "Jerry makes Elaine laugh during a piano recital with a Tweety Bird Pez dispenser."
+  }, {
+    "date": "1992-02-12",
+    "title": "The Boyfriend",
+    "description": "Jerry befriends Keith Hernandez. The episode parodies 'JFK' with the 'Magic Loogie' theory."
+  }, {
+    "date": "1992-02-26",
+    "title": "The Limo",
+    "description": "Jerry and George steal a limo intended for a neo-Nazi leader named O'Brien."
+  }, {
+    "date": "1992-05-06",
+    "title": "The Keys",
+    "description": "Season 3 finale. Kramer flees to California to become an actor after Jerry takes back his keys."
+  }, {
+    "date": "1992-08-12",
+    "title": "The Trip",
+    "description": "Season 4 premieres in LA. Kramer is a suspect in the 'Smog Strangler' murders."
+  }, {
+    "date": "1992-09-16",
+    "title": "The Pitch",
+    "description": "Jerry and George pitch a 'show about nothing' to NBC executives."
+  }, {
+    "date": "1992-10-07",
+    "title": "The Bubble Boy",
+    "description": "George fights a 'bubble boy' over a Trivial Pursuit answer: 'The Moops'."
+  }, {
+    "date": "1992-11-04",
+    "title": "The Opera",
+    "description": "Introduces 'Crazy' Joe Davola, who stalks the group while dressed as a clown from Pagliacci."
+  }, {
+    "date": "1992-11-18",
+    "title": "The Contest",
+    "description": "The group bets on who can go the longest without 'self-gratification'. 'Master of my domain!'"
+  }, {
+    "date": "1993-01-27",
+    "title": "The Visa",
+    "description": "Babu Bhatt is deported after his visa renewal paperwork is delivered to Jerry's apartment by mistake."
+  }, {
+    "date": "1993-02-11",
+    "title": "The Outing",
+    "description": "A journalist thinks Jerry and George are a couple. 'Not that there's anything wrong with that!'"
+  }, {
+    "date": "1993-02-25",
+    "title": "The Implant",
+    "description": "Jerry dates a woman he suspects has breast implants. 'They're real, and they're spectacular!'"
+  }, {
+    "date": "1993-03-18",
+    "title": "The Junior Mint",
+    "description": "Kramer and Jerry witness a surgery. Kramer drops a Junior Mint into the patient."
+  }, {
+    "date": "1993-05-20",
+    "title": "The Pilot",
+    "description": "The fictional pilot 'Jerry' airs on NBC but is not picked up for a series."
+  }, {
+    "date": "1993-09-16",
+    "title": "The Mango",
+    "description": "Season 5 premieres. Elaine admits she faked 'it' with Jerry during their relationship."
+  }, {
+    "date": "1993-09-23",
+    "title": "The Puffy Shirt",
+    "description": "Jerry accidentally agrees to wear a 'pirate' shirt on The Today Show."
+  }, {
+    "date": "1993-11-04",
+    "title": "The Non-Fat Yogurt",
+    "description": "The group suspects a 'non-fat' yogurt shop is lying. Rudy Giuliani makes a cameo."
+  }, {
+    "date": "1993-12-16",
+    "title": "The Conversion",
+    "description": "George converts to Latvian Orthodox for a woman. Kramer discovers his 'Kavorka'."
+  }, {
+    "date": "1994-01-06",
+    "title": "The Stall",
+    "description": "Elaine's bathroom neighbor won't 'spare a square'. Dan Cortese guest stars."
+  }, {
+    "date": "1994-02-03",
+    "title": "The Dinner Party",
+    "description": "The group tries to buy a chocolate babka. 'Look to the cookie, Elaine!'"
+  }, {
+    "date": "1994-02-10",
+    "title": "The Marine Biologist",
+    "description": "George saves a whale with a Titleist golf ball. One of the show's most famous monologues."
+  }, {
+    "date": "1994-04-28",
+    "title": "The Raincoats",
+    "description": "Jerry is caught making out during 'Schindler's List'. Kramer and Morty go into business."
+  }, {
+    "date": "1994-05-12",
+    "title": "The Hamptons",
+    "description": "The group visits the Hamptons. George suffers from 'shrinkage' in the pool."
+  }, {
+    "date": "1994-05-19",
+    "title": "The Opposite",
+    "description": "George decides to do the opposite of every instinct and finds success with the Yankees."
+  }, {
+    "date": "1994-09-22",
+    "title": "The Chaperone",
+    "description": "Season 6 premieres. George changes the Yankees' uniforms to 100% cotton."
+  }, {
+    "date": "1994-09-29",
+    "title": "The Big Salad",
+    "description": "George wants credit for buying Elaine a 'big salad'. Jerry dates a woman Newman dumped."
+  }, {
+    "date": "1994-11-17",
+    "title": "The Mom & Pop Store",
+    "description": "George buys a car he thinks belonged to Jon Voight. Kramer helps a 'Mom & Pop' store."
+  }, {
+    "date": "1994-12-15",
+    "title": "The Race",
+    "description": "Jerry races an old high school rival. Elaine is blacklisted by a delivery guy."
+  }, {
+    "date": "1995-01-05",
+    "title": "The Switch",
+    "description": "Kramer's first name is revealed to be 'Cosmo'. Jerry tries to date his girlfriend's roommate."
+  }, {
+    "date": "1995-01-19",
+    "title": "The Label Maker",
+    "description": "Introduces 're-gifting'. Kramer and Newman play a high-stakes game of Risk."
+  }, {
+    "date": "1995-02-02",
+    "title": "The Highlights of 100",
+    "description": "A two-part retrospective celebrating the show's 100th episode milestone."
+  }, {
+    "date": "1995-02-23",
+    "title": "The Doorman",
+    "description": "Frank Costanza and Kramer invent 'The Manssiere' (or 'The Bro')."
+  }, {
+    "date": "1995-04-27",
+    "title": "The Fusilli Jerry",
+    "description": "Kramer gets 'ASSMAN' license plates. Frank Costanza sits on a pasta statue of Jerry."
+  }, {
+    "date": "1995-05-11",
+    "title": "The Face Painter",
+    "description": "Elaine's boyfriend Puddy paints his face for a hockey game. 'Gotta support the team!'"
+  }, {
+    "date": "1995-09-21",
+    "title": "The Engagement",
+    "description": "Season 7 premieres. George gets engaged to Susan Ross."
+  }, {
+    "date": "1995-10-05",
+    "title": "The Maestro",
+    "description": "Elaine dates a conductor who insists on being called 'The Maestro'."
+  }, {
+    "date": "1995-11-02",
+    "title": "The Soup Nazi",
+    "description": "The group visits a strict soup stand owner. 'No soup for you!'"
+  }, {
+    "date": "1995-12-07",
+    "title": "The Sponge",
+    "description": "Elaine's favorite contraceptive is discontinued. She evaluates men for 'spongeworthiness'."
+  }, {
+    "date": "1996-01-04",
+    "title": "The Rye",
+    "description": "The Costanzas steal back a marble rye. Jerry steals one from an old lady."
+  }, {
+    "date": "1996-02-08",
+    "title": "The Cadillac",
+    "description": "Jerry buys his dad a Cadillac. George tries to date Marisa Tomei."
+  }, {
+    "date": "1996-04-25",
+    "title": "The Calzone",
+    "description": "George becomes Steinbrenner's favorite by bringing him calzones."
+  }, {
+    "date": "1996-05-02",
+    "title": "The Bottle Deposit",
+    "description": "Kramer and Newman take a mail truck to Michigan to recycle bottles for 10 cents."
+  }, {
+    "date": "1996-05-16",
+    "title": "The Invitations",
+    "description": "Season 7 finale. Susan Ross dies from licking toxic wedding envelopes."
+  }, {
+    "date": "1996-09-19",
+    "title": "The Foundation",
+    "description": "Season 8 premieres. Larry David leaves the show as head writer."
+  }, {
+    "date": "1996-10-03",
+    "title": "The Bizarro Jerry",
+    "description": "Elaine finds a group of friends who are the exact opposites of Jerry, George, and Kramer."
+  }, {
+    "date": "1996-10-10",
+    "title": "The Little Kicks",
+    "description": "Elaine's terrible dancing is revealed. 'It's like a full-body dry heave set to music.'"
+  }, {
+    "date": "1996-11-14",
+    "title": "The Chicken Roaster",
+    "description": "A neon sign from Kenny Rogers Roasters drives Kramer crazy. He and Jerry swap apartments."
+  }, {
+    "date": "1996-11-21",
+    "title": "The Abstinence",
+    "description": "George becomes a genius when he stops having sex. Elaine becomes stupid."
+  }, {
+    "date": "1997-01-09",
+    "title": "The Little Jerry",
+    "description": "Kramer buys a rooster for cockfighting. Jerry's check bounces at a bodega."
+  }, {
+    "date": "1997-02-20",
+    "title": "The Pothole",
+    "description": "Jerry drops a toothbrush in the toilet. Kramer adopts a mile of highway."
+  }, {
+    "date": "1997-04-24",
+    "title": "The Yada Yada",
+    "description": "George's girlfriend 'yada yadas' over the best parts. Jerry thinks his dentist converted for the jokes."
+  }, {
+    "date": "1997-05-08",
+    "title": "The Muffin Tops",
+    "description": "Elaine starts a business selling only the tops of muffins. 'Top of the Muffin to You!'"
+  }, {
+    "date": "1997-05-15",
+    "title": "The Summer of George",
+    "description": "Season 8 finale. George plans a summer of leisure but ends up in the hospital."
+  }, {
+    "date": "1997-09-25",
+    "title": "The Butter Shave",
+    "description": "Season 9 premieres. Kramer shaves with butter and cooks himself in the sun."
+  }, {
+    "date": "1997-10-09",
+    "title": "The Serenity Now",
+    "description": "Frank Costanza uses 'Serenity Now!' to control his temper. Kramer builds a porch."
+  }, {
+    "date": "1997-11-06",
+    "title": "The Merv Griffin Show",
+    "description": "Kramer sets up the old Merv Griffin Show set in his apartment."
+  }, {
+    "date": "1997-11-20",
+    "title": "The Betrayal",
+    "description": "The 'backwards' episode. The group goes to India for a wedding."
+  }, {
+    "date": "1997-12-18",
+    "title": "The Strike",
+    "description": "The introduction of Festivus ('for the rest of us'). Kramer returns to H&H Bagels."
+  }, {
+    "date": "1998-04-23",
+    "title": "The Frogger",
+    "description": "George tries to move a Frogger machine across a busy street without losing his high score."
+  }, {
+    "date": "1998-05-07",
+    "title": "The Puerto Rican Day",
+    "description": "The second-to-last episode. The group is stuck in traffic during a parade."
+  }, {
+    "date": "1998-05-14",
+    "title": "The Finale",
+    "description": "The series finale. The group is sentenced to one year in prison for violating a Good Samaritan law."
+  }, {
+    "date": "2004-11-23",
+    "title": "Seinfeld: Season 1 & 2 DVD Release",
+    "description": "The first official DVD release of the series, sparking a new generation of fans."
+  }, {
+    "date": "2009-09-22",
+    "title": "Seinfeld Reunion on Curb Your Enthusiasm",
+    "description": "The cast reunites for a fictional 7th season of Seinfeld during Curb's 7th season."
+  }, {
+    "date": "2014-02-02",
+    "title": "Comedians in Cars: Seinfeld Reunion",
+    "description": "Jerry and Jason Alexander (as George) film a special Super Bowl spot at Tom's Restaurant."
+  }, {
+    "date": "2021-10-01",
+    "title": "Seinfeld Debuts on Netflix",
+    "description": "The entire series becomes available on Netflix in 4K for the first time."
+  } ]
+}

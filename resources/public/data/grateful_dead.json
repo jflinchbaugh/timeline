@@ -2,11 +2,12 @@
   "name": "Grateful Dead and Company",
   "url": "https://en.wikipedia.org/wiki/Grateful_Dead",
   "theme": {
-    "primaryColor": "#E11B22",
-    "secondaryColor": "#0054A6",
-    "backgroundColor": "#FFFFFF",
-    "cardColor": "#F8F9FA",
-    "textColor": "#212529"
+    "primaryColor": "#FF00FF",
+    "secondaryColor": "#00FFFF",
+    "backgroundColor": "#1A0B2E",
+    "cardColor": "#2D004B",
+    "textColor": "#CCFF00",
+    "cardTextColor": "#FFFFFF"
   },
   "events": [ {
     "title": "First show as The Warlocks",

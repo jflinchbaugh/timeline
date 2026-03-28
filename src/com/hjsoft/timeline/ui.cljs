@@ -60,8 +60,7 @@
                             (.focus input)))))
     (d/div {:class "setup-screen"}
            (d/h1
-             (d/a {:href js/window.location.pathname
-                   :style {:text-decoration "none" :color "inherit"}}
+             (d/a {:href js/window.location.pathname}
                "Timeline"))
 
            (d/div {:class "field-group"}
@@ -173,8 +172,7 @@
                    (d/span {:class "count"}
                            (str (count deck) "/" initial-deck-size)))
             (d/button {:on-click handle-restart
-                       :class "button-secondary"
-                       :style {:padding "5px 15px" :font-size "1rem"}}
+                       :class "button-secondary button-restart"}
                       "Restart"))
 
      (d/h2 {:class "turn-message"}
@@ -227,8 +225,7 @@
      (when (and (not last-result) (not= status :won) current-card)
        ($ card {:card current-card
                 :revealed? false
-                :class-name "sticky"
-                :style {:margin-top "0"}}))
+                :class-name "sticky"}))
 
      (d/h3 "Timeline:")
      (d/div {:class "timeline-container"}
@@ -248,10 +245,6 @@
                        (d/button {:class "place-button"
                                   :on-click #(handle-place (inc idx))}
                                  "Place here")))))
-     (d/div {:style {:text-align "center"
-                     :margin-top "40px"
-                     :padding-bottom "20px"
-                     :font-size "0.9rem"
-                     :opacity 0.7}}
+     (d/div {:class "footer"}
             (when source-url
               (d/a {:href source-url :target "_blank"} "Source"))))))

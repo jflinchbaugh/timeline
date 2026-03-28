@@ -21,7 +21,7 @@
     (spit dest-index new-content)))
 
 (defn copy-resources
-  {:shadow.build/stage #{:compile-finish :flush}}
+  {:shadow.build/stage :flush}
   [build-state & args]
   (println "Build Hook: Copying resources to target/public...")
   (copy-dir "resources/public" "target/public")

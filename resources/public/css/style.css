@@ -264,6 +264,14 @@ input {
     margin-bottom: 20px;
 }
 
+.dataset-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
 .result-banner {
     padding: 10px 20px;
     border-radius: 12px;

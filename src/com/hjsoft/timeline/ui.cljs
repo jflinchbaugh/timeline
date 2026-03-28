@@ -156,11 +156,7 @@
 
     (d/div
      (when dataset-name
-       (d/div {:style {:text-align "center"
-                       :margin-bottom "15px"
-                       :font-size "1.1rem"
-                       :font-weight "bold"
-                       :opacity 0.8}}
+       (d/div {:class "dataset-title"}
               dataset-name))
       ;; Scoreboard
      (d/div {:class "scoreboard"}

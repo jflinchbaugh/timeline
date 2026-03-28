@@ -81,6 +81,7 @@
               :on-start handle-start})
           ($ ui/game-screen
              {:game game
+              :dataset-name (:name data)
               :source-url (:url data)
               :on-action handle-action}))))))
 

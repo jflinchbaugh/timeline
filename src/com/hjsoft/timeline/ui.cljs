@@ -98,7 +98,7 @@
                    (d/li "If correct, the card stays. If wrong, it's discarded.")
                    (d/li "First player to empty their hand wins!"))))))
 
-(defnc game-screen [{:keys [game source-url on-action]}]
+(defnc game-screen [{:keys [game dataset-name source-url on-action]}]
   (let [{:keys [timeline
                 players
                 current-player-idx
@@ -155,6 +155,13 @@
                         (.scrollTo js/window #js {:top 0 :behavior "smooth"})))
 
     (d/div
+     (when dataset-name
+       (d/div {:style {:text-align "center"
+                       :margin-bottom "15px"
+                       :font-size "1.1rem"
+                       :font-weight "bold"
+                       :opacity 0.8}}
+              dataset-name))
       ;; Scoreboard
      (d/div {:class "scoreboard"}
             (for [p players]
@@ -245,10 +252,10 @@
                        (d/button {:class "place-button"
                                   :on-click #(handle-place (inc idx))}
                                  "Place here")))))
-     (when source-url
-       (d/div {:style {:text-align "center"
-                       :margin-top "40px"
-                       :padding-bottom "20px"
-                       :font-size "0.9rem"
-                       :opacity 0.7}}
+     (d/div {:style {:text-align "center"
+                     :margin-top "40px"
+                     :padding-bottom "20px"
+                     :font-size "0.9rem"
+                     :opacity 0.7}}
+            (when source-url
               (d/a {:href source-url :target "_blank"} "Source"))))))

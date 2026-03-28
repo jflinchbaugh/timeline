@@ -6,5 +6,6 @@
   {"filename": "computer.json", "name": "Computer History"},
   {"filename": "videogames.json", "name": "Video Game History"},
   {"filename": "cinema.json", "name": "Cinema & Film"},
-  {"filename": "olympics.json", "name": "The Olympic Games (Easy)"}
+  {"filename": "olympics.json", "name": "The Olympic Games (Easy)"},
+  {"filename": "grateful_dead.json", "name": "Grateful Dead & Family"}
 ]

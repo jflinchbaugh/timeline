@@ -1,0 +1,332 @@
+{
+  "name": "Grateful Dead & Family",
+  "url": "https://en.wikipedia.org/wiki/Grateful_Dead",
+  "theme": {
+    "primaryColor": "#E11B22",
+    "secondaryColor": "#0054A6",
+    "backgroundColor": "#FFFFFF",
+    "cardColor": "#F8F9FA",
+    "textColor": "#212529"
+  },
+  "events": [ {
+    "title": "First show as The Warlocks",
+    "date": "1965-05-05",
+    "description": "The band plays their first show at Magoo's Pizza in Menlo Park, California."
+  }, {
+    "title": "First show as the Grateful Dead",
+    "date": "1965-12-04",
+    "description": "The band debuts their new name at the San Jose Acid Test."
+  }, {
+    "title": "Move to 710 Ashbury Street",
+    "date": "1966",
+    "description": "The band moves into a communal house in the Haight-Ashbury district of San Francisco."
+  }, {
+    "title": "Human Be-In",
+    "date": "1967-01-14",
+    "description": "The band performs at the 'Gathering of the Tribes' in Golden Gate Park, a prelude to the Summer of Love."
+  }, {
+    "title": "Release of 'The Grateful Dead'",
+    "date": "1967-03-17",
+    "description": "The band's self-titled debut studio album is released by Warner Bros."
+  }, {
+    "title": "Monterey Pop Festival",
+    "date": "1967-06-18",
+    "description": "The Dead perform at the historic festival that launched the careers of Hendrix and Joplin."
+  }, {
+    "title": "Mickey Hart joins the band",
+    "date": "1967-09-29",
+    "description": "Mickey Hart joins as the second drummer, beginning the 'Rhythm Devils' era."
+  }, {
+    "title": "Carousel Ballroom (Road Trips Vol 4 No 4)",
+    "date": "1968-02-14",
+    "description": "A legendary Valentine's Day show often cited for its early psychedelic energy."
+  }, {
+    "title": "Release of 'Anthem of the Sun'",
+    "date": "1968-07-18",
+    "description": "The band's experimental second studio/live hybrid album is released."
+  }, {
+    "title": "Tom Constanten joins on keyboards",
+    "date": "1968-11-23",
+    "description": "A childhood friend of Phil Lesh joins to add avant-garde keyboard textures."
+  }, {
+    "title": "Fillmore West 'Live/Dead' Recording",
+    "date": "1969-02-27",
+    "description": "The definitive version of 'Dark Star' is recorded for the Live/Dead album."
+  }, {
+    "title": "Release of 'Aoxomoxoa'",
+    "date": "1969-06-20",
+    "description": "The band's third studio album, featuring Rick Griffin's iconic psychedelic cover art."
+  }, {
+    "title": "Woodstock Festival",
+    "date": "1969-08-16",
+    "description": "The band's performance is plagued by technical issues and rain, resulting in a set they famously disliked."
+  }, {
+    "title": "Release of 'Live/Dead'",
+    "date": "1969-11-10",
+    "description": "The first official live album capturing the band's improvisational peak."
+  }, {
+    "title": "Altamont Free Concert",
+    "date": "1969-12-06",
+    "description": "The band refuses to play after violence breaks out at the speedway."
+  }, {
+    "title": "Tom Constanten leaves the band",
+    "date": "1970-01-30",
+    "description": "The keyboardist departs after a run at the Family Dog at the Great Highway."
+  }, {
+    "title": "New Orleans Drug Bust",
+    "date": "1970-01-31",
+    "description": "The band is arrested for drug possession, an event immortalized in the song 'Truckin'."
+  }, {
+    "title": "Harpur College (Dick's Picks Vol. 8)",
+    "date": "1970-05-02",
+    "description": "A beloved show featuring a deep acoustic set and an electric transition."
+  }, {
+    "title": "Release of 'Workingman's Dead'",
+    "date": "1970-06-14",
+    "description": "The band shifts toward Americana, folk, and country-rock styles."
+  }, {
+    "title": "Release of 'American Beauty'",
+    "date": "1970-11-01",
+    "description": "A landmark album featuring 'Box of Rain', 'Friend of the Devil', and 'Ripple'."
+  }, {
+    "title": "Mickey Hart leaves the band",
+    "date": "1971-02-18",
+    "description": "The drummer departs for several years following a financial scandal involving his father."
+  }, {
+    "title": "Keith Godchaux's first show",
+    "date": "1971-10-19",
+    "description": "Keith joins as the new keyboardist, replacing Pigpen who was too ill to tour."
+  }, {
+    "title": "Release of 'Grateful Dead (Skull & Roses)'",
+    "date": "1971-10-24",
+    "description": "A live album that helped popularize the 'Skull & Roses' iconography."
+  }, {
+    "title": "Release of 'Garcia'",
+    "date": "1972-01",
+    "description": "Jerry Garcia's debut solo album, featuring 'Sugaree' and 'The Wheel'."
+  }, {
+    "title": "Donna Jean Godchaux joins",
+    "date": "1972-03-25",
+    "description": "The wife of keyboardist Keith Godchaux joins the band as a vocalist."
+  }, {
+    "title": "Europe '72 Tour Begins",
+    "date": "1972-04-07",
+    "description": "The band embarks on their most famous international tour across Western Europe."
+  }, {
+    "title": "Pigpen's final show",
+    "date": "1972-06-17",
+    "description": "Ron 'Pigpen' McKernan performs for the last time at the Hollywood Bowl."
+  }, {
+    "title": "Veneta, Oregon (Sunshine Daydream)",
+    "date": "1972-08-27",
+    "description": "A legendary benefit concert for the Springfield Creamery in extreme heat."
+  }, {
+    "title": "Release of 'Europe '72'",
+    "date": "1972-11-05",
+    "description": "A triple-LP live album documenting the band's European tour."
+  }, {
+    "title": "Death of Pigpen",
+    "date": "1973-03-08",
+    "description": "Founding member Ron 'Pigpen' McKernan dies of a gastrointestinal hemorrhage at age 27."
+  }, {
+    "title": "RFK Stadium with Allman Brothers",
+    "date": "1973-06-10",
+    "description": "A massive joint concert featuring a long jam with members of both bands."
+  }, {
+    "title": "Release of 'Bear's Choice'",
+    "date": "1973-07-13",
+    "description": "A live tribute to Pigpen, curated by Owsley 'Bear' Stanley."
+  }, {
+    "title": "Summer Jam at Watkins Glen",
+    "date": "1973-07-28",
+    "description": "The Dead play for an estimated 600,000 people along with the Allman Brothers and The Band."
+  }, {
+    "title": "Release of 'Wake of the Flood'",
+    "date": "1973-10-15",
+    "description": "The first release on the band's own 'Grateful Dead Records' label."
+  }, {
+    "title": "Debut of the 'Wall of Sound'",
+    "date": "1974-03-23",
+    "description": "The massive 600-speaker PA system is used for the first time at the Cow Palace."
+  }, {
+    "title": "Release of 'From the Mars Hotel'",
+    "date": "1974-06-27",
+    "description": "Featuring classics like 'Scarlet Begonias' and 'Ship of Fools'."
+  }, {
+    "title": "Winterland 'The Grateful Dead Movie' run",
+    "date": "1974-10-16",
+    "description": "A five-night run filmed for the future feature-length movie."
+  }, {
+    "title": "Mickey Hart returns",
+    "date": "1974-10-20",
+    "description": "Hart rejoins the band on stage for the final show before their hiatus."
+  }, {
+    "title": "Band begins touring hiatus",
+    "date": "1974-10-21",
+    "description": "The band takes a break from the road to focus on solo projects and editing their movie."
+  }, {
+    "title": "Release of 'Blues for Allah'",
+    "date": "1975-09-01",
+    "description": "A complex studio effort recorded during the band's hiatus from touring."
+  }, {
+    "title": "Return to touring",
+    "date": "1976-06-03",
+    "description": "The band plays their first show after the hiatus at Portland's Paramount Theatre."
+  }, {
+    "title": "Release of 'Steal Your Face'",
+    "date": "1976-06-15",
+    "description": "A double live album recorded during the 1974 Winterland run."
+  }, {
+    "title": "Cornell '77 (Barton Hall)",
+    "date": "1977-05-08",
+    "description": "Widely considered one of the band's greatest performances of all time."
+  }, {
+    "title": "Release of 'Terrapin Station'",
+    "date": "1977-07-27",
+    "description": "Produced by Keith Olsen, featuring a grand orchestral title suite."
+  }, {
+    "title": "Englishtown, New Jersey",
+    "date": "1977-09-03",
+    "description": "One of the band's largest crowds, playing to over 100,000 people at Raceway Park."
+  }, {
+    "title": "Release of 'Cats Under the Stars'",
+    "date": "1978-04",
+    "description": "The only studio album released by the Jerry Garcia Band."
+  }, {
+    "title": "Egypt / Giza Pyramids shows",
+    "date": "1978-09-14",
+    "description": "The band performs three nights in front of the Great Pyramid of Giza."
+  }, {
+    "title": "Release of 'Shakedown Street'",
+    "date": "1978-11-15",
+    "description": "Produced by Lowell George, leaning into disco and funk influences."
+  }, {
+    "title": "Closing of Winterland",
+    "date": "1978-12-31",
+    "description": "The band plays the final show at the legendary San Francisco venue."
+  }, {
+    "title": "Keith and Donna Godchaux's final show",
+    "date": "1979-02-17",
+    "description": "The couple departs the band after a seven-year tenure."
+  }, {
+    "title": "Brent Mydland's first show",
+    "date": "1979-04-22",
+    "description": "Brent debuts on keyboards at Spartan Stadium in San Jose."
+  }, {
+    "title": "Release of 'Go to Heaven'",
+    "date": "1980-04-28",
+    "description": "Featuring the white-suit cover art and the song 'Althea'."
+  }, {
+    "title": "15th Anniversary Warfield Run",
+    "date": "1980-09-25",
+    "description": "The band begins a 15-night residency in San Francisco featuring acoustic sets."
+  }, {
+    "title": "Release of 'Reckoning'",
+    "date": "1981-04-01",
+    "description": "A live acoustic album recorded during the 1980 anniversary shows."
+  }, {
+    "title": "Release of 'Dead Set'",
+    "date": "1981-08-26",
+    "description": "A live electric album recorded during the 1980 anniversary shows."
+  }, {
+    "title": "Release of 'Run for the Roses'",
+    "date": "1982-08-30",
+    "description": "Jerry Garcia's final solo studio rock album."
+  }, {
+    "title": "Jerry Garcia's Diabetic Coma",
+    "date": "1986-07-10",
+    "description": "Garcia collapses and falls into a life-threatening five-day coma."
+  }, {
+    "title": "Jerry Garcia's return to stage",
+    "date": "1986-12-15",
+    "description": "The band returns to performing after Garcia's recovery from his coma."
+  }, {
+    "title": "Release of 'In the Dark'",
+    "date": "1987-07-06",
+    "description": "The band's late-career comeback album, which became their biggest commercial hit."
+  }, {
+    "title": "Touch of Grey hits Top 10",
+    "date": "1987-09",
+    "description": "The song becomes the band's only Top 10 single on the Billboard Hot 100."
+  }, {
+    "title": "Release of 'Built to Last'",
+    "date": "1989-10-31",
+    "description": "The band's final studio album, featuring 'Foolish Heart' and 'Standing on the Moon'."
+  }, {
+    "title": "Nassau Coliseum with Branford Marsalis",
+    "date": "1990-03-29",
+    "description": "The jazz saxophonist joins the band for a widely acclaimed collaboration."
+  }, {
+    "title": "Death of Brent Mydland",
+    "date": "1990-07-26",
+    "description": "The band's longest-tenured keyboardist dies of a drug overdose at age 37."
+  }, {
+    "title": "Release of 'Without a Net'",
+    "date": "1990-09",
+    "description": "A double live album documenting the band's 1989-1990 era."
+  }, {
+    "title": "Vince Welnick's first show",
+    "date": "1990-09-07",
+    "description": "The former Tubes keyboardist debuts as the newest member of the band."
+  }, {
+    "title": "Bruce Hornsby joins as touring member",
+    "date": "1990-09-15",
+    "description": "The Grammy-winning pianist begins a period of frequent touring with the band."
+  }, {
+    "title": "Release of 'Garcia/Grisman'",
+    "date": "1991-08",
+    "description": "Jerry's first collaboration album with mandolinist David Grisman."
+  }, {
+    "title": "Bruce Hornsby's final show as touring member",
+    "date": "1992-03-24",
+    "description": "Hornsby leaves the touring lineup to focus on his solo career."
+  }, {
+    "title": "Release of 'Not for Kids Only'",
+    "date": "1993-09-28",
+    "description": "An album of children's folk songs by Garcia and Grisman."
+  }, {
+    "title": "Rock and Roll Hall of Fame Induction",
+    "date": "1994-01-19",
+    "description": "The band is inducted; Jerry Garcia famously misses the ceremony."
+  }, {
+    "title": "Final Grateful Dead concert",
+    "date": "1995-07-09",
+    "description": "The band plays their last show at Soldier Field in Chicago."
+  }, {
+    "title": "Death of Jerry Garcia",
+    "date": "1995-08-09",
+    "description": "The legendary guitarist and cultural icon dies at age 53."
+  }, {
+    "title": "Grateful Dead officially disband",
+    "date": "1995-12-08",
+    "description": "The remaining members announce their decision to retire the name 'Grateful Dead'."
+  }, {
+    "title": "Formation of The Other Ones",
+    "date": "1998",
+    "description": "The first major post-Jerry group featuring Weir, Lesh, and Hart."
+  }, {
+    "title": "Formation of The Dead",
+    "date": "2003",
+    "description": "The 'Core Four' reunite for a summer tour with guests."
+  }, {
+    "title": "Fare Thee Well shows",
+    "date": "2015-06-27",
+    "description": "The 'Core Four' celebrate the band's 50th anniversary with five final stadium shows."
+  }, {
+    "title": "Dead & Company Debut",
+    "date": "2015-10-31",
+    "description": "The band featuring Mayer, Weir, Hart, Kreutzmann, Burbridge, and Chimenti debuts at MSG."
+  }, {
+    "title": "Dead & Company 'The Final Tour' concludes",
+    "date": "2023-07-16",
+    "description": "The band finishes their final cross-country tour at Oracle Park in San Francisco."
+  }, {
+    "title": "Dead Forever residency begins",
+    "date": "2024-05-16",
+    "description": "Dead & Company begins their 30-show immersive residency at the Las Vegas Sphere."
+  }, {
+    "title": "Final show of Sphere residency",
+    "date": "2024-08-10",
+    "description": "The band concludes their 'Dead Forever' run at the Sphere."
+  } ]
+}

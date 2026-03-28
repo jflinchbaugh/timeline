@@ -136,7 +136,7 @@
                 :last-result {:correct? false
                               :card {:title "E2" :date "2000"}}}
           _ (rtl/render ($ ui/game-screen {:game game}))]
-      (is (rtl/screen.getByText #"\u2717 Wrong!"))
+      (is (rtl/screen.getByText (re-pattern (str ui/cross-mark " Wrong!"))))
       (is (rtl/screen.getByText #"You draw another card."))
       (is (rtl/screen.getByText "Next Player: Bob"))
       ;; Card should be shown in timeline with date revealed
@@ -175,6 +175,20 @@
           _ (rtl/render ($ ui/game-screen
                            {:game game
                             :source-url source-url}))]
-      (let [link (rtl/screen.getByText "Source")]
+      (let [link (rtl/screen.getByText "Data Source")]
         (is (= (.getAttribute link "href") source-url))
+        (is (= (.getAttribute link "target") "_blank"))))))
+
+(deftest game-screen-github-link-test
+  (testing "game screen displays github project link"
+    (let [game {:timeline [{:title "E1" :date "1000"}]
+                :players [{:id 0
+                           :name "Alice"
+                           :hand [{:title "E2" :date "2000"}]}]
+                :current-player-idx 0
+                :status :playing
+                :deck []}
+          _ (rtl/render ($ ui/game-screen {:game game}))]
+      (let [link (rtl/screen.getByText "GitHub")]
+        (is (= (.getAttribute link "href") "https://github.com/jflinchbaugh/timeline"))
         (is (= (.getAttribute link "target") "_blank"))))))

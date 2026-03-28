@@ -5,6 +5,10 @@
             [clojure.string :as str]
             [com.hjsoft.timeline.logic :as logic]))
 
+(def trophy-icon "\uD83C\uDFC6")
+(def check-mark "\u2713")
+(def cross-mark "\u2717")
+
 (defn- save-names [names]
   (let [to-save (filterv #(not (str/blank? %)) names)]
     (js/localStorage.setItem "timeline-player-names"
@@ -192,14 +196,14 @@
               (d/h2 (cond
                       game-over? (let [names (map :name winners)]
                                    (if (> (count names) 1)
-                                     (str "\uD83C\uDFC6 "
+                                     (str trophy-icon " "
                                           (str/join " & " names)
                                           " Tie!")
-                                     (str "\uD83C\uDFC6 "
+                                     (str trophy-icon " "
                                           (first names)
                                           " Wins!")))
-                      (:correct? last-result) "\u2713 Correct!"
-                      :else "\u2717 Wrong!"))
+                      (:correct? last-result) (str check-mark " Correct!")
+                      :else (str cross-mark " Wrong!")))
               (when-not (or game-over? (:correct? last-result))
                 (d/p "You draw another card."))
               (if game-over?
@@ -247,12 +251,8 @@
                                  "Place here")))))
      (d/div {:class "footer"}
             (d/div
-             (d/a {:href "https://github.com/jflinchbaugh/timeline"
-                   :target "_blank"}
-                  "GitHub")
+             (d/a {:href "https://github.com/jflinchbaugh/timeline" :target "_blank"} "GitHub")
              (when source-url
                (d/span
                 (d/span " | ")
-                (d/a {:href source-url
-                      :target "_blank"}
-                     "Data Source"))))))))
+                (d/a {:href source-url :target "_blank"} "Data Source"))))))))

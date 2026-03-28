@@ -7,7 +7,8 @@
 
 (defn- save-names [names]
   (let [to-save (filterv #(not (str/blank? %)) names)]
-    (js/localStorage.setItem "timeline-player-names" (js/JSON.stringify (clj->js to-save)))))
+    (js/localStorage.setItem "timeline-player-names"
+      (js/JSON.stringify (clj->js to-save)))))
 
 (defn- load-names []
   (try
@@ -58,7 +59,10 @@
                           (when-let [input (get @input-refs last-idx)]
                             (.focus input)))))
     (d/div {:class "setup-screen"}
-           (d/h1 (d/a {:href js/window.location.pathname :style {:text-decoration "none" :color "inherit"}} "Timeline"))
+           (d/h1
+             (d/a {:href js/window.location.pathname
+                   :style {:text-decoration "none" :color "inherit"}}
+               "Timeline"))
 
            (d/div {:class "field-group"}
                   (d/label "Select Theme:")
@@ -75,7 +79,9 @@
                     (d/div {:key idx :class "player-input-wrapper"}
                            (d/input {:ref #(swap! input-refs assoc idx %)
                                      :value name
-                                     :placeholder (str "Player " (inc idx) " name")
+                                     :placeholder (str "Player "
+                                                    (inc idx)
+                                                    " name")
                                      :on-change #(handle-name-change idx %)}))))
 
            (d/div {:class "button-group"}
@@ -185,8 +191,12 @@
               (d/h2 (cond
                       game-over? (let [names (map :name winners)]
                                    (if (> (count names) 1)
-                                     (str "\uD83C\uDFC6 " (str/join " & " names) " Tie!")
-                                     (str "\uD83C\uDFC6 " (first names) " Wins!")))
+                                     (str "\uD83C\uDFC6 "
+                                       (str/join " & " names)
+                                       " Tie!")
+                                     (str "\uD83C\uDFC6 "
+                                       (first names)
+                                       " Wins!")))
                       (:correct? last-result) "\u2713 Correct!"
                       :else "\u2717 Wrong!"))
               (when-not (or game-over? (:correct? last-result))
@@ -196,8 +206,14 @@
                  (d/div {:class "final-scores"}
                         (for [p players]
                           (d/p {:key (:id p)}
-                               (str (:name p) ": " (count (:hand p)) " cards left")))
-                        (d/p (d/strong (str "Deck: " (count deck) "/" initial-deck-size))))
+                               (str (:name p)
+                                 ": "
+                                 (count (:hand p))
+                                 " cards left")))
+                        (d/p (d/strong (str "Deck: "
+                                         (count deck)
+                                         "/"
+                                         initial-deck-size))))
                  (d/button {:on-click handle-restart :class "button-black"}
                            "Play Again"))
                 (d/button {:on-click handle-next-turn :class "button-white"}

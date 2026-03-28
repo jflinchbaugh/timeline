@@ -251,8 +251,12 @@
                                  "Place here")))))
      (d/div {:class "footer"}
             (d/div
-             (d/a {:href "https://github.com/jflinchbaugh/timeline" :target "_blank"} "GitHub")
+             (d/a {:href "https://github.com/jflinchbaugh/timeline"
+                   :target "_blank"}
+               "GitHub")
              (when source-url
                (d/span
                 (d/span " | ")
-                (d/a {:href source-url :target "_blank"} "Data Source"))))))))
+                (d/a {:href source-url
+                      :target "_blank"}
+                  "Data Source"))))))))

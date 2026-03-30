@@ -31,7 +31,7 @@ To start the development environment:
 npx shadow-cljs watch frontend
 ```
 
-- The app will be available at [http://localhost:8080](http://localhost:8080).
+- The app will be available at [http://localhost:3000](http://localhost:3000).
 
 ## Testing
 
@@ -47,7 +47,7 @@ To run the ClojureScript tests in the browser:
 npx shadow-cljs watch test
 ```
 
-- The tests will be available at [http://localhost:8021](http://localhost:8021).
+- The tests will be available at [http://localhost:3021](http://localhost:3021).
 
 ## Releasing
 

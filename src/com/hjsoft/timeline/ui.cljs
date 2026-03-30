@@ -98,7 +98,10 @@
                   (d/h3 "How to Play")
                   (d/ul
                    (d/li "Place cards in chronological order on the timeline.")
-                   (d/li "If correct, the card stays. If wrong, it's discarded.")
+                   (d/li (str/join " "
+                           ["If correct, the card stays."
+                            "If wrong, it's discarded,"
+                            "and you draw a new card."]))
                    (d/li "First player to empty their hand wins!"))))))
 
 (defnc game-screen [{:keys [game dataset-name source-url on-action]}]

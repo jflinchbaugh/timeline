@@ -32,6 +32,7 @@
     (d/div {:class (str "card"
                         (when correct? " correct")
                         (when wrong? " wrong")
+                        (when (or correct? wrong?) " pop")
                         (when class-name (str " " class-name)))
             :style style}
            (d/h2 title)
@@ -195,7 +196,8 @@
                            (cond
                              game-over? "win"
                              (:correct? last-result) "correct"
-                             :else "wrong"))}
+                             :else "wrong"))
+               :on-click (if game-over? handle-restart handle-next-turn)}
               (d/h2 (cond
                       game-over? (let [names (map :name winners)]
                                    (if (> (count names) 1)
@@ -222,9 +224,15 @@
                                             (count deck)
                                             "/"
                                             initial-deck-size))))
-                 (d/button {:on-click handle-restart :class "button-black"}
+                 (d/button {:on-click (fn [e]
+                                         (.stopPropagation e)
+                                         (handle-restart))
+                            :class "button-black"}
                            "Play Again"))
-                (d/button {:on-click handle-next-turn :class "button-white"}
+                (d/button {:on-click (fn [e]
+                                       (.stopPropagation e)
+                                       (handle-next-turn))
+                           :class "button-white"}
                           (str "Next Player: " (:name next-player))))))
 
      (when (and (not last-result) (not= status :won) current-card)

@@ -192,3 +192,41 @@
       (let [link (rtl/screen.getByText "GitHub")]
         (is (= (.getAttribute link "href") "https://github.com/jflinchbaugh/timeline"))
         (is (= (.getAttribute link "target") "_blank"))))))
+
+(deftest game-screen-banner-dismiss-test
+  (testing "clicking banner triggers next-turn action"
+    (let [next-turn-called? (atom false)
+          game {:timeline [{:title "E1" :date "1000"}]
+                :players [{:id 0 :name "Alice" :hand []}
+                          {:id 1 :name "Bob" :hand [{:title "E3" :date "3000"}]}]
+                :current-player-idx 0
+                :status :playing
+                :last-result {:correct? false :card {:title "E2" :date "2000"}}}
+          _ (rtl/render ($ ui/game-screen
+                           {:game game
+                            :on-action (fn [action]
+                                         (when (= action :next-turn)
+                                           (reset! next-turn-called? true)))}))
+          banner (rtl/screen.getByText (re-pattern (str ui/cross-mark " Wrong!")))]
+      (let [banner-div (.closest banner ".result-banner")]
+        (rtl/fireEvent.click banner-div)
+        (is @next-turn-called?)))))
+
+(deftest game-screen-win-banner-dismiss-test
+  (testing "clicking win banner triggers restart action"
+    (let [restarted? (atom false)
+          game {:timeline [{:title "E1" :date "1000"}]
+                :players [{:id 0 :name "Alice" :hand []}]
+                :current-player-idx 0
+                :status :won
+                :winners [{:id 0 :name "Alice"}]
+                :last-result {:correct? true :winners [{:id 0 :name "Alice"}]}}
+          _ (rtl/render ($ ui/game-screen
+                           {:game game
+                            :on-action (fn [action]
+                                         (when (= action :restart)
+                                           (reset! restarted? true)))}))
+          banner (rtl/screen.getByText (re-pattern (str ui/trophy-icon " Alice Wins!")))]
+      (let [banner-div (.closest banner ".result-banner")]
+        (rtl/fireEvent.click banner-div)
+        (is @restarted?)))))

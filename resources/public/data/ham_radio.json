@@ -1,0 +1,412 @@
+{
+  "name": "Ham Radio History",
+  "url": "https://en.wikipedia.org/wiki/History_of_amateur_radio",
+  "theme": {
+    "primaryColor": "#004080",
+    "secondaryColor": "#ffd700",
+    "backgroundColor": "#f8f9fa",
+    "cardColor": "#ffffff",
+    "textColor": "#212529"
+  },
+  "events": [ {
+    "title": "Hertz Proves EM Waves",
+    "date": "1887",
+    "description": "Heinrich Hertz proves the existence of electromagnetic waves, the foundation of radio."
+  }, {
+    "title": "Marconi's First Experiments",
+    "date": "1894",
+    "description": "Guglielmo Marconi begins his first wireless telegraphy experiments in Italy."
+  }, {
+    "title": "Term 'Radio' Coined",
+    "date": "1897",
+    "description": "The term 'radio' is coined by French physicist Édouard Branly."
+  }, {
+    "title": "First Amateur Experiments",
+    "date": "1898",
+    "description": "The first 'amateur' wireless experiments are reported in hobbyist magazines."
+  }, {
+    "title": "First Transatlantic Signal",
+    "date": "1901",
+    "description": "Marconi sends the first transatlantic wireless signal (the letter 'S') from Cornwall to Newfoundland."
+  }, {
+    "title": "Hertzian Wave Instructions",
+    "date": "1901",
+    "description": "Amateur Work magazine publishes instructions on building a 'Hertzian wave' system for hobbyists."
+  }, {
+    "title": "International Telegraph Conference",
+    "date": "1903",
+    "description": "The first International Telegraph Conference in London discusses the need for wireless regulation."
+  }, {
+    "title": "Invention of the Diode",
+    "date": "1904",
+    "description": "John Ambrose Fleming invents the thermionic valve (diode), a key radio component."
+  }, {
+    "title": "UK Wireless Telegraphy Act",
+    "date": "1904",
+    "description": "The UK passes the Wireless Telegraphy Act, the first law requiring radio licenses."
+  }, {
+    "title": "First UK Licenses Issued",
+    "date": "1905",
+    "description": "The first UK 'Experimental' licenses are issued to 68 pioneering individuals."
+  }, {
+    "title": "Invention of the Triode",
+    "date": "1906",
+    "description": "Lee de Forest invents the Audion (triode), enabling electronic signal amplification."
+  }, {
+    "title": "First Voice Transmission",
+    "date": "1906",
+    "description": "Reginald Fessenden makes the first wireless voice and music transmission on Christmas Eve."
+  }, {
+    "title": "First US College Radio Club",
+    "date": "1908",
+    "description": "The Wireless Telegraph Club of Columbia University is formed, the first US college club."
+  }, {
+    "title": "Radio Club of America Founded",
+    "date": "1909",
+    "description": "The Junior Wireless Club (later Radio Club of America) is founded in New York."
+  }, {
+    "title": "First Radio Call Book",
+    "date": "1909",
+    "description": "The first 'Call Book' listing radio stations is published by Modern Electrics magazine."
+  }, {
+    "title": "World's First National Society",
+    "date": "1910",
+    "description": "The Wireless Institute of Australia (WIA) is founded, the world's first national radio society."
+  }, {
+    "title": "Sinking of the Titanic",
+    "date": "1912",
+    "description": "The Titanic disaster highlights the critical need for 24-hour radio watches and regulation."
+  }, {
+    "title": "US Radio Act of 1912",
+    "date": "1912",
+    "description": "Following the Titanic, the US passes the Radio Act, relegating amateurs to '200 meters and down'."
+  }, {
+    "title": "Amateur First Grade Licenses",
+    "date": "1912",
+    "description": "The US Department of Commerce begins issuing the first official 'Amateur First Grade' licenses."
+  }, {
+    "title": "Q-Code Adopted",
+    "date": "1912",
+    "description": "The 'Q-Code' is internationally adopted to standardize radio shorthand communication."
+  }, {
+    "title": "RSGB Founded",
+    "date": "1913",
+    "description": "The Radio Society of Great Britain (RSGB) is founded to represent British amateurs."
+  }, {
+    "title": "Regenerative Circuit Developed",
+    "date": "1913",
+    "description": "Edwin Armstrong develops the regenerative receiver circuit, vastly improving sensitivity."
+  }, {
+    "title": "Founding of the ARRL",
+    "date": "1914",
+    "description": "Hiram Percy Maxim and Clarence Tuska found the American Radio Relay League (ARRL)."
+  }, {
+    "title": "First Issue of QST",
+    "date": "1915",
+    "description": "The ARRL publishes the first issue of QST magazine, the journal for radio amateurs."
+  }, {
+    "title": "WWI Dismantle Order",
+    "date": "1917",
+    "description": "The US enters WWI; all amateur stations are ordered to dismantle and store their equipment."
+  }, {
+    "title": "Superheterodyne Receiver",
+    "date": "1918",
+    "description": "Edwin Armstrong develops the superheterodyne receiver while serving in the military in France."
+  }, {
+    "title": "ARRL Defeats Navy Monopoly",
+    "date": "1919",
+    "description": "The US Navy attempts to maintain a monopoly on radio; the ARRL successfully lobbies Congress against it."
+  }, {
+    "title": "Amateurs Return to Air",
+    "date": "1919",
+    "description": "US amateurs are allowed back on the air on October 1st following the post-WWI ban."
+  }, {
+    "title": "Transatlantic Tests Fail",
+    "date": "1921",
+    "description": "The first ARRL Transatlantic Tests fail to hear US amateur signals in the United Kingdom."
+  }, {
+    "title": "Godley Hears US Hams",
+    "date": "1921",
+    "description": "Paul Godley (1BCG) travels to Scotland and successfully hears dozens of US hams, proving shortwave propagation."
+  }, {
+    "title": "Official Call Signs Assigned",
+    "date": "1922",
+    "description": "The US government begins assigning official call signs, replacing self-chosen initials."
+  }, {
+    "title": "First 2-Way Transatlantic Contact",
+    "date": "1923",
+    "description": "Leon Deloy (8AB) and Fred Schnell (1MO) achieve the first two-way amateur contact across the Atlantic."
+  }, {
+    "title": "Amateur Extra License Created",
+    "date": "1923",
+    "description": "The 'Amateur Extra First Grade' license is created in the US for top-tier operators."
+  }, {
+    "title": "Shortwave Discovery",
+    "date": "1924",
+    "description": "Amateurs discover that 'short waves' (below 100m) allow for reliable global daytime communication."
+  }, {
+    "title": "Formation of the IARU",
+    "date": "1925",
+    "description": "The International Amateur Radio Union is founded in Paris to coordinate global amateur activity."
+  }, {
+    "title": "Worked All Continents (WAC)",
+    "date": "1926",
+    "description": "The Worked All Continents (WAC) award is established to recognize global communication."
+  }, {
+    "title": "Washington Conference Allocations",
+    "date": "1927",
+    "description": "The Washington Conference officially allocates the 80, 40, 20, and 10-meter bands to amateurs."
+  }, {
+    "title": "Federal Radio Commission (FRC)",
+    "date": "1927",
+    "description": "The Federal Radio Commission (FRC) is created in the US to regulate the growing radio spectrum."
+  }, {
+    "title": "Amateur First Class License",
+    "date": "1932",
+    "description": "The 'Amateur First Class' license grade is introduced in the United States."
+  }, {
+    "title": "Early SSB Experiments",
+    "date": "1933",
+    "description": "Robert Moore (W6DEI) begins early experimental Single Sideband (SSB) voice transmissions."
+  }, {
+    "title": "Creation of the FCC",
+    "date": "1934",
+    "description": "The US Communications Act of 1934 creates the Federal Communications Commission (FCC)."
+  }, {
+    "title": "License Classes A, B, and C",
+    "date": "1934",
+    "description": "The FCC implements the Class A, B, and C amateur license structure."
+  }, {
+    "title": "DXCC Rules Drafted",
+    "date": "1935",
+    "description": "The first rules for the DX Century Club (DXCC) are drafted to reward contacts with 100 countries."
+  }, {
+    "title": "Hiram Percy Maxim Passes",
+    "date": "1936",
+    "description": "ARRL founder Hiram Percy Maxim passes away; W1AW is established as his memorial station."
+  }, {
+    "title": "DXCC Award Launched",
+    "date": "1937",
+    "description": "The DXCC award is officially launched, becoming the premier award in amateur radio."
+  }, {
+    "title": "Cairo Conference Loss",
+    "date": "1938",
+    "description": "The Cairo Conference results in amateurs losing parts of the 40-meter band to international broadcasters."
+  }, {
+    "title": "WWII Shutdown",
+    "date": "1941",
+    "description": "US amateurs are ordered off the air following the attack on Pearl Harbor."
+  }, {
+    "title": "WERS Created",
+    "date": "1942",
+    "description": "The War Emergency Radio Service (WERS) is created to allow hams to assist in civil defense."
+  }, {
+    "title": "Bands Reopen Post-War",
+    "date": "1945",
+    "description": "Amateur bands begin to reopen after WWII; the 10-meter band is the first to return."
+  }, {
+    "title": "2-Meter Band Allocated",
+    "date": "1946",
+    "description": "The 2-meter band (144 MHz) is allocated to amateurs, replacing the old 2.5-meter band."
+  }, {
+    "title": "15-Meter Band Created",
+    "date": "1947",
+    "description": "The Atlantic City Conference creates the 15-meter band (21 MHz) for amateur use."
+  }, {
+    "title": "Invention of the Transistor",
+    "date": "1947",
+    "description": "The transistor is invented at Bell Labs, paving the way for compact, solid-state radio gear."
+  }, {
+    "title": "SSB Superiority Demonstrated",
+    "date": "1948",
+    "description": "Oswald Villard (W6QYT) demonstrates that SSB is superior to traditional AM for amateur voice."
+  }, {
+    "title": "Novice and Technician Classes",
+    "date": "1951",
+    "description": "The FCC introduces the Novice and Technician license classes to encourage new hams."
+  }, {
+    "title": "40m Phone Band Opens",
+    "date": "1952",
+    "description": "The 40-meter band is opened to voice (Phone) communication for the first time in the US."
+  }, {
+    "title": "RTTY Authorized",
+    "date": "1953",
+    "description": "The first Radio Teletype (RTTY) authorizations are granted to US amateur operators."
+  }, {
+    "title": "Novice License Popularity",
+    "date": "1954",
+    "description": "The Novice license becomes a major entry point for the 'Space Age' generation of hams."
+  }, {
+    "title": "First Transatlantic SSB Contact",
+    "date": "1956",
+    "description": "The first two-way amateur contact across the Atlantic using Single Sideband occurs."
+  }, {
+    "title": "Sputnik 1 Tracking",
+    "date": "1957",
+    "description": "Hams worldwide track Sputnik 1's beacons, providing the first public tracking data of a satellite."
+  }, {
+    "title": "Explorer 1 Tracking",
+    "date": "1958",
+    "description": "Amateur operators track the first US satellite, Explorer 1, on its 108 MHz signal."
+  }, {
+    "title": "First Moonbounce (EME)",
+    "date": "1960",
+    "description": "The first two-way Earth-Moon-Earth (EME) contact occurs on 1296 MHz."
+  }, {
+    "title": "OSCAR 1 Launch",
+    "date": "1961",
+    "description": "OSCAR 1, the first amateur satellite, is launched and transmits 'HI' in Morse code."
+  }, {
+    "title": "US Hams Pass 250,000",
+    "date": "1962",
+    "description": "The number of licensed amateur radio operators in the United States exceeds 250,000."
+  }, {
+    "title": "Incentive Licensing",
+    "date": "1964",
+    "description": "The FCC introduces Incentive Licensing, tying spectrum privileges to higher-grade licenses."
+  }, {
+    "title": "OSCAR 3 Transponder",
+    "date": "1965",
+    "description": "OSCAR 3 is launched, featuring the first active communications transponder on an amateur satellite."
+  }, {
+    "title": "SSTV Popularized",
+    "date": "1967",
+    "description": "Slow Scan Television (SSTV) standards are popularized, allowing hams to send images over HF."
+  }, {
+    "title": "Satellite Transponder Contact",
+    "date": "1968",
+    "description": "The first amateur contact via a relaying satellite transponder (OSCAR 5) takes place."
+  }, {
+    "title": "AMSAT Founded",
+    "date": "1969",
+    "description": "The Radio Amateur Satellite Corporation (AMSAT) is founded to coordinate amateur space projects."
+  }, {
+    "title": "VHF FM Repeater Boom",
+    "date": "1970",
+    "description": "VHF FM repeaters begin to proliferate, revolutionizing local and mobile communication."
+  }, {
+    "title": "OSCAR 6 Long-Life Satellite",
+    "date": "1972",
+    "description": "OSCAR 6 is launched, the first long-lived amateur communications satellite in orbit."
+  }, {
+    "title": "OSCAR 7 Launch",
+    "date": "1974",
+    "description": "OSCAR 7 is launched; it would famously 'come back to life' decades after its battery failed."
+  }, {
+    "title": "Solid-State QRP Boom",
+    "date": "1975",
+    "description": "The 'West Coast Handbook' and new transistors popularize solid-state low-power (QRP) construction."
+  }, {
+    "title": "Vanity Call Signs Begin",
+    "date": "1976",
+    "description": "The FCC begins issuing 'Vanity' call signs, allowing hams to request specific identifiers."
+  }, {
+    "title": "PCs Enter the Shack",
+    "date": "1977",
+    "description": "The first personal computers (Apple II, TRS-80) begin to be used for logging and digital modes."
+  }, {
+    "title": "Russian RS Satellites",
+    "date": "1978",
+    "description": "The first Soviet amateur satellites (RS-1 and RS-2) are successfully launched into orbit."
+  }, {
+    "title": "WARC-79 New Bands",
+    "date": "1979",
+    "description": "WARC-79 allocates three new 'WARC bands' at 30m (10 MHz), 17m (18 MHz), and 12m (24 MHz)."
+  }, {
+    "title": "First Packet Experiments",
+    "date": "1980",
+    "description": "The first amateur Packet Radio experiments are conducted in Vancouver, Canada."
+  }, {
+    "title": "AX.25 Protocol Standard",
+    "date": "1981",
+    "description": "The AX.25 protocol is adopted as the worldwide standard for amateur packet radio."
+  }, {
+    "title": "First Ham in Space",
+    "date": "1983",
+    "description": "Owen Garriott (W5LFL) operates the first amateur station from the Space Shuttle Columbia."
+  }, {
+    "title": "Volunteer Examiner Program",
+    "date": "1984",
+    "description": "The VE program begins in the US, allowing hams to administer license exams themselves."
+  }, {
+    "title": "AMTOR Error Correction",
+    "date": "1985",
+    "description": "AMTOR (Amateur Teleprinting Over Radio) introduces robust error-correcting digital modes."
+  }, {
+    "title": "Early Digital Voice",
+    "date": "1986",
+    "description": "The first experimental 'Digital Voice' transmissions are conducted on the HF bands."
+  }, {
+    "title": "Novice Enhancement",
+    "date": "1987",
+    "description": "The FCC 'Novice Enhancement' grants voice privileges on 10m and 220MHz to entry-level hams."
+  }, {
+    "title": "OSCAR 13 Launch",
+    "date": "1988",
+    "description": "OSCAR 13 is launched, providing high-altitude elliptical orbit communications for years."
+  }, {
+    "title": "No-Code Technician License",
+    "date": "1990",
+    "description": "The 'No-Code Technician' license is introduced in the US, leading to a massive boom in hams."
+  }, {
+    "title": "Contact with Mir Station",
+    "date": "1991",
+    "description": "The first amateur radio contact between Earth and the Mir Space Station takes place."
+  }, {
+    "title": "First SDR Concepts",
+    "date": "1994",
+    "description": "The first 'Software Defined Radio' (SDR) concepts are published in amateur technical journals."
+  }, {
+    "title": "APRS Protocol Standardized",
+    "date": "1996",
+    "description": "The Automatic Packet Reporting System (APRS) protocol is standardized for position reporting."
+  }, {
+    "title": "Introduction of PSK31",
+    "date": "1998",
+    "description": "Peter Martinez (G3PLX) introduces PSK31, revolutionizing weak-signal digital text chat."
+  }, {
+    "title": "Sound Card Digital Modes",
+    "date": "1999",
+    "description": "The first 'Sound Card' digital modes allow hams to use regular PCs instead of external modems."
+  }, {
+    "title": "License Structure Simplified",
+    "date": "2000",
+    "description": "The FCC simplifies the US license structure to Technician, General, and Extra classes."
+  }, {
+    "title": "ARISS Program Begins",
+    "date": "2001",
+    "description": "The ARISS program begins, facilitating school contacts with the International Space Station."
+  }, {
+    "title": "Morse Requirement Optional",
+    "date": "2003",
+    "description": "The WRC-03 conference allows countries to eliminate Morse code as a licensing requirement."
+  }, {
+    "title": "D-STAR Introduced",
+    "date": "2004",
+    "description": "D-STAR (Digital Smart Technologies for Amateur Radio) is introduced as a digital voice standard."
+  }, {
+    "title": "Morse Requirement Removed",
+    "date": "2007",
+    "description": "The FCC officially removes the Morse code requirement for all US amateur license classes."
+  }, {
+    "title": "WSJT-X Released",
+    "date": "2010",
+    "description": "Joe Taylor (K1JT) releases WSJT-X, introducing the JT65 and JT9 weak-signal digital modes."
+  }, {
+    "title": "ARRL 100th Anniversary",
+    "date": "2014",
+    "description": "The American Radio Relay League (ARRL) celebrates its 100th anniversary since founding."
+  }, {
+    "title": "Release of FT8",
+    "date": "2017",
+    "description": "The FT8 digital mode is released, quickly becoming the most popular mode in amateur history."
+  }, {
+    "title": "QO-100 Launch",
+    "date": "2019",
+    "description": "QO-100, the first geostationary amateur radio transponder, is launched over Africa/Europe."
+  }, {
+    "title": "Record License Numbers",
+    "date": "2024",
+    "description": "Amateur radio reaches a record high of over 780,000 licensed operators in the United States."
+  } ]
+}

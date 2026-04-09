@@ -10,5 +10,6 @@
   {"filename": "friends.json", "name": "Friends (TV Series)"},
   {"filename": "seinfeld.json", "name": "Seinfeld: A Show About Nothing"},
   {"filename": "olympics.json", "name": "The Olympic Games (Easy)"},
-  {"filename": "grateful_dead.json", "name": "Grateful Dead and Company"}
+  {"filename": "grateful_dead.json", "name": "Grateful Dead and Company"},
+  {"filename": "ham_radio.json", "name": "Ham Radio History"}
 ]

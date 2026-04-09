@@ -1,0 +1,412 @@
+{
+  "name": "Morse Code & Telegraph History",
+  "url": "https://en.wikipedia.org/wiki/Morse_code",
+  "theme": {
+    "primaryColor": "#5d4037",
+    "secondaryColor": "#8d6e63",
+    "backgroundColor": "#efebe9",
+    "cardColor": "#ffffff",
+    "textColor": "#212121"
+  },
+  "events": [ {
+    "title": "Electrical Conduction Discovered",
+    "date": "1729",
+    "description": "Stephen Gray discovers that electricity can be conducted over long distances through wire."
+  }, {
+    "title": "Two-Mile Charge Experiment",
+    "date": "1747",
+    "description": "Dr. William Watson sends an electric charge through two miles of wire, suggesting its use for messaging."
+  }, {
+    "title": "Electrostatic Telegraph Proposal",
+    "date": "1753",
+    "description": "An anonymous writer 'C.M.' proposes an electrostatic telegraph in Scots Magazine."
+  }, {
+    "title": "Optical Telegraph Demonstration",
+    "date": "1791",
+    "description": "Claude Chappe demonstrates the first 'Optical Telegraph' (semaphore) system in France."
+  }, {
+    "title": "First Commercial Semaphore Line",
+    "date": "1794",
+    "description": "The first commercial semaphore line opens between Paris and Lille."
+  }, {
+    "title": "Invention of the Voltaic Pile",
+    "date": "1800",
+    "description": "Alessandro Volta invents the Voltaic Pile, the first reliable chemical battery."
+  }, {
+    "title": "Electrochemical Telegraph Proposal",
+    "date": "1804",
+    "description": "Francisco Salva Campillo proposes an electrochemical telegraph using bubbles in water."
+  }, {
+    "title": "Soemmering's Telegraph",
+    "date": "1809",
+    "description": "Samuel Soemmering builds an electrochemical telegraph in Bavaria."
+  }, {
+    "title": "Ronalds' Electrostatic Telegraph",
+    "date": "1816",
+    "description": "Francis Ronalds builds an electrostatic telegraph; the British Admiralty rejects it as 'unnecessary'."
+  }, {
+    "title": "Magnetic Field Discovery",
+    "date": "1820",
+    "description": "Hans Christian Ørsted discovers that electric current creates a magnetic field."
+  }, {
+    "title": "Needle Telegraph Proposal",
+    "date": "1820",
+    "description": "André-Marie Ampère proposes an electromagnetic telegraph using magnetized needles."
+  }, {
+    "title": "Schilling's Needle Telegraph",
+    "date": "1821",
+    "description": "Baron Schilling develops the first electromagnetic needle telegraph in Russia."
+  }, {
+    "title": "Invention of the Electromagnet",
+    "date": "1825",
+    "description": "William Sturgeon invents the electromagnet, the core component of the future telegraph."
+  }, {
+    "title": "Henry Rings a Bell",
+    "date": "1830",
+    "description": "Joseph Henry rings a bell at a distance using an electromagnet and a mile of wire."
+  }, {
+    "title": "Morse's Telegraph Concept",
+    "date": "1832",
+    "description": "Samuel Morse conceives the idea of an electromagnetic telegraph while on the ship Sully."
+  }, {
+    "title": "Gauss and Weber Telegraph",
+    "date": "1833",
+    "description": "Gauss and Weber build a working electromagnetic telegraph in Göttingen, Germany."
+  }, {
+    "title": "Morse's First Prototype",
+    "date": "1835",
+    "description": "Samuel Morse builds his first prototype using a wooden picture frame and a lead pencil."
+  }, {
+    "title": "Telegraph Relay Added",
+    "date": "1836",
+    "description": "Morse adds a 'relay' to his system, allowing signals to travel long distances without fading."
+  }, {
+    "title": "Five-Needle Telegraph Patent",
+    "date": "1837",
+    "description": "William Cooke and Charles Wheatstone patent the five-needle telegraph in England."
+  }, {
+    "title": "Demonstration to Leonard Gale",
+    "date": "1837",
+    "description": "Samuel Morse demonstrates his telegraph to Professor Leonard Gale at NYU."
+  }, {
+    "title": "Alfred Vail Joins Morse",
+    "date": "1837",
+    "description": "Alfred Vail joins Morse, bringing financial backing and crucial mechanical skill to the project."
+  }, {
+    "title": "Earth Ground Return Discovered",
+    "date": "1837",
+    "description": "Carl August von Steinheil discovers that the earth can act as a 'ground return' for a circuit."
+  }, {
+    "title": "First Public Demonstration",
+    "date": "1838",
+    "description": "First public demonstration of the Morse telegraph at Speedwell Ironworks, NJ."
+  }, {
+    "title": "Dots and Dashes Developed",
+    "date": "1838",
+    "description": "Morse and Vail develop the 'dots and dashes' code, initially as a number-based dictionary."
+  }, {
+    "title": "Franklin Institute Demo",
+    "date": "1838",
+    "description": "Morse demonstrates the telegraph to the Franklin Institute and President Martin Van Buren."
+  }, {
+    "title": "First Commercial Telegraph",
+    "date": "1839",
+    "description": "The first commercial telegraph line in the world opens between Paddington and West Drayton, UK."
+  }, {
+    "title": "Morse's First US Patent",
+    "date": "1840",
+    "description": "Samuel Morse receives his first U.S. Patent (No. 1,647) for the telegraph."
+  }, {
+    "title": "Alphabetical Code Developed",
+    "date": "1841",
+    "description": "Morse develops the 'Alphabetical Code', the direct precursor to Modern Morse Code."
+  }, {
+    "title": "Telegraph Line Appropriation",
+    "date": "1843",
+    "description": "U.S. Congress appropriates $30,000 to build a test line from Washington, D.C. to Baltimore."
+  }, {
+    "title": "First News Dispatch",
+    "date": "1844",
+    "description": "First news dispatch (Whig Party nomination) sent via telegraph from Annapolis Junction."
+  }, {
+    "title": "What Hath God Wrought!",
+    "date": "1844",
+    "description": "Morse sends the official first message: 'What hath God wrought!' from the US Capitol."
+  }, {
+    "title": "Public Telegraph Office Opens",
+    "date": "1845",
+    "description": "The first public telegraph office opens in Washington, D.C."
+  }, {
+    "title": "Magnetic Telegraph Company",
+    "date": "1845",
+    "description": "The Magnetic Telegraph Company is formed to extend lines from D.C. to New York."
+  }, {
+    "title": "Printing Telegraph Patent",
+    "date": "1845",
+    "description": "Royal Earl House patents the first 'Printing Telegraph' which prints letters directly."
+  }, {
+    "title": "First Telegraphic Arrest",
+    "date": "1845",
+    "description": "The first telegraphic arrest occurs in England after a message is sent ahead of a suspect's train."
+  }, {
+    "title": "Western Union Predecessor Founded",
+    "date": "1846",
+    "description": "The New York and Mississippi Valley Printing Telegraph Company (later Western Union) is founded."
+  }, {
+    "title": "Associated Press (AP) Formed",
+    "date": "1847",
+    "description": "The Associated Press is formed to pool telegraph costs for efficient news gathering."
+  }, {
+    "title": "International Morse Created",
+    "date": "1848",
+    "description": "Friedrich Gerke simplifies Morse's code in Germany, creating what became International Morse Code."
+  }, {
+    "title": "First Telegraphic Election Results",
+    "date": "1848",
+    "description": "First telegraphic election results are reported in the race between Taylor and Cass."
+  }, {
+    "title": "First Submarine Cable",
+    "date": "1850",
+    "description": "The first submarine cable is laid across the English Channel; it fails within hours."
+  }, {
+    "title": "English Channel Success",
+    "date": "1851",
+    "description": "The first successful and durable English Channel telegraph cable is completed."
+  }, {
+    "title": "Telegraph Train Dispatching",
+    "date": "1851",
+    "description": "The New York & Erie Railroad becomes the first to use the telegraph for train dispatching."
+  }, {
+    "title": "Reuters Agency Founded",
+    "date": "1851",
+    "description": "Paul Julius Reuter founds the Reuters news agency using telegraphs and carrier pigeons."
+  }, {
+    "title": "Telegraphic Time Signal",
+    "date": "1852",
+    "description": "The first telegraphic time signal is sent from Greenwich Observatory."
+  }, {
+    "title": "Duplex Telegraphy Invented",
+    "date": "1853",
+    "description": "Wilhelm Gintl invents 'Duplex' telegraphy, allowing two messages on one wire simultaneously."
+  }, {
+    "title": "Transatlantic Project Begins",
+    "date": "1854",
+    "description": "Cyrus West Field begins the ambitious project to lay a Transatlantic Cable."
+  }, {
+    "title": "Improved Printing Telegraph",
+    "date": "1855",
+    "description": "David Edward Hughes patents an improved printing telegraph with a piano-style keyboard."
+  }, {
+    "title": "Name 'Western Union' Adopted",
+    "date": "1856",
+    "description": "The name 'Western Union' is officially adopted for the expanding telegraph company."
+  }, {
+    "title": "First Transatlantic Messages",
+    "date": "1858",
+    "description": "First Transatlantic cable completed; Queen Victoria and President Buchanan exchange messages."
+  }, {
+    "title": "1858 Cable Fails",
+    "date": "1858",
+    "description": "The 1858 cable fails after only three weeks due to insulation breakdown from excessive voltage."
+  }, {
+    "title": "Pony Express Begins",
+    "date": "1860",
+    "description": "The Pony Express begins, though its future is threatened by the advancing telegraph."
+  }, {
+    "title": "Transcontinental Line Complete",
+    "date": "1861",
+    "description": "The first Transcontinental Telegraph line is completed across the United States."
+  }, {
+    "title": "Pony Express Ceases",
+    "date": "1861",
+    "description": "The Pony Express officially ceases operations, rendered obsolete by the transcontinental telegraph."
+  }, {
+    "title": "Telegraph from a Balloon",
+    "date": "1861",
+    "description": "Thaddeus Lowe sends the first telegraph message from a balloon to President Lincoln."
+  }, {
+    "title": "Military Telegraph Corps",
+    "date": "1861",
+    "description": "The U.S. Military Telegraph Corps is formed; Lincoln becomes the first 'telegraphic' president."
+  }, {
+    "title": "ITU Founded",
+    "date": "1865",
+    "description": "The International Telegraph Union (ITU) is founded in Paris to standardize regulations."
+  }, {
+    "title": "Permanent Transatlantic Cable",
+    "date": "1866",
+    "description": "The SS Great Eastern successfully lays the first reliable, permanent Transatlantic cable."
+  }, {
+    "title": "Stock Exchange Link",
+    "date": "1866",
+    "description": "The first telegraphic link between the London and New York Stock Exchanges is established."
+  }, {
+    "title": "Stock Ticker Invented",
+    "date": "1867",
+    "description": "Edward Calahan invents the Stock Ticker, revolutionizing the flow of market data."
+  }, {
+    "title": "British Nationalization",
+    "date": "1870",
+    "description": "The British government nationalizes all private telegraph companies under the Post Office."
+  }, {
+    "title": "Telegraphic Money Transfer",
+    "date": "1870",
+    "description": "Western Union introduces the first telegraphic money transfer service."
+  }, {
+    "title": "Quadruplex Telegraph",
+    "date": "1871",
+    "description": "Thomas Edison invents the 'Quadruplex' telegraph, allowing four messages on one wire."
+  }, {
+    "title": "Australian Overland Line",
+    "date": "1872",
+    "description": "The Australian Overland Telegraph Line is completed, linking Australia to the global network."
+  }, {
+    "title": "Baudot Code Invented",
+    "date": "1874",
+    "description": "Émile Baudot invents the 5-bit 'Baudot Code', the direct ancestor of digital computing."
+  }, {
+    "title": "Bell Patents Telephone",
+    "date": "1876",
+    "description": "Alexander Graham Bell patents the telephone, the first major technology to challenge the telegraph."
+  }, {
+    "title": "First Telephone Line",
+    "date": "1877",
+    "description": "The first commercial telephone line is installed, often using existing telegraph infrastructure."
+  }, {
+    "title": "Wheatstone Automatic System",
+    "date": "1879",
+    "description": "The British Post Office introduces the Wheatstone Automatic system, reaching 400 words per minute."
+  }, {
+    "title": "Postal Telegraph System",
+    "date": "1881",
+    "description": "The Postal Telegraph System is formed to compete with Western Union's monopoly in the US."
+  }, {
+    "title": "Standard Time Zones adopted",
+    "date": "1883",
+    "description": "Standard Time Zones are adopted in the U.S., coordinated via telegraphic time signals."
+  }, {
+    "title": "Radio Waves Proven",
+    "date": "1888",
+    "description": "Heinrich Hertz proves the existence of radio waves, the basis for wireless telegraphy."
+  }, {
+    "title": "London-Paris Telephone Cable",
+    "date": "1891",
+    "description": "The first submarine telephone cable is laid between London and Paris."
+  }, {
+    "title": "Marconi's Wireless Experiments",
+    "date": "1894",
+    "description": "Guglielmo Marconi begins his first wireless telegraphy experiments in Italy."
+  }, {
+    "title": "Wireless Telegraphy Patent",
+    "date": "1896",
+    "description": "Marconi receives the first patent for wireless telegraphy."
+  }, {
+    "title": "Wireless Telegraph Company",
+    "date": "1897",
+    "description": "Marconi establishes the Wireless Telegraph & Signal Company."
+  }, {
+    "title": "First Wireless Distress Signal",
+    "date": "1899",
+    "description": "The first wireless distress signal is sent from the lightship Goodwin Sands."
+  }, {
+    "title": "Creed System Invented",
+    "date": "1900",
+    "description": "Frederick Creed invents the 'Creed System', which converts Morse code directly into text."
+  }, {
+    "title": "First Transatlantic Wireless",
+    "date": "1901",
+    "description": "Marconi sends the first Transatlantic wireless signal (the letter 'S' in Morse)."
+  }, {
+    "title": "All Red Pacific Cable",
+    "date": "1902",
+    "description": "The 'All Red' Pacific cable is completed, circling the globe on British territory."
+  }, {
+    "title": "US-Philippines Cable",
+    "date": "1903",
+    "description": "The first Transpacific cable is completed between the U.S. and the Philippines."
+  }, {
+    "title": "CQD Distress Signal",
+    "date": "1904",
+    "description": "CQD is adopted as the first international wireless distress signal."
+  }, {
+    "title": "Germany Adopts SOS",
+    "date": "1905",
+    "description": "Germany adopts 'SOS' as its national distress signal due to its distinct sound."
+  }, {
+    "title": "SOS Global Standard",
+    "date": "1906",
+    "description": "The International Radio Telegraph Convention in Berlin adopts SOS as the global standard."
+  }, {
+    "title": "SOS Officially Effective",
+    "date": "1908",
+    "description": "SOS officially becomes the international standard for distress calls."
+  }, {
+    "title": "First Major SOS Use",
+    "date": "1909",
+    "description": "The first major use of SOS in a real emergency occurs during the wreck of the SS Slavonia."
+  }, {
+    "title": "ICC Rate Authority",
+    "date": "1910",
+    "description": "The Mann-Elkins Act gives the Interstate Commerce Commission authority to regulate telegraph rates."
+  }, {
+    "title": "World Record Speed Message",
+    "date": "1911",
+    "description": "A telegraph message is sent around the world in just 9.5 minutes."
+  }, {
+    "title": "Sinking of the Titanic",
+    "date": "1912",
+    "description": "The sinking of the Titanic; both CQD and SOS are used by wireless operators."
+  }, {
+    "title": "Radio Act of 1912",
+    "date": "1912",
+    "description": "The Radio Act of 1912 mandates 24-hour radio watchkeeping on ships."
+  }, {
+    "title": "Western Union Multiplexing",
+    "date": "1913",
+    "description": "Western Union introduces Multiplexing, allowing 8 messages on a single wire."
+  }, {
+    "title": "Zimmermann Telegram",
+    "date": "1917",
+    "description": "The Zimmermann Telegram is intercepted, helping draw the U.S. into World War I."
+  }, {
+    "title": "First Telex Service",
+    "date": "1924",
+    "description": "The first Telex (teleprinter exchange) service begins in Germany."
+  }, {
+    "title": "FCC Created",
+    "date": "1934",
+    "description": "The Communications Act of 1934 creates the FCC to oversee US telegraphy."
+  }, {
+    "title": "Western Union Merger",
+    "date": "1943",
+    "description": "Western Union merges with its last major rival, Postal Telegraph, becoming a monopoly."
+  }, {
+    "title": "WWII Code Breaking",
+    "date": "1945",
+    "description": "Morse code remains the primary medium for intercepting and decoding wartime signals."
+  }, {
+    "title": "Moscow-Washington Hotline",
+    "date": "1963",
+    "description": "The Moscow-Washington 'Hotline' is established using teletype technology."
+  }, {
+    "title": "World Wide Web Public",
+    "date": "1991",
+    "description": "The World Wide Web becomes public, signaling the final end of the Wired World."
+  }, {
+    "title": "Maritime Morse Requirement Ends",
+    "date": "1999",
+    "description": "International maritime regulations officially end the requirement for Morse code."
+  }, {
+    "title": "Final Western Union Telegram",
+    "date": "2006",
+    "description": "Western Union sends its final telegram, ending 155 years of service on Jan 27."
+  }, {
+    "title": "India Shuts Down Telegraph",
+    "date": "2013",
+    "description": "India's state-run BSNL shuts down the world's last major commercial telegraph system."
+  }, {
+    "title": "Modern Morse Usage",
+    "date": "2024",
+    "description": "Morse code remains a vital skill for amateur radio operators and a symbol of communications history."
+  } ]
+}

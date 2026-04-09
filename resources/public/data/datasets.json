@@ -11,5 +11,6 @@
   {"filename": "seinfeld.json", "name": "Seinfeld: A Show About Nothing"},
   {"filename": "olympics.json", "name": "The Olympic Games (Easy)"},
   {"filename": "grateful_dead.json", "name": "Grateful Dead and Company"},
-  {"filename": "ham_radio.json", "name": "Ham Radio History"}
+  {"filename": "ham_radio.json", "name": "Ham Radio History"},
+  {"filename": "morse_code.json", "name": "Morse Code & Telegraph History"}
 ]

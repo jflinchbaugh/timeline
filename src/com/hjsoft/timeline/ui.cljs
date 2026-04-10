@@ -9,6 +9,11 @@
 (def check-mark "\u2713")
 (def cross-mark "\u2717")
 
+(defn- with-stop-propagation [f]
+  (fn [e]
+    (.stopPropagation e)
+    (f)))
+
 (defn- save-names [names]
   (let [to-save (filterv #(not (str/blank? %)) names)]
     (js/localStorage.setItem "timeline-player-names"
@@ -224,14 +229,10 @@
                                             (count deck)
                                             "/"
                                             initial-deck-size))))
-                 (d/button {:on-click (fn [e]
-                                         (.stopPropagation e)
-                                         (handle-restart))
+                 (d/button {:on-click (with-stop-propagation handle-restart)
                             :class "button-black"}
                            "Play Again"))
-                (d/button {:on-click (fn [e]
-                                       (.stopPropagation e)
-                                       (handle-next-turn))
+                (d/button {:on-click (with-stop-propagation handle-next-turn)
                            :class "button-white"}
                           (str "Next Player: " (:name next-player))))))
 

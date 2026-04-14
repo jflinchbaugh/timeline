@@ -108,7 +108,10 @@
                            ["If correct, the card stays."
                             "If wrong, it's discarded,"
                             "and you draw a new card."]))
-                   (d/li "First player to empty their hand wins!"))))))
+                   (d/li "First player to empty their hand wins!")))
+           (d/div {:class "footer"}
+             (d/a {:href "mailto:john@hjsoft.com"}
+               "john@hjsoft.com")))))
 
 (defnc game-screen [{:keys [game dataset-name source-url on-action]}]
   (let [{:keys [timeline

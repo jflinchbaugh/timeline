@@ -110,8 +110,12 @@
                             "and you draw a new card."]))
                    (d/li "First player to empty their hand wins!")))
            (d/div {:class "footer"}
-             (d/a {:href "mailto:john@hjsoft.com"}
-               "john@hjsoft.com")))))
+             (d/a {:href "https://github.com/jflinchbaugh/timeline"
+                   :target "_blank"}
+               "GitHub")
+             (d/span " | ")
+             (d/a {:href "mailto:timeline@hjsoft.com"}
+               "timeline@hjsoft.com")))))
 
 (defnc game-screen [{:keys [game dataset-name source-url on-action]}]
   (let [{:keys [timeline

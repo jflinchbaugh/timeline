@@ -303,7 +303,7 @@ input {
     text-align: center;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 10px;
     z-index: 1100;
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }

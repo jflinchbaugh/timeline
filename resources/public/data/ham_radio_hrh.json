@@ -1,5 +1,5 @@
 {
-  "name": "First 25 Years of Amateur Radio",
+  "name": "Beginnings of Amateur Radio Through 1930",
   "url": "https://w2pa.net/HRH/",
   "theme": {
     "primaryColor": "#800000",
@@ -9,9 +9,33 @@
     "textColor": "#212529"
   },
   "events": [ {
-    "title": "Navy Establishes Coastal Stations",
+    "title": "Hertz Demonstrates Radio Waves",
+    "date": "1886",
+    "description": "Heinrich Hertz demonstrates electromagnetic waves in his laboratory, providing the physical foundation for wireless telegraphy."
+  }, {
+    "title": "Marconi's Practical Wireless System",
+    "date": "1896",
+    "description": "Guglielmo Marconi brings together early wireless inventions to produce and demonstrate a practical communications system."
+  }, {
+    "title": "Navy Wireless Board Formed",
+    "date": "1899",
+    "description": "Following successful trials during the America's Cup races, the U.S. Navy establishes a board to advise on wireless telegraphy."
+  }, {
+    "title": "Marconi's Transatlantic Signal",
+    "date": "1901-12-12",
+    "description": "Guglielmo Marconi successfully receives the first transatlantic wireless signal (the letter 'S') in Newfoundland."
+  }, {
+    "title": "Navy Establishes First 20 Coastal Stations",
     "date": "1904",
     "description": "The U.S. Navy establishes 20 coastal stations to communicate with 24 wireless-equipped ships."
+  }, {
+    "title": "First Scheduled Time Broadcasts Begin",
+    "date": "1904-09",
+    "description": "The U.S. Navy begins regularly scheduled time broadcasts from the Boston Navy Yard."
+  }, {
+    "title": "Berlin Wireless Convention",
+    "date": "1906-11",
+    "description": "The International Wireless Telegraph Convention in Berlin adopts the term 'radio' and establishes early international regulations."
   }, {
     "title": "Modern Electrics Founded",
     "date": "1908",
@@ -21,7 +45,7 @@
     "date": "1909-01",
     "description": "The Junior Wireless Club, the first amateur radio organization, is formed in New York City."
   }, {
-    "title": "Navy Skill Certificates",
+    "title": "Navy Issues Skill Certificates",
     "date": "1910",
     "description": "The Navy issues 447 certificates of skill in radio communication, mostly to amateur operators."
   }, {
@@ -29,15 +53,15 @@
     "date": "1910-03",
     "description": "Amateurs successfully lobby against two Congressional bills that would have restricted their operations."
   }, {
-    "title": "Radio Club of America",
+    "title": "Junior Wireless Club is Renamed Radio Club of America",
     "date": "1911",
     "description": "The Junior Wireless Club is renamed the Radio Club of America (R.C.A.)."
   }, {
-    "title": "Second Legislative Victory",
+    "title": "Second Legislative Victory for Amateurs",
     "date": "1911",
     "description": "A second attempt to restrict amateur radio through legislation is defeated by R.C.A. opposition."
   }, {
-    "title": "Radio Act of 1912",
+    "title": "Radio Act Relegates Amateurs to 200 Meters and Down",
     "date": "1912-05-17",
     "description": "President Taft signs the Radio Act of 1912, relegating amateurs to '200 meters and down'."
   }, {
@@ -45,11 +69,11 @@
     "date": "1913-01",
     "description": "In the first four months of the 1912 law, 1,185 amateur licenses are issued."
   }, {
-    "title": "Growing Ham Population",
+    "title": "Ham Population Grows to 2000",
     "date": "1913",
     "description": "By the end of 1913, the number of licensed amateur operators reaches nearly 2,000."
   }, {
-    "title": "Radio Club of Hartford",
+    "title": "Radio Club of Hartford Holds First Meeting",
     "date": "1914-01-14",
     "description": "The Radio Club of Hartford holds its first meeting; Hiram Percy Maxim is a key attendee."
   }, {
@@ -65,15 +89,15 @@
     "date": "1914-06",
     "description": "Licensed amateurs in the U.S. surpass 5,000, with over 10,000 total transmitters active."
   }, {
-    "title": "Relay Routes Proven",
+    "title": "Relay Routes Proven Across Northeast",
     "date": "1914-06",
     "description": "The ARRL successfully demonstrates several reliable relay routes across the Northeast."
   }, {
-    "title": "Network Expansion",
+    "title": "Network Expansion: 200 Relays Across U.S. and Canada",
     "date": "1914-08",
     "description": "The list of registered ARRL relay stations grows to over 200 across the U.S. and Canada."
   }, {
-    "title": "First List of Stations",
+    "title": "First List of Amateur Stations for Routing",
     "date": "1914-10",
     "description": "The Radio Club of Hartford publishes the first official list of amateur stations and routing tables."
   }, {
@@ -81,43 +105,43 @@
     "date": "1915-02",
     "description": "Maxim and colleagues incorporate the ARRL as an independent entity separate from the Hartford club."
   }, {
-    "title": "Expanding Directory",
+    "title": "Expanding Directory: Second Edition with 600 Amateur Stations",
     "date": "1915-03",
     "description": "The second edition of the List of Amateur Stations is published, now containing 600 entries."
   }, {
-    "title": "Creation of QST",
+    "title": "Creation of QST Magazine",
     "date": "1915-12",
     "description": "The ARRL launches QST magazine to coordinate its growing membership and technical efforts."
   }, {
-    "title": "Postcard QSL Idea",
+    "title": "Postcard QSL is First Suggested",
     "date": "1916",
     "description": "The idea of using postcards for reception reports (QSLs) is first suggested in QST."
   }, {
-    "title": "Marconi Telephone Demo",
+    "title": "Marconi Wireless Telephone Demo",
     "date": "1916-06-12",
     "description": "The Marconi Wireless Telephone is demonstrated during a voyage to Boston."
   }, {
-    "title": "ARRL Reorganization",
+    "title": "ARRL Reorganization after WWI",
     "date": "1919-03-29",
     "description": "The ARRL Board meets to reorganize post-WWI and plans a 'midget' issue of QST."
   }, {
-    "title": "Receiving Ban Lifted",
+    "title": "Receiving Ban Lifted after WWI",
     "date": "1919-04-15",
     "description": "The U.S. Navy officially lifts the wartime ban on radio receiving for amateur operators."
   }, {
-    "title": "Canada Resumes Operations",
+    "title": "Canada Resumes Operations after WWI",
     "date": "1919-05-01",
     "description": "The ban on amateur radio is lifted in Canada under new proximity-based regulations."
   }, {
-    "title": "QST Reopening Number",
+    "title": "QST Publishes Reopening Number Issue",
     "date": "1919-06",
     "description": "QST magazine returns to regular publication with a special 'Reopening Number'."
   }, {
-    "title": "Navy Test Broadcasts",
+    "title": "Navy Test Broadcasts from NAJ",
     "date": "1919-08",
     "description": "The Navy begins broadcasting test messages from station NAJ for amateur practice."
   }, {
-    "title": "Hoffman QSL Postcard",
+    "title": "Hoffman QSL Postcards in QST",
     "date": "1919-08",
     "description": "Don Hoffman writes to QST about using postcards to report heard signals."
   }, {
@@ -125,11 +149,11 @@
     "date": "1919-08-28",
     "description": "A new Congressional bill proposes replacing the 1912 law with a technical committee."
   }, {
-    "title": "Transmitting Ban Lifted",
+    "title": "Transmitting Ban Lifted after WWI",
     "date": "1919-10",
     "description": "The U.S. government finally lifts the wartime restriction on amateur radio transmitting."
   }, {
-    "title": "Liberty Number",
+    "title": "QST Publishes Liberty Number",
     "date": "1919-11",
     "description": "QST publishes the 'LIBERTY NUMBER,' celebrating the return of amateur radio freedoms."
   }, {
@@ -141,15 +165,15 @@
     "date": "1919-12",
     "description": "Edwin Armstrong presents his paper on short-wavelength weak signal reception to the R.C.A."
   }, {
-    "title": "Natural Radio Blackout",
+    "title": "Natural Radio Blackout and 600-Meter Remains Strong",
     "date": "1919-12",
     "description": "A natural blackout affects shorter wavelengths while 600-meter signals remain strong."
   }, {
-    "title": "Superheterodyne Article",
+    "title": "Superheterodyne Article in QST",
     "date": "1920-02",
     "description": "Armstrong's seminal article on the superheterodyne principle is published in QST."
   }, {
-    "title": "Amateur CW Arrival",
+    "title": "Amateur CW Arrival in QST",
     "date": "1920-03",
     "description": "QST declares that amateur continuous wave (CW) telegraphy is now proven for relay work."
   }, {
@@ -157,7 +181,7 @@
     "date": "1920-03-21",
     "description": "A severe auroral display caused by a solar flare halts amateur message handling."
   }, {
-    "title": "Colpitts Oscillator",
+    "title": "Colpitts Oscillator Introduced",
     "date": "1920-05",
     "description": "The Colpitts oscillator is introduced to amateurs, aiding stable frequency control."
   }, {
@@ -185,15 +209,15 @@
     "date": "1921",
     "description": "Hundreds of amateurs adopt the Reinartz tuner, revolutionizing CW reception."
   }, {
-    "title": "Transcon Record Speed",
+    "title": "Transcon Record Speed: 6.5 Minutes",
     "date": "1921-01-18",
     "description": "A round-trip message between Hartford and Los Angeles sets a record of 6-1/2 minutes."
   }, {
-    "title": "Heising Modulation Seminar",
+    "title": "Heising Presents Modulation Seminar",
     "date": "1921-02",
     "description": "Raymond Heising presents a seminar on amplitude modulation theory at Columbia University."
   }, {
-    "title": "The Chicago Plan",
+    "title": "The Chicago Plan to Resolve Interference",
     "date": "1921-05",
     "description": "A cooperative model to resolve local interference is published and adopted in Chicago."
   }, {
@@ -201,7 +225,7 @@
     "date": "1921-06",
     "description": "John Reinartz presents a tuner design optimized for CW that becomes highly popular."
   }, {
-    "title": "Smith Cup to Chicago",
+    "title": "Smith Cup Is Established",
     "date": "1921-07",
     "description": "The Smith Cup is established to recognize outstanding feats in amateur radio."
   }, {
@@ -225,23 +249,23 @@
     "date": "1921-12-03",
     "description": "Paul Godley arrives in Glasgow to set up his receiving station away from London's noise."
   }, {
-    "title": "Ardrossan Signals",
+    "title": "Ardrossan Signals Heard by Godley",
     "date": "1921-12-07",
     "description": "Godley successfully hears the first U.S. amateur signals from a station in Ardrossan, Scotland."
   }, {
-    "title": "1BCG Success",
+    "title": "1BCG Successfully Heard by Godley",
     "date": "1921-12-09",
     "description": "The high-power station 1BCG is heard by Godley, proving transatlantic amateur capability."
   }, {
-    "title": "QST Success Banner",
+    "title": "QST Success Banner for Transatlantic Tests",
     "date": "1922-01",
     "description": "QST features a massive banner headline celebrating the success of transatlantic tests."
   }, {
-    "title": "Smith Cup Award",
+    "title": "Smith Cup Awarded to Chicago Executive Radio Council",
     "date": "1922-03",
     "description": "The Chicago Executive Radio Council receives the Smith Cup for their cooperation model."
   }, {
-    "title": "National Radio Conference",
+    "title": "First National Radio Conference",
     "date": "1922-03",
     "description": "Herbert Hoover convenes the first conference to manage the crowded radio spectrum."
   }, {
@@ -249,7 +273,7 @@
     "date": "1922-06",
     "description": "For the first time, ARRL message traffic on CW exceeds traffic handled via spark."
   }, {
-    "title": "Seefred CW Switch",
+    "title": "Seefred Brothers Switch to CW",
     "date": "1922-06",
     "description": "The Seefred brothers switch to CW, quickly outperforming their old spark equipment."
   }, {
@@ -257,17 +281,9 @@
     "date": "1922-06-07",
     "description": "Edwin Armstrong presents his super-regenerative receiver design to the IRE."
   }, {
-    "title": "Armstrong R.C.A. Demo",
+    "title": "Armstrong Demos Super-Regenerative Receiever to R.C.A.",
     "date": "1922-06-28",
     "description": "Armstrong demonstrates his super-regenerative receiver prototype to the R.C.A."
-  }, {
-    "title": "Armstrong Prototype R.C.A.",
-    "date": "1922-06-28",
-    "description": "Edwin Armstrong demonstrates his super-regenerative prototype to the Radio Club of America."
-  }, {
-    "title": "Record Message Volume",
-    "date": "1922-10",
-    "description": "Fred Schnell and others set new records for the number of messages handled in a month."
   }, {
     "title": "East Coast-Hawaii Relay",
     "date": "1922-11-22",
@@ -277,7 +293,7 @@
     "date": "1923-01-02",
     "description": "ARRL President Maxim testifies before Congress to protect amateur radio status."
   }, {
-    "title": "US Signals in China",
+    "title": "US Signals Are Copied in China",
     "date": "1923-02",
     "description": "Amateur signals are reported copied all the way to China by an operator on a ship."
   }, {
@@ -289,7 +305,7 @@
     "date": "1923-03-24",
     "description": "ARRL holds a party to encourage exploration of the 100-meter wavelength."
   }, {
-    "title": "Rochester Plan",
+    "title": "Rochester Plan to Reduce Interference",
     "date": "1923-04",
     "description": "ARRL promotes a voluntary time-sharing scheme to reduce interference for broadcast listeners."
   }, {
@@ -305,7 +321,7 @@
     "date": "1923-06-23",
     "description": "The schooner Bowdoin departs with operator Don Mix (1TS) for a 14-month voyage."
   }, {
-    "title": "WWV Standard Frequencies",
+    "title": "WWV Standard Frequencies Established",
     "date": "1923-07",
     "description": "WWV begins broadcasting standard frequencies to help hams calibrate their wave meters."
   }, {
@@ -333,7 +349,7 @@
     "date": "1923-11-25",
     "description": "Leon Deloy's 100-meter transmissions are immediately copied in the US, leading to a QSO."
   }, {
-    "title": "Japan-US QSO",
+    "title": "First Japan-US QSO",
     "date": "1923-11-26",
     "description": "Charles York (7HG) makes the first two-way amateur contact across the Pacific with Japan."
   }, {
@@ -361,6 +377,10 @@
     "date": "1923-12-21",
     "description": "The fourth ARRL transatlantic tests begin, aiming for two-way communication."
   }, {
+    "title": "Coolidge Arctic Greeting via Amateur Radio",
+    "date": "1923-12-22",
+    "description": "President Coolidge sends a holiday greeting to the MacMillan arctic expedition via amateur radio relay."
+  }, {
     "title": "US-Holland First QSO",
     "date": "1923-12-27",
     "description": "The first two-way amateur contact between the US and the Netherlands is achieved."
@@ -369,11 +389,7 @@
     "date": "1924-01",
     "description": "Standard ARRL practices for efficient CQing are established to reduce interference."
   }, {
-    "title": "Coolidge Arctic Greeting",
-    "date": "1924-01-01",
-    "description": "A Christmas message from President Coolidge is successfully relayed to the Arctic expedition."
-  }, {
-    "title": "4-Milliwatt Distance Record",
+    "title": "4-Milliwatt Distance Record: 1500 miles",
     "date": "1924",
     "description": "Charles Maclurcan is heard 1,500 miles away while transmitting with only 4 milliwatts."
   }, {
@@ -384,10 +400,6 @@
     "title": "NKF Shortwave Testing",
     "date": "1924-03",
     "description": "The Naval Research Laboratory begins cooperative shortwave testing with amateur stations."
-  }, {
-    "title": "Tahiti Generator Search",
-    "date": "1924-03-15",
-    "description": "Operators aboard the R.M.S. Tahiti search for a replacement generator in New Zealand."
   }, {
     "title": "SA-NZ Record Contact",
     "date": "1924-05-22",
@@ -405,27 +417,19 @@
     "date": "1924-09",
     "description": "ARRL endorses Esperanto as the international language for amateur radio communication."
   }, {
-    "title": "Bowdoin Returns",
+    "title": "MacMillan Expedition Returns",
     "date": "1924-09-20",
     "description": "The MacMillan expedition arrives back in Maine after nearly a year in the Arctic ice."
   }, {
     "title": "3rd Radio Conference",
     "date": "1924-10-06",
-    "description": "The Third National Radio Conference discusses harmonically related amateur bands."
-  }, {
-    "title": "Radio Conference Reps",
-    "date": "1924-10-06",
-    "description": "Eighty representatives from various radio services attend the 3rd National Radio Conference."
+    "description": "The Third National Radio Conference discusses harmonically related amateur bands. Eighty representatives attend."
   }, {
     "title": "Abolition of Spark",
     "date": "1924-12",
     "description": "The ARRL calls for the complete abolition of spark radio in favor of cleaner CW signals."
   }, {
-    "title": "Spark Abolition Proposal",
-    "date": "1924-12",
-    "description": "ARRL formally proposes the immediate abolition of amateur spark radio transmissions."
-  }, {
-    "title": "Ultra Short Wave Band",
+    "title": "Ultra Short Wave Band Announced for Amateurs",
     "date": "1925",
     "description": "The Department of Commerce announces a new 3/4 meter 'ultra short wave' band for hams."
   }, {
@@ -438,23 +442,43 @@
     "description": "The International Amateur Radio Union is formed in Paris to coordinate global amateur radio."
   }, {
     "title": "April in Paris (IARU)",
-    "date": "1925-04",
-    "description": "The formation of the IARU in Paris marks a major milestone for international cooperation."
+    "date": "1925-04-16",
+    "description": "The first organizing Congress of the International Amateur Radio Union (IARU) begins in Paris."
   }, {
     "title": "Washington Wireless Law",
     "date": "1927",
     "description": "A new radio law is finally passed in Washington, establishing modern band allocations."
   }, {
-    "title": "Third Party Traffic",
+    "title": "Third Party Traffic Defined and Regulated",
     "date": "1927",
     "description": "The 1927 law introduces specific definitions and restrictions for third-party message traffic."
   }, {
+    "title": "First International DX Contest",
+    "date": "1928-02",
+    "description": "The ARRL sponsors its first International DX Contest, attracting global amateur radio participation."
+  }, {
+    "title": "US Ratifies Washington Convention",
+    "date": "1928-03-21",
+    "description": "The U.S. Senate ratifies the Washington International Radiotelegraph Convention, cementing new global radio allocations."
+  }, {
     "title": "1929-Type Station",
-    "date": "1929",
+    "date": "1929-01-01",
     "description": "A new generation of high-stability equipment, known as the '1929-type,' is introduced."
   }, {
-    "title": "Perspectives on 1930",
-    "date": "1930",
-    "description": "The ARRL reviews the state of amateur radio, celebrating its growth and technical maturity."
+    "title": "Washington Convention Takes Effect",
+    "date": "1929-01-01",
+    "description": "The provisions of the Washington Radiotelegraph Convention go into effect, introducing strict international band limits."
+  }, {
+    "title": "Maxim 60th Birthday Relay",
+    "date": "1929-08-31",
+    "description": "Amateurs across the continent run the Hiram Percy Maxim 60th Birthday Relay to honor the ARRL president."
+  }, {
+    "title": "First Sweepstakes Precursor Contest",
+    "date": "1930-01-18",
+    "description": "A message-handling contest between US and Canadian stations serves as the precursor to the ARRL Sweepstakes."
+  }, {
+    "title": "Third International Relay Competition",
+    "date": "1930-02-15",
+    "description": "A progenitor of the modern ARRL DX Contest, the Third International Relay Competition begins."
   } ]
 }

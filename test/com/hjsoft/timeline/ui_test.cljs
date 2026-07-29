@@ -22,7 +22,7 @@
           _ (rtl/render ($ ui/setup-screen
                                 {:on-start #(reset! started? true)
                                  :current-file "history.json"}))
-          input (rtl/screen.getByPlaceholderText "Player 1 name")
+          input (rtl/screen.getByPlaceholderText "Player 1")
           button (rtl/screen.getByText "Start Game")]
       (rtl/fireEvent.change input #js {:target #js {:value "Alice"}})
         ;; Button should be enabled now
@@ -36,7 +36,7 @@
           _ (rtl/render ($ ui/setup-screen
                            {:on-start #(reset! started? true)
                             :current-file "history.json"}))]
-      (let [input1 (rtl/screen.getByPlaceholderText "Player 1 name")
+      (let [input1 (rtl/screen.getByPlaceholderText "Player 1")
             add-button (rtl/screen.getByText "+ Add Player")
             start-button (rtl/screen.getByText "Start Game")]
 
@@ -48,7 +48,7 @@
 
         ;; Add Player 3 and enter "Bob"
         (rtl/fireEvent.click add-button)
-        (let [inputs (rtl/screen.getAllByPlaceholderText #"Player \d name")
+        (let [inputs (rtl/screen.getAllByPlaceholderText #"Player \d")
               input3 (nth (vec inputs) 2)]
           (rtl/fireEvent.change input3 #js {:target #js {:value "Bob"}}))
 

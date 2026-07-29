@@ -88,9 +88,7 @@
                     (d/div {:key idx :class "player-input-wrapper"}
                            (d/input {:ref #(swap! input-refs assoc idx %)
                                      :value name
-                                     :placeholder (str "Player "
-                                                       (inc idx)
-                                                       " name")
+                                     :placeholder (str "Player " (inc idx))
                                      :on-change #(handle-name-change idx %)}))))
 
            (d/div {:class "button-group"}
